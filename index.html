@@ -38,6 +38,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
+  <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
@@ -62,54 +63,71 @@
   <div class="visual">
     <div class="inner clearfix">
       <div class="visual-left">
-        <h2>One Page Site<br>
+        <h2><br>
           Lorem ipsum</h2>
         <span></span>
         <p></p>
       </div>
       <div class="visual-right">
-        <h3>'김정용'의 포트폴리오</h3>
-        <span>개발자 '김정용'의 포트폴리오 입니다.</span>
-        <span>피드백은 언제나 환영입니다.</span>
+        <h2>Web Portfolio</h2>
+        <span>#web publisher</span>
+        <span>#front-end developer</span>
+        <span>#하는일에재미를느끼지못하면의미없다<br>
+        </span>
+        </p>
       </div>
     </div>
-  </div>
+  </div>  
   <!-- skills -->
   <div class="skills">
     <div class="inner">
       <h2>SKILLS</h2>
       <ul class="skill-list clearfix">
-        <li class="skill01">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skill01" id="html">
+          <a href="">
+            <span>html</span>
+            <p>SEO 작업을 수행할 수 있습니다.</p> 
+          </a>
         </li>
-        <li class="skill02">
-          <p></p>
-          <span>스킬명</span>
+        <li></li>
+        <li class="skill02" id="scss">
+          <a href="">
+            <span>scss</span>
+            <p></p>
+          </a>
         </li>
-        <li class="skill03">
-          <p></p>
-          <span>스킬명</span>
+        <li></li>
+        <li class="skill03" id="js">
+          <a href="">
+            <span>js/jq</span>
+            <p></p>
+          </a>
         </li>
-        <li class="skill04">
-          <p></p>
-          <span>스킬명</span>
+        <li></li>
+        <li class="skill04" id="vue">
+          <a href="">
+            <span>vue.js</span>
+            <p></p>
+          </a>
         </li>
-        <li class="skill05">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skill05" id="git">
+          <a href="">
+            <span>git</span>
+            <p>버전관리를 위해 적극활용합니다.</p>
+            <p>브랜치를 통한 협업이 가능합니다.</p>
+          </a>
         </li>
-        <li class="skill06">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skill06" id="bootstrap">
+          <a href="">
+            <span>bootstrap</span>
+            <p></p>
+          </a>
         </li>
-        <li class="skill07">
-          <p></p>
-          <span>스킬명</span>
-        </li>
-        <li class="skill08">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skill07" id="gf">
+          <a href="">
+            <span>grid/flex</span>
+            <p></p>
+          </a>
         </li>
       </ul>
     </div>
@@ -134,60 +152,70 @@
             aspernatur.</p>
         </div>
       </div>
-      <div class="port-view"></div>
+      <div class="port-view">
+        <div class="swiper-container port-site-view">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/images/draft/kwater-d.png" alt=""></div>
+            <div class="swiper-slide"><img src="/images/draft/gjyouth-d.png" alt=""></div>
+            <div class="swiper-slide"><img src="/images/draft/masi-d.png" alt=""></div>
+            <div class="swiper-slide"><img src="/images/draft/noelo-d.png" alt=""></div>
+          </div>
+        </div>
+        <div class="app-draw">
+          <button class="app-buttons ap-bt01"></button>
+          <button class="app-buttons ap-bt02"></button>
+          <button class="app-buttons ap-bt03"></button>
+          <button class="app-buttons ap-bt04"></button>
+        </div>
+      </div>
       <div class="port-desc">
         <span>Lorem Ipsum<br>
           One Page Site
         </span>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit quaerat.<br>
           Possimus accusamus vero repellat aspernatur corrupti! Laboriosam suscipit,<br>
-          dolores quibusdam repellat quod necessitatibus nobis exercitationem! Voluptas earum vitae minus?</p>
-        <a href=""></a>
-      </div>
-    </div>
-  </div>
-  <!-- life -->
-  <div class="life">
-    <div class="inner">
-      <button class="life-sw-prev">&lt;</button>
-      <div class="swiper-container life-sw">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <h4>Title01</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
-              voluptate aspernatur.</p>
-            <a href="">button</a>
-          </div>
-          <div class="swiper-slide">
-            <h4>Title02</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
-              voluptate aspernatur.</p>
-            <a href="">button</a>
-          </div>
-          <div class="swiper-slide">
-            <h4>Title03</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
-              voluptate aspernatur.</p>
-            <a href="">button</a>
+          dolores quibusdam repellat quod necessitatibus nobis exercitationem! Voluptas earum vitae minus?</p </div>
+          </div> </div> <!-- life -->
+        <div class="life">
+          <div class="inner">
+            <button class="life-sw-prev">&lt;</button>
+            <div class="swiper-container life-sw">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h4>Title01</h4>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+                    voluptate aspernatur.</p>
+                  <a href="">button</a>
+                </div>
+                <div class="swiper-slide">
+                  <h4>Title02</h4>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+                    voluptate aspernatur.</p>
+                  <a href="">button</a>
+                </div>
+                <div class="swiper-slide">
+                  <h4>Title03</h4>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+                    voluptate aspernatur.</p>
+                  <a href="">button</a>
+                </div>
+              </div>
+
+            </div>
+            <button class="life-sw-next">&gt;</button>
           </div>
         </div>
-
-      </div>
-      <button class="life-sw-next">&gt;</button>
-    </div>
-  </div>
-  <!-- contact -->
-  <div class="contact">
-    <div class="inner"></div>
-  </div>
-  <!-- footer -->
-  <footer class="footer">
-    <div class="inner">
-      <p>현실에 안주하기보단, 미래를 위한 밑거름을 만들어가는데도<br>
-        힘쓰는 사람이 되겠습니다.</p>
-        <span>Welcome, thanks for visiting :)</span>
-    </div>
-  </footer>
+        <!-- contact -->
+        <div class="contact">
+          <div class="inner"></div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+          <div class="inner">
+            <p>피드백은 언제나 환영입니다.</p>
+            <span>Thanks for visiting :)</span>
+          </div>
+        </footer>
 </body>
 
 </html>
