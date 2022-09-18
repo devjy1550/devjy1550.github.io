@@ -34,6 +34,7 @@ body {
   letter-spacing: -0.64px;
   color: #444;
 }
+
 /* 공통요소 */
 .clearfix::after {
   content: '';
@@ -46,6 +47,409 @@ body {
 .inner {
   position: relative;
   display: block;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
+}
+
+.wrap {
+  position: relative;
+  display: block;
+}
+
+
+
+/* header */
+.header {
+  position: relative;
+  display: block;
+  background-color: rgb(81, 89, 101);
+}
+
+h1.logo {
+  position: relative;
+  display: block;
+  float: left;
+  font-size: 60px;
+  line-height: 100px;
+}
+
+.gnb {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.gnb .menu {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+.gnb .menu li {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  line-height: 100px;
+  padding: 0 20px;
+}
+
+
+
+/* visual */
+.visual {
+  position: relative;
+  display: block;
+  padding: 200px 0;
+  background-color: rgb(81, 89, 101);
+}
+
+.visual-left {
+  position: relative;
+  display: block;
+  float: left;
+  font-size: 50px;
+  line-height: 65px;
+  margin-left: 100px;
+}
+
+.visual-left>span {
+  top: 130px;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 100%;
+  background: url('../images/03.png') no-repeat center;
+  background-size: auto 100%;
+  filter: grayscale(1);
+}
+
+.visual-left>p {
+  top: 180px;
+  right: 0;
+  position: absolute;
+  display: block;
+  width: 80%;
+  height: 100%;
+  background: url('../images/03.png') no-repeat center;
+  background-size: auto 100%;
+  filter: grayscale(1);
+
+}
+
+.visual-right {
+  position: relative;
+  display: block;
+  float: right;
+  border-radius: 20px;
+  background-color: rgb(106, 115, 130);
+  width: 40%;
+  padding: 40px;
+}
+
+.visual-right h3 {
+  position: relative;
+  display: block;
+  font-size: 32px;
+  text-align: center;
+}
+
+.visual-right span {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  padding-left: 20px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin-top: 15px;
+}
+
+
+/* skills */
+.skills {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  padding: 150px;
+}
+
+.skills h2 {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(78, 88, 98);
+}
+
+.skill-list {
+  position: relative;
+  display: block;
+  font-size: 0;
+}
+
+.skill-list>li {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  width: 25%;
+}
+
+.skill-list>li p {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 50%;
+  border: 4px solid #888;
+  background: url('../images/01.png') no-repeat center center;
+  background-size: contain;
+  filter: grayscale(1);
+}
+
+.skill-list>li span {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 24px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+/* portfolio */
+.portfolio {
+  position: relative;
+  display: block;
+  padding: 150px 0 0 0;
+}
+
+.port-cate {
+  position: relative;
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 40px 0;
+}
+
+.port-cate>div {
+  position: relative;
+  display: block;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.port-cate>div:last-child {
+  margin-bottom: 0;
+}
+
+.port-cate>div span {
+  position: relative;
+  display: block;
+  font-size: 60px;
+  line-height: 100px;
+  padding-left: 100px;
+}
+
+.port-cate>div span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 80px;
+  height: 100px;
+  background: url('../images/02.png') no-repeat center center;
+  background-size: contain;
+  filter: grayscale(1);
+  border-radius: 50%;
+  border: 4px solid #888;
+}
+
+.port-cate>div p {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+}
+
+.port-view {
+  position: relative;
+  display: block;
+  float: left;
+  width: 35%;
+  margin-left: 5%;
+  height: 740px;
+  background-color: #fff;
+  border: 10px solid rgb(152, 164, 180);
+  border-bottom: 0;
+  border-radius: 60px 60px 0 0;
+}
+
+.port-view::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  display: block;
+  float: left;
+  width: 88%;
+  height: 710px;
+  background-color: rgb(152, 164, 180);
+  border: 10px solid rgb(152, 164, 180);
+  border-bottom: 0;
+  border-radius: 40px 40px 0 0;
+}
+
+
+.port-view::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  background-color: #fff;
+  border-bottom: 0;
+  border-radius: 0 0 24px 24px;
+}
+
+.port-desc {
+  position: relative;
+  display: block;
+  float: left;
+  width: 30%;
+  height: 600px;
+  margin-top: 80px;
+  margin-left: 5%;
+}
+
+.port-desc span {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  text-align: center;
+}
+
+.port-desc p {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.port-desc a {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 80px;
+  background-color: rgb(71, 122, 169);
+  margin-top: 60px;
+}
+
+/* life */
+.life {
+  position: relative;
+  display: block;
+  padding: 100px 0;
+  background-color: rgb(152, 164, 180);
+}
+
+
+.life-sw {
+  position: relative;
+  display: block;
+  height: 400px;
+}
+
+.life-sw .swiper-slide .life-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 95%;
+  height: 100%;
+  background-color: #fff;
+  padding: 30px 20px;
+}
+
+.life-box h4 {
+  position: relative;
+  display: block;
+  font-size: 40px;
+  text-align: center;
+}
+
+.life-box p {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.life-box a {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 80px;
+  background-color: rgb(71, 122, 169);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 80px;
+}
+
+
+
+
+
+.life button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(80, 88, 101);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 9;
+  color: rgb(218, 219, 221);
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.life-sw-prev {
+  left: -100px;
+}
+
+.life-sw-next {
+  right: -100px;
+}
+
+
+
+
+
+/* contact */
+.contact {
+  position: relative;
+  display: block;
 }
