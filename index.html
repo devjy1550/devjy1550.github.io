@@ -38,6 +38,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
+  <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
@@ -49,11 +50,21 @@
       <h1 class="logo">포트폴리오</h1>
       <div class="gnb">
         <ul class="menu">
-          <li>visual</li>
-          <li>skills</li>
-          <li>portfolio</li>
-          <li>life</li>
-          <li>contact</li>
+          <li>visual<span></span>
+            <p></p>
+          </li>
+          <li>skills<span></span>
+            <p></p>
+          </li>
+          <li>portfolio<span></span>
+            <p></p>
+          </li>
+          <li>life<span></span>
+            <p></p>
+          </li>
+          <li>contact<span></span>
+            <p></p>
+          </li>
         </ul>
       </div>
     </div>
@@ -62,16 +73,31 @@
   <div class="visual">
     <div class="inner clearfix">
       <div class="visual-left">
-        <h2>One Page Site<br>
+        <h2><br>
           Lorem ipsum</h2>
         <span></span>
         <p></p>
       </div>
       <div class="visual-right">
-        <h3>'김정용'의 포트폴리오</h3>
-        <span>개발자 '김정용'의 포트폴리오 입니다.</span>
-        <span>피드백은 언제나 환영입니다.</span>
-        <span>Welcome, thanks for visiting :)</span>
+        <h2>Web Portfolio</h2>
+        <span>#web publisher</span>
+        <span>#front-end developer</span>
+        <span>#하는일에재미를느끼지못하면의미없다<br>
+        </span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- whoamI -->
+  <div class="aboutMe">
+    <div class="inner clearfix">
+      <h3>ABOUT ME</h3>
+      <div class="mystory">
+        <span>현실에 안주하지 않고, 꾸준한 배움을 통해 더욱 발전하고싶은,
+          <br>프론트엔드 개발자 지망생 '김정용'입니다.</span>
+        <p>뷰(Vue)통합 프론트엔트 개발 교육 과정에 참여하여 HTML, CSS, JavaScript의 기초를 익히고, 다양한 웹사이트를 클론코딩해보며 실전 감각을 길러왔습니다.<br>
+          이러한 과정에서 jQuery나 SCSS, GitHub 등의 사용법도 익혀, 개발의 속도 및 효율성을 향상시킬 수 있는 도구들에도 점차 관심을 확장해 나가고 있는 중입니다.<br>
+          최근에는 Vue.js를 활용하여 웹 애플리케이션을 개발하는 방법을 공부하고 있습니다.</p>
       </div>
     </div>
   </div>
@@ -80,37 +106,88 @@
     <div class="inner">
       <h2>SKILLS</h2>
       <ul class="skill-list clearfix">
-        <li class="skill01">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skillN skill01" id="html">
+          <a href="">
+            <span>html</span>
+            <ul class="skilldesc">
+              <li>SEO 작업을 <br>
+                수행할 수 있습니다.</li>
+              <li></li>
+            </ul>
+          </a>
         </li>
-        <li class="skill02">
-          <p></p>
-          <span>스킬명</span>
+        <li></li>
+        <li class="skillN skill02" id="scss">
+          <a href="">
+            <span>scss</span>
+            <ul class="skilldesc">
+              <li>주어진 디자인에 따라 <br>
+                레이아웃을 구성할 수 있습니다.</li>
+              <li>반응형 기반의<br>
+                css 작업이 가능합니다.</li>
+            </ul>
+          </a>
         </li>
-        <li class="skill03">
-          <p></p>
-          <span>스킬명</span>
+        <li></li>
+        <li class="skillN skill03" id="js">
+          <a href="">
+            <span>js/jq</span>
+            <ul class="skilldesc">
+              <li>필요한 기능의 컴포넌트<br>
+                구현이 가능합니다.</li>
+              <li>라이브러리(Vanilla JS & Jquery)<br>
+                활용이 가능합니다.</li>
+            </ul>
+          </a>
         </li>
-        <li class="skill04">
-          <p></p>
-          <span>스킬명</span>
+        <li></li>
+        <li class="skillN skill04" id="vue">
+          <a href="">
+            <span>vue.js</span>
+            <ul class="skilldesc">
+              <li>DB 연동 웹 어플리케이션(php,MariaDB)<br>
+                제작해본 경험이 있습니다.
+              </li>
+              <li>지브리...</li>
+            </ul>
+          </a>
         </li>
-        <li class="skill05">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skillN skill05" id="git">
+          <a href="">
+            <span>git</span>
+            <ul class="skilldesc">
+              <li>버전관리를 위해 적극활용합니다.</li>
+              <li> 브랜치를 통한 협업이 가능합니다.</li>
+            </ul>
+          </a>
         </li>
-        <li class="skill06">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skillN skill06" id="bootstrap">
+          <a href="">
+            <span>bootstrap</span>
+            <ul class="skilldesc">
+              <li>컴포넌트 디자인에<br>
+                적절한 활용이 가능합니다.
+              <li>
+            </ul>
+          </a>
         </li>
-        <li class="skill07">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skillN skill07" id="gf">
+          <a href="">
+            <span>grid/flex</span>
+            <ul class="skilldesc">
+            </ul>
+          </a>
         </li>
-        <li class="skill08">
-          <p></p>
-          <span>스킬명</span>
+        <li class="skillN skill08" id="??">
+          <a href="">
+            <span>something</span>
+            <ul class="skilldesc">
+              <li>주어진 디자인에 따라 <br>
+                레이아웃을 구성할 수 있습니다.</li>
+              <li>반응형 기반의<br>
+                css 작업이 가능합니다.</li>
+            </ul>
+          </a>
         </li>
       </ul>
     </div>
@@ -118,29 +195,51 @@
   <!-- portfolio -->
   <div class="portfolio">
     <div class="inner clearfix">
-      <div class="port-cate">
+      <div class="port-left">
         <div class="port-all">
           <span>Subject</span>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate aspernatur.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate
+            aspernatur.</p>
         </div>
         <div class="port-clone">
           <span>Subject</span>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate aspernatur.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate
+            aspernatur.</p>
         </div>
         <div class="port-vue">
           <span>Subject</span>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate aspernatur.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate
+            aspernatur.</p>
         </div>
       </div>
-      <div class="port-view"></div>
-      <div class="port-desc">
-        <span>Lorem Ipsum<br>
+      <div class="port-center">
+        <div class="swiper-container port-site-view">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/images/draft/kwater-d.png" alt=""></div>
+            <div class="swiper-slide"><img src="/images/draft/gjyouth-d.png" alt=""></div>
+            <div class="swiper-slide"><img src="/images/draft/masi-d.png" alt=""></div>
+            <div class="swiper-slide"><img src="/images/draft/noelo-d.png" alt=""></div>
+          </div>
+        </div>
+        <div class="app-draw">
+          <button class="app-buttons ap-bt01"></button>
+          <button class="app-buttons ap-bt02"></button>
+          <button class="app-buttons ap-bt03"></button>
+          <button class="app-buttons ap-bt04"></button>
+        </div>
+      </div>
+      <div class="port-right">
+        <h4>Lorem Ipsum<br>
           One Page Site
-        </span>
+        </h4>
+        <div class="psview-control">
+          <button class="ps-view-prev"></button>
+          <button class="ps-view-next"></button>
+        </div>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit quaerat.<br>
           Possimus accusamus vero repellat aspernatur corrupti! Laboriosam suscipit,<br>
           dolores quibusdam repellat quod necessitatibus nobis exercitationem! Voluptas earum vitae minus?</p>
-        <a href=""></a>
       </div>
     </div>
   </div>
@@ -151,25 +250,22 @@
       <div class="swiper-container life-sw">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="life-box">
-              <h4>Title01</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate aspernatur.</p>
-              <a href="">button</a>
-            </div>
+            <h4>Title01</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+              voluptate aspernatur.</p>
+            <a href="">button</a>
           </div>
           <div class="swiper-slide">
-            <div class="life-box">
-              <h4>Title02</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate aspernatur.</p>
-              <a href="">button</a>
-            </div>
+            <h4>Title02</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+              voluptate aspernatur.</p>
+            <a href="">button</a>
           </div>
           <div class="swiper-slide">
-            <div class="life-box">
-              <h4>Title03</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate aspernatur.</p>
-              <a href="">button</a>
-            </div>
+            <h4>Title03</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+              voluptate aspernatur.</p>
+            <a href="">button</a>
           </div>
         </div>
 
@@ -181,6 +277,13 @@
   <div class="contact">
     <div class="inner"></div>
   </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="inner">
+      <p>피드백은 언제나 환영입니다.</p>
+      <span>Thanks for visiting :)</span>
+    </div>
+  </footer>
 </body>
 
 </html>
