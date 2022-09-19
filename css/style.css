@@ -70,7 +70,7 @@ body {
 .header {
   position: relative;
   display: block;
-  background-color: rgb(81, 89, 101);
+  background-color: rgb(184, 184,184);
   padding: 20px 0;
 }
 
@@ -81,7 +81,7 @@ h1.logo {
   width: 240px;
   height: 120px;
   line-height: 120px;
-  background: url('../images/lg.png') no-repeat center;
+  background: url('../images/Untitled\ \(2\).png') no-repeat center;
   background-size: 100% 100%;
 }
 
@@ -109,6 +109,7 @@ h1.logo {
   line-height: 32px;
   padding: 18px 10px;
   border: 2px solid #fff;
+  color: #fff;
   border-radius: 15px;
   letter-spacing: 2px;
   transition: all 0.5s;
@@ -116,54 +117,15 @@ h1.logo {
 }
 
 .gnb .menu li:hover {
-  letter-spacing: 4px;
+  padding: 20px;
 }
-
-
-.gnb .menu li>span {
-  position: absolute;
-  top: -6px;
-  left: 10px;
-  display: block;
-  width: 20px;
-  height: 10px;
-  border: 2px solid rgb(240, 251, 255);
-  background-color: rgb(115, 115, 131);
-  transition: all 0.5s;
-}
-
-.gnb .menu li:hover>span {
-  left: calc(100% - 40px);
-  width: 30px;
-}
-
-
-.gnb .menu li>p {
-  position: absolute;
-  top: 64px;
-  right: 10px;
-  display: block;
-  width: 20px;
-  height: 10px;
-  border: 2px solid rgb(240, 251, 255);
-  background-color: rgb(115, 115, 131);
-  transition: all 0.5s;
-}
-
-.gnb .menu li:hover>p {
-  right: calc(100% - 40px);
-  width: 30px;
-}
-
-
-
 
 /* visual */
 .visual {
   position: relative;
   display: block;
   padding: 300px 0;
-  background-color: rgb(81, 89, 101);
+  background-color: rgb(107,107,107)
 }
 
 .visual-left {
@@ -209,12 +171,14 @@ h1.logo {
   position: relative;
   display: block;
   padding: 50px 0;
+  background-color: rgb(227, 227, 227);
 }
 
 .aboutMe-top {
   position: relative;
   display: block;
 }
+
 .aboutMe-top h3 {
   position: relative;
   display: block;
@@ -277,7 +241,7 @@ h1.logo {
   content: '';
   position: absolute;
   top: 100%;
-right: 0;
+  right: 0;
   display: block;
   width: 60px;
   height: 6px;
@@ -296,7 +260,7 @@ right: 0;
   display: block;
   border-width: 50px 18px 0px;
   border-style: solid;
-  border-color: rgb(240, 240, 178) transparent;
+  border-color:rgb(71, 122, 169) transparent;
 }
 
 .MBTI::before {
@@ -309,7 +273,7 @@ right: 0;
   left: -18px;
   border-width: 0px 45px 35px;
   border-style: solid;
-  border-color: transparent transparent rgb(240, 240, 178);
+  border-color: transparent transparent  rgb(71, 122, 169);
 }
 
 
@@ -320,7 +284,7 @@ right: 0;
   display: block;
   border-width: 60px 21.6px 0;
   border-style: solid;
-  border-color: rgb(240, 240, 178) transparent;
+  border-color: rgb(71, 122, 169) transparent;
 }
 
 .MBTI2::before {
@@ -333,7 +297,7 @@ right: 0;
   left: -21.6px;
   border-width: 0px 54px 42px;
   border-style: solid;
-  border-color: transparent transparent rgb(240, 240, 178);
+  border-color: transparent transparent rgb(71, 122, 169);
 }
 
 
@@ -491,17 +455,49 @@ ul.skilldesc2 {
   position: relative;
   display: block;
   font-size: 32px;
+  line-height: 48px;
 }
 
-.port-left>div>span::before {
+.port-left>div:first-child>span::before {
   content: '';
   position: absolute;
-  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 40px;
+  background:url('../images/phon.png') no-repeat center;
+  background-size: contain;
+}
+
+
+
+.port-left>div:nth-child(2)>span::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: url('../images/monit.png') no-repeat center;
+  background-size: contain;
+}
+
+
+
+
+.port-left>div:last-child>span::before {
+  content: '';
+  position: absolute;
+  right: 0;
   top: 0;
   width: 20px;
-  height: 20px;
-  background: url('../images/');
+  height: 40px;
+  background: url('../images/phon.png') no-repeat center;
+  background-size: contain;
 }
+
 
 .port-left>div p {
   position: relative;
@@ -534,7 +530,7 @@ ul.skilldesc2 {
   width: calc(50% + 30px);
   height: 680px;
   background-color: #000;
-  border: 10px solid rgb(152, 164, 180);
+  border: 10px solid rgb(077, 169, 225);
   border-bottom: 0;
   border-radius: 60px 60px 0 0;
 }
@@ -862,7 +858,7 @@ ul.skilldesc2 {
   font-size: 32px;
   line-height: 40px;
   text-align: center;
-  background-color: #999;
+  background-color: rgba(077, 169, 225, 0.7);
   padding: 20px 0;
   border-radius: 20px 20px 0 0;
 }
@@ -876,16 +872,16 @@ ul.skilldesc2 {
   width: 60px;
   height: 60px;
   cursor: pointer;
-}
+  z-index: 9;}
 
 .psview-control>button.ps-view-prev {
-  left: -30px;
-  border-radius: 0 50% 50% 0;
+  left: -10px;
+  border-radius: 20% 50% 50% 20%;
 }
 
 .psview-control>button.ps-view-next {
-  right: -30px;
-  border-radius: 50% 0 0 50%;
+  right: -10px;
+  border-radius: 50% 20% 20% 50%;
 }
 
 
