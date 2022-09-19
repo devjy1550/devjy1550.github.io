@@ -14,7 +14,7 @@ window.onload = function () {
     },
   })
 
-  new Swiper('.port-site-view', {
+  new Swiper('.personal-swiper', {
     loop: true,
     autoplay: {
       delay: 2000,
@@ -25,6 +25,27 @@ window.onload = function () {
       nextEl: '.ps-view-next'
     }
   })
+
+
+  new Swiper('.study-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      prevEl: '.st-sw-prev',
+      nextEl: '.st-sw-next'
+    },
+    pagination : {
+      type: 'bullets',
+      el: '.st-sw-pgnt',
+    }
+  })
+
+
+
+
 
   var bar = new ProgressBar.Circle(html, {
     color: '#ff3f34',

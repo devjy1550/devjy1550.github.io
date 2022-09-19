@@ -47,7 +47,7 @@
   <!-- header -->
   <header class="header">
     <div class="inner clearfix">
-      <h1 class="logo">포트폴리오</h1>
+      <h1 class="logo"></h1>
       <div class="gnb">
         <ul class="menu">
           <li>visual<span></span>
@@ -90,14 +90,32 @@
   </div>
   <!-- whoamI -->
   <div class="aboutMe">
-    <div class="inner clearfix">
-      <h3>ABOUT ME</h3>
-      <div class="mystory">
-        <span>현실에 안주하지 않고, 꾸준한 배움을 통해 더욱 발전하고싶은,
-          <br>프론트엔드 개발자 지망생 '김정용'입니다.</span>
-        <p>뷰(Vue)통합 프론트엔트 개발 교육 과정에 참여하여 HTML, CSS, JavaScript의 기초를 익히고, 다양한 웹사이트를 클론코딩해보며 실전 감각을 길러왔습니다.<br>
-          이러한 과정에서 jQuery나 SCSS, GitHub 등의 사용법도 익혀, 개발의 속도 및 효율성을 향상시킬 수 있는 도구들에도 점차 관심을 확장해 나가고 있는 중입니다.<br>
-          최근에는 Vue.js를 활용하여 웹 애플리케이션을 개발하는 방법을 공부하고 있습니다.</p>
+    <div class="inner">
+      <div class="aboutMe-top clearfix">
+        <h3>ABOUT<br>ME</h3>
+        <div class="mystory">
+          <span>현실에 안주하지 않고, 꾸준한 배움을 통해 더욱 발전하고싶은,</span>
+          <span>프론트엔드 개발자 지망생 '김정용'입니다.</span>
+          <p>뷰(Vue)통합 프론트엔트 개발 교육 과정에 참여하여 HTML, CSS, JavaScript의 기초를 익히고,
+            <br>다양한 웹사이트를 클론코딩해보며 실전 감각을 길러왔습니다.<br>
+            이러한 과정속에서 JQuery나 SCSS, GitHub 등 개발에 유용한 도구들에 대해 학습하였고,<br>
+            Vue.js를 활용하여 기존 클론코딩 작업물에 적용해보며 개발분야의 지식을 넓혀나가고 있습니다.</p>
+        </div>
+      </div>
+      <div class="aboutMe-bottom">
+        <div class="myhistory">
+          <h4>Education</h4>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <h4>MBTI</h4>
+          <p>청렴결백한 논리주의자, 현실주의자</p>
+          <p>책임감이 강한 성격</p>
+          <p>헌신적인 성향은 현실주의자의 훌륭한 강점이며 다양한 일을 성취하는 데 도움이 됩니다. </p>
+          <span class="MBTI"></span>
+          <span class="MBTI2"></span>
+        </div>
       </div>
     </div>
   </div>
@@ -155,7 +173,7 @@
         <li class="skillN skill05" id="git">
           <a href="">
             <span>git</span>
-            <ul class="skilldesc">
+            <ul class="skilldesc2">
               <li>버전관리를 위해 적극활용합니다.</li>
               <li> 브랜치를 통한 협업이 가능합니다.</li>
             </ul>
@@ -164,7 +182,7 @@
         <li class="skillN skill06" id="bootstrap">
           <a href="">
             <span>bootstrap</span>
-            <ul class="skilldesc">
+            <ul class="skilldesc2">
               <li>컴포넌트 디자인에<br>
                 적절한 활용이 가능합니다.
               <li>
@@ -174,14 +192,14 @@
         <li class="skillN skill07" id="gf">
           <a href="">
             <span>grid/flex</span>
-            <ul class="skilldesc">
+            <ul class="skilldesc2">
             </ul>
           </a>
         </li>
         <li class="skillN skill08" id="??">
           <a href="">
             <span>something</span>
-            <ul class="skilldesc">
+            <ul class="skilldesc2">
               <li>주어진 디자인에 따라 <br>
                 레이아웃을 구성할 수 있습니다.</li>
               <li>반응형 기반의<br>
@@ -196,50 +214,87 @@
   <div class="portfolio">
     <div class="inner clearfix">
       <div class="port-left">
-        <div class="port-all">
+        <div>
+          <span>Study Clone Coding</span>
+          <p>개발자 교육과정을 수료하면서 html,css, javascript등의 기초부터, 반응형css,github이용등까지 배웠던 다양한 내용들을 적용한 클론코딩입니다.</p>
+        </div>
+        <div>
+          <span>Personal Clone Coding</span>
+          <p>배웠던 내용들을 기반으로 하여, 처음부터 끝까지 시행착오를 겪어가며 스스로 제작해본 클론코딩입니다.</p>
+        </div>
+        <div>
           <span>Subject</span>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate
             aspernatur.</p>
-        </div>
-        <div class="port-clone">
-          <span>Subject</span>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate
-            aspernatur.</p>
-        </div>
-        <div class="port-vue">
-          <span>Subject</span>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id voluptate
-            aspernatur.</p>
-        </div>
-      </div>
-      <div class="port-center">
-        <div class="swiper-container port-site-view">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="/images/draft/kwater-d.png" alt=""></div>
-            <div class="swiper-slide"><img src="/images/draft/gjyouth-d.png" alt=""></div>
-            <div class="swiper-slide"><img src="/images/draft/masi-d.png" alt=""></div>
-            <div class="swiper-slide"><img src="/images/draft/noelo-d.png" alt=""></div>
-          </div>
-        </div>
-        <div class="app-draw">
-          <button class="app-buttons ap-bt01"></button>
-          <button class="app-buttons ap-bt02"></button>
-          <button class="app-buttons ap-bt03"></button>
-          <button class="app-buttons ap-bt04"></button>
         </div>
       </div>
       <div class="port-right">
-        <h4>Lorem Ipsum<br>
-          One Page Site
-        </h4>
-        <div class="psview-control">
-          <button class="ps-view-prev"></button>
-          <button class="ps-view-next"></button>
+        <div class="port-phone clearfix">
+          <div class="personal-show clearfix">
+            <div class="swiper-container personal-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/images/draft/nhis-d.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/draft/alpha-d.png" alt=""></div>
+              </div>
+            </div>
+            <div class="app-draw">
+              <button class="app-buttons ap-bt01"></button>
+              <button class="app-buttons ap-bt02"></button>
+              <button class="app-buttons ap-bt03"></button>
+              <button class="app-buttons ap-bt04"></button>
+            </div>
+            <dib class="st-sw-bar">
+              <dib class="st-sw-pgnt swiper-pagination"></dib>
+            </dib>
+          </div>
+          <div class="portsummary">
+            <h4>Lorem Ipsum<br>
+              One Page Site
+            </h4>
+            <div class="psview-control">
+              <button class="ps-view-prev"></button>
+              <button class="ps-view-next"></button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit quaerat.<br>
+              Possimus accusamus vero repellat aspernatur corrupti! Laboriosam suscipit,<br>
+              dolores quibusdam repellat quod necessitatibus nobis exercitationem! Voluptas earum vitae minus?</p>
+          </div>
         </div>
+        <div class="port-com clearfix">
+          <div class="portfolio-cate">
+            <div class="study-show clearfix">
+              <div class="swiper-container study-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="/images/draft/kwater-d.png" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/draft/gjyouth-d.png" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/draft/masi-d.png" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/draft/noelo-d.png" alt=""></div>
+                  <div class="swiper-slide"><img src="/images/draft/jyg-d.png" alt=""></div>
+                </div>
+              </div>
+              <div class="pro-draw">
+                <button class="pro-buttons pr-bt01"></button>
+                <button class="pro-buttons pr-bt02"></button>
+                <button class="pro-buttons pr-bt03"></button>
+                <button class="pro-buttons pr-bt04"></button>
+              </div>
+              <span>
+                <dib class="st-sw-bar">
+                  <dib class="st-sw-pgnt swiper-pagination"></dib>
+                </dib>
+                <dig class="st-sw-control">
+                  <button class="st-sw-prev">&lt;</button>
+                  <button class="st-sw-next">&gt;</button>
+                </dig>
+              </span>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit quaerat.<br>
-          Possimus accusamus vero repellat aspernatur corrupti! Laboriosam suscipit,<br>
-          dolores quibusdam repellat quod necessitatibus nobis exercitationem! Voluptas earum vitae minus?</p>
+              <div class="com-memo">
+                <span></span>
+              </div>
+            </div>
+            <p class="mockup"></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -268,7 +323,6 @@
             <a href="">button</a>
           </div>
         </div>
-
       </div>
       <button class="life-sw-next">&gt;</button>
     </div>
