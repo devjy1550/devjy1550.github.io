@@ -70,7 +70,7 @@ body {
 .header {
   position: relative;
   display: block;
-  background-color: rgb(184, 184, 184);
+  background-color: rgb(81, 89, 102);
   padding: 20px 0;
 }
 
@@ -125,7 +125,7 @@ h1.logo {
   position: relative;
   display: block;
   padding: 300px 0;
-  background-color: rgb(107, 107, 107)
+  background-color: rgb(81, 89, 102);
 }
 
 .visual-left {
@@ -171,7 +171,7 @@ h1.logo {
   position: relative;
   display: block;
   padding: 50px 0;
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(255, 255, 255)
 }
 
 .aboutMe-top {
@@ -198,7 +198,7 @@ h1.logo {
   right: 0;
   width: 40%;
   height: 4px;
-  background-color: #034EA2;
+  background-color: rgb(81, 89, 102);
 }
 
 .aboutMe .mystory {
@@ -412,95 +412,63 @@ h1.logo {
 
 .skill-list {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(8, minmax(120px, 1fr));
-  grid-template-rows: 1fr 1fr;
-  gap: 40px 10px;
-  justify-content: space-between;
-  margin-top: 60px;
+  display: block;
+  width: 100%;
+  font-size: 0;
 }
 
 
 .skill-list>li {
   position: relative;
-  display: block;
+  display: inline-block;
+  margin-right: 8%;
+  width: 19%;
+  margin-bottom: 40px;
 }
 
-.skill-list>li:nth-child(8) {
-  grid-column: 2;
-}
-
-.skill-list>li:nth-child(9) {
-  grid-column: 4;
-}
-
-.skill-list>li:nth-child(10) {
-  grid-column: 6;
-}
-
-.skill-list>li:nth-child(11) {
-  grid-column: 8;
+.skill-list>li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .skill-list>li>a {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: block;
   height: 100%;
   width: 100%;
-  padding-top: 30%;
+  padding-top: 75px;
   font-size: 20px;
-  line-height: 20px;
+  text-align: center;
   border-radius: 50%;
   transition: all 1s;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.45);
+  z-index: 99;
 }
 
-.skill-list>li>a::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  height: calc(100% - 40px);
-  width: calc(100% - 40px);
-  border-radius: 50%;
-  box-shadow: inset 2px 2px 4px 0px rgba(0, 0, 0, 0.45);
+
+.skill-list>li>a>span{
+  z-index: 9;
+  cursor: pointer;
 }
 
-.skill-list>li>a>span {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  text-transform: uppercase;
-}
 
-.skill-list>li>a>ul {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+
+.skilldesc {
+  position: relative;
   display: block;
-  background-color: #444;
+  float: left;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 10px 10px 10px 0;
   border-radius: 10px;
   white-space: nowrap;
-  border: 5px solid #888;
-  transition: all 1s;
+  color: rgb(233, 233, 233);
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  z-index: 9999;
 }
 
-.skilldesc {
-  left: 80%;
-}
-
-ul.skilldesc2 {
-  right: 90%;
+.skilldesc-active {
+  position: fixed;
+  visibility: visible;
 }
 
 .skill-list>li>a>ul>li {
@@ -513,7 +481,10 @@ ul.skilldesc2 {
 
 
 .progressbar-text {
-  top: 60% !important;
+  padding-top: 20px !important;
+font-size: 40px;
+  z-index: 9;
+  cursor: not-allowed;
 }
 
 /* portfolio */
@@ -618,10 +589,10 @@ ul.skilldesc2 {
   top: 0;
   display: block;
   float: left;
-  width: calc(50% + 30px);
+  width: calc(50% + 50px);
   height: 680px;
-  background-color: #000;
-  border: 10px solid rgb(077, 169, 225);
+  background-color: rgb(225, 234, 235);
+  border: 15px solid #98A4B4;
   border-bottom: 0;
   border-radius: 60px 60px 0 0;
 }
@@ -636,7 +607,7 @@ ul.skilldesc2 {
   float: left;
   width: 50%;
   height: 40px;
-  background-color: #000;
+  background-color: rgb(225, 234, 235);
   border-bottom: 0;
   border-radius: 0 0 24px 24px;
   z-index: 4;
@@ -644,9 +615,9 @@ ul.skilldesc2 {
 
 .personal-swiper {
   position: relative;
-  margin-top: 10px;
-  width: calc(100% - 20px);
-  height: 660px;
+  margin-top: 15px;
+  width: calc(100% - 30px);
+  height: 650px;
   border-radius: 40px 40px 0 0;
   display: block;
   z-index: 3;
@@ -664,7 +635,7 @@ ul.skilldesc2 {
 
 .psn-sw-bar {
   position: absolute;
-  top: 80%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   display: block;
@@ -696,7 +667,7 @@ ul.skilldesc2 {
 }
 
 
-
+/*
 .app-draw {
   position: absolute;
   top: 580px;
@@ -773,16 +744,15 @@ ul.skilldesc2 {
   background-color: rgb(245, 140, 35);
 }
 
-
+*/
 
 .portsummary {
   position: relative;
   display: block;
   float: right;
-  margin-top: 68px;
   width: 40%;
-  height: 80%;
-  border: 1px solid #555;
+  height: 100%;
+  padding: 80px 0;
   border-radius: 20px;
 }
 
@@ -792,37 +762,12 @@ ul.skilldesc2 {
   font-size: 32px;
   line-height: 40px;
   text-align: center;
-  background-color: rgba(077, 169, 225, 0.7);
   padding: 20px 0;
   border-radius: 20px 20px 0 0;
 }
 
-/* 
-.portsummary .psview-control>button {
-  position: absolute;
-  top: 90px;
-  display: block;
-  border: 0;
-  background-color: #000;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  z-index: 9;
-}
-
-.psview-control>button.ps-view-prev {
-  left: -10px;
-  border-radius: 20% 50% 50% 20%;
-}
-
-.psview-control>button.ps-view-next {
-  right: -10px;
-  border-radius: 50% 20% 20% 50%;
-} */
-
 
 .portsummary p {
-  border-top: 1px solid #555;
   padding-top: 40px;
   position: relative;
   display: block;
@@ -848,7 +793,7 @@ ul.skilldesc2 {
 
 
 
-
+/*
 .port-com {
   position: absolute;
   top: 0;
@@ -1111,7 +1056,7 @@ ul.skilldesc2 {
 }
 
 
-
+*/
 
 
 
@@ -1124,7 +1069,7 @@ ul.skilldesc2 {
   position: relative;
   display: block;
   padding: 100px 0;
-  background-color: rgb(152, 164, 180);
+  background-color: #98A4B4;
 }
 
 

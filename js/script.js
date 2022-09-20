@@ -24,7 +24,7 @@ window.onload = function () {
       prevEl: '.ps-view-prev',
       nextEl: '.ps-view-next'
     },
-    pagination : {
+    pagination: {
       type: 'bullets',
       el: '.psn-sw-pgnt',
     }
@@ -41,7 +41,7 @@ window.onload = function () {
       prevEl: '.st-sw-prev',
       nextEl: '.st-sw-next'
     },
-    pagination : {
+    pagination: {
       type: 'bullets',
       el: '.st-sw-pgnt',
     }
@@ -250,4 +250,26 @@ window.onload = function () {
     }
   });
   bar7.animate(0.93);
+
+
+  let skillList = $('.skill-list >li >a');
+  let skillDesc = $('.skilldesc-box >.skilldesc');
+
+
+
+
+  $.each(skillList, function (index) {
+    $(this).mouseenter(function () {
+      skillDesc.eq(index).addClass('skilldesc-active');
+    })
+    $(this).mouseleave(function () {
+      skillDesc.removeClass('skilldesc-active');
+    })
+    $(this).mousemove(function (e) {
+      let x = e.clientX;
+      let y = e.clientY;
+      skillDesc.css('left', x + 5);
+      skillDesc.css('top', y + 5);
+    })
+  })
 }
