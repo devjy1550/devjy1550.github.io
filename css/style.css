@@ -189,6 +189,18 @@ h1.logo {
   line-height: 72px;
 }
 
+
+.aboutMe-top h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -20px;
+  right: 0;
+  width: 40%;
+  height: 4px;
+  background-color: #034EA2;
+}
+
 .aboutMe .mystory {
   width: 75%;
   position: relative;
@@ -213,17 +225,6 @@ h1.logo {
   line-height: 32px;
 }
 
-.mystory p::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: 0;
-  display: block;
-  width: 60px;
-  height: 2px;
-  background-color: cadetblue;
-}
-
 .aboutMe-bottom {
   position: relative;
   display: block;
@@ -243,12 +244,26 @@ h1.logo {
   margin-left: 0;
 }
 
-.aboutMe-bottom>div>h4 {
+.aboutMe-bottom>div h4 {
   position: relative;
-  display: inline-block;
+  display: block;
   font-size: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 24px;
   text-transform: uppercase;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.aboutMe-bottom>div h4::before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #034EA2;
+  width: 60%;
+  height: 4px;
 }
 
 .aboutMe-bottom>div>p {
@@ -256,7 +271,6 @@ h1.logo {
   display: block;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
 }
 
 .aboutMe-bottom>div>span {
@@ -264,37 +278,52 @@ h1.logo {
   display: block;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
 }
 
-
-.mbti-desc .MBTI {
+.eduNprofile {
   position: relative;
   display: block;
-  width: 250px;
-  height: 250px;
-  background: url('../images/PTG.png') no-repeat center;
-  background-size: 100% 100%;
-
-  margin: 0 auto;
-  margin-top: 50px;
 }
 
-.mbti-desc h4::before {
-  left: 50%;
-  transform: translateX(-50%);
+.edu-history {
+  position: relative;
+  display: block;
+  text-align: left;
+  line-height: 32px;
 }
 
+
+.edu-history>span {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+  letter-spacing: 4px;
+}
+
+.edu-history>p {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.profile-desc {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+}
 
 
 .profile-desc>div {
   position: relative;
   display: block;
+  text-align: left;
+  padding-left: 40px;
+
 }
 
 
 
-.profile-desc>div::after{
+.profile-desc>div::after {
   content: '';
   position: relative;
   display: block;
@@ -303,19 +332,65 @@ h1.logo {
 }
 
 
-.profile-desc>div>span{
+.profile-desc>div>span {
   position: relative;
   display: block;
   float: left;
   width: 30%;
+  font-size: 24px;
+  text-align: right;
 }
 
-.profile-desc>div>p{
+.profile-desc>div>p {
   position: relative;
   display: block;
   float: left;
   width: 70%;
+  font-size: 24px;
 }
+
+
+.mbti-desc .MBTI {
+  position: relative;
+  display: block;
+  width: 380px;
+  height: 380px;
+  background: url('../images/PTG.png') no-repeat center;
+  background-size: contain;
+
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.mbti-desc .MBTI::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 167px;
+  left: 170px;
+  width: 40px;
+  height: 40px;
+  background: url('../images/frame.png') no-repeat center;
+  background-size: contain;
+  transition: all 0.5s;
+}
+
+.MBTI:hover::before {
+  top: 16px;
+  left: 30px;
+  width: 320px;
+  height: 320px;
+}
+
+
+
+.mbti-desc h4::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
 
 
 /* skills */
@@ -416,7 +491,7 @@ h1.logo {
   padding: 10px 10px 10px 0;
   border-radius: 10px;
   white-space: nowrap;
-  border: 5px dashed #888;
+  border: 5px solid #888;
   transition: all 1s;
 }
 
@@ -721,6 +796,7 @@ ul.skilldesc2 {
   padding: 20px 0;
   border-radius: 20px 20px 0 0;
 }
+
 /* 
 .portsummary .psview-control>button {
   position: absolute;
