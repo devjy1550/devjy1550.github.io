@@ -23,6 +23,10 @@ window.onload = function () {
     navigation: {
       prevEl: '.ps-view-prev',
       nextEl: '.ps-view-next'
+    },
+    pagination : {
+      type: 'bullets',
+      el: '.psn-sw-pgnt',
     }
   })
 
