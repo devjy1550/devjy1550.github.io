@@ -14,57 +14,71 @@ window.onload = function () {
     },
   })
 
-  new Swiper('.personal-swiper', {
+  new Swiper('.list-sw', {
+    speed: 1000,
+    direction : 'vertical',
+    allowTouchMove: true,
+    slidesPerView:2
+  })
+
+
+
+
+  let psSW = new Swiper('.personal-swiper', {
     loop: true,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
+    pauseOnMouseEnter: true,
     navigation: {
-      prevEl: '.ps-view-prev',
-      nextEl: '.ps-view-next'
+      prevEl: '.psn-sw-prev',
+      nextEl: '.psn-sw-next'
     },
-    pagination : {
+    pagination: {
       type: 'bullets',
       el: '.psn-sw-pgnt',
-    }
+    },
 
   })
-
-
-  new Swiper('.study-swiper', {
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+  const stSW = new Swiper('.study-swiper', {
+    speed: 1000,
+    loop: false,
+    allowTouchMove: true,
     navigation: {
-      prevEl: '.st-view-prev',
-      nextEl: '.st-view-next'
+      prevEl: '.st-sw-prev',
+      nextEl: '.st-sw-next'
     },
-    pagination : {
+    pagination: {
       type: 'bullets',
       el: '.st-sw-pgnt',
-    }
+    },
+    resistanceRatio	: 0
+  })
+
+  const stttSW = new Swiper('.st-title-sw', {
+    speed: 1000,
+    loop: false,
+    allowTouchMove: false,
   })
 
 
-
+  stSW.controller.control = stttSW;
 
 
   var bar = new ProgressBar.Circle(html, {
-    color: '#034EA2',
+    color: '#ff3f34',
     trailColor: '#E9F8F0',
     trailWidth: 1,
     duration: 2500,
     easing: 'bounce',
     strokeWidth: 12,
     from: {
-      color: '#034EA2',
+      color: '#FFE6D6',
       a: 0
     },
     to: {
-      color:'#034EA2',
+      color: '#ff3f34',
       a: 1
     },
     // Set default step function for all animate calls
@@ -82,18 +96,18 @@ window.onload = function () {
   bar.animate(0.98);
 
   var bar2 = new ProgressBar.Circle(scss, {
-    color: '#034EA2',
+    color: '#ffd32a',
     trailColor: '#E9F8F0',
     trailWidth: 1,
     duration: 2500,
     easing: 'bounce',
     strokeWidth: 12,
     from: {
-      color: '#034EA2',
+      color: '#FFF9D4',
       a: 0
     },
     to: {
-      color:'#034EA2',
+      color: '#ffd32a',
       a: 1
     },
     // Set default step function for all animate calls
@@ -110,18 +124,18 @@ window.onload = function () {
   bar2.animate(0.91);
 
   var bar3 = new ProgressBar.Circle(js, {
-    color: '#034EA2',
+    color: '#04c56b',
     trailColor: '#E9F8F0',
     trailWidth: 1,
     duration: 2500,
     easing: 'bounce',
     strokeWidth: 12,
     from: {
-      color: '#034EA2',
+      color: '#CAFCD1',
       a: 0
     },
     to: {
-      color:'#034EA2',
+      color: '#04c56b',
       a: 1
     },
     // Set default step function for all animate calls
@@ -139,18 +153,18 @@ window.onload = function () {
 
 
   var bar4 = new ProgressBar.Circle(vue, {
-    color: '#034EA2',
+    color: '#00d8d6',
     trailColor: '#E9F8F0',
     trailWidth: 1,
     duration: 2500,
     easing: 'bounce',
     strokeWidth: 12,
     from: {
-      color: '#034EA2',
+      color: '  #CAFDEA',
       a: 0
     },
     to: {
-      color:'#034EA2',
+      color: '#00d8d6',
       a: 1
     },
     // Set default step function for all animate calls
@@ -169,18 +183,18 @@ window.onload = function () {
 
 
   var bar5 = new ProgressBar.Circle(git, {
-    color: '#034EA2',
+    color: '#3d40c6',
     trailColor: '#E9F8F0',
     trailWidth: 1,
     duration: 2500,
     easing: 'bounce',
     strokeWidth: 12,
     from: {
-      color: '#034EA2',
+      color: '#D9DAFC',
       a: 0
     },
     to: {
-      color:'#034EA2',
+      color: '#3d40c6',
       a: 1
     },
     // Set default step function for all animate calls
@@ -197,18 +211,18 @@ window.onload = function () {
   bar5.animate(0.92);
 
   var bar6 = new ProgressBar.Circle(bootstrap, {
-    color: '#034EA2',
+    color: '#694fb6',
     trailColor: '#E9F8F0',
     trailWidth: 1,
     duration: 2500,
     easing: 'bounce',
     strokeWidth: 12,
     from: {
-      color: '#034EA2',
+      color: '#E9DEFB',
       a: 0
     },
     to: {
-      color:'#034EA2',
+      color: '#694fb6',
       a: 1
     },
     // Set default step function for all animate calls
@@ -225,18 +239,18 @@ window.onload = function () {
   bar6.animate(0.94);
 
   var bar7 = new ProgressBar.Circle(gf, {
-    color: '#034EA2',
+    color: '#48545f',
     trailColor: '#E9F8F0',
     trailWidth: 1,
     duration: 2500,
     easing: 'bounce',
     strokeWidth: 12,
     from: {
-      color: '#034EA2',
+      color: '#EBF3F7',
       a: 0
     },
     to: {
-      color:'#034EA2',
+      color: '#48545f',
       a: 1
     },
     // Set default step function for all animate calls
@@ -251,4 +265,22 @@ window.onload = function () {
     }
   });
   bar7.animate(0.93);
+
+
+  let skillList = $('.skill-list >li >a');
+  let skillDesc = $('.skilldesc-box >.skilldesc');
+  $.each(skillList, function (index) {
+    $(this).mouseenter(function () {
+      skillDesc.eq(index).addClass('skilldesc-active');
+    })
+    $(this).mouseleave(function () {
+      skillDesc.removeClass('skilldesc-active');
+    })
+    $(this).mousemove(function (e) {
+      let x = e.clientX;
+      let y = e.clientY;
+      skillDesc.css('left', x + 5);
+      skillDesc.css('top', y + 5);
+    })
+  })
 }

@@ -92,7 +92,7 @@
   <div class="aboutMe">
     <div class="inner">
       <div class="aboutMe-top clearfix">
-        <h3>ABOUT<br>ME</h3>
+        <h2>ABOUT<br>ME</h2>
         <div class="mystory">
           <span>현실에 안주하지 않고, 꾸준한 배움을 통해 더욱 발전하고싶은,</span>
           <span>프론트엔드 개발자 지망생 '김정용'입니다.</span>
@@ -117,18 +117,14 @@
           </div>
           <div class="profile-desc">
             <h4>Profile</h4>
-            <div><span>Name</span>
-              <p>김정용</p>
-            </div>
-            <div><span>Position</span>
-              <p>publisher &#38; front-end</p>
-            </div>
-            <div><span>E-mail</span>
-              <p></p>
-            </div>
-            <div><span>Github</span>
-              <p></p>
-            </div>
+            <span>Name</span>
+            <p>김정용</p>
+            <span>Position</span>
+            <p>publisher &#38; front-end</p>
+            <span>E-mail</span>
+            <p class="mail"><a href="mailto:jykim3501@gmail.com">jykim3501@gmail.com</a></p>
+            <span>Github</span>
+            <p></p>
           </div>
         </div>
         <div class="mbti-desc">
@@ -138,6 +134,12 @@
             책임감이 강한 성격<br>
             헌신적인 성향은 현실주의자의 훌륭한 강점이며 다양한 일을 성취하는 데 도움이 됩니다.</p>
           <div class="MBTI">
+          </div>
+        </div>
+        <div class="my-roadmap">
+          <div class="rm-title">
+            <h3>AS A DEVELOPER,</h3>
+            <h3>MY ROADMAP</h3>
           </div>
         </div>
       </div>
@@ -218,7 +220,20 @@
     <div class="portfolio">
       <div class="inner clearfix">
         <div class="port-left">
-          <div>
+          <h3>portfolio list</h3>
+          <ul class="port-list">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+          </div>
+
+          <!-- <div>
             <span>Study Clone Coding</span>
             <p>개발자 교육과정을 수료하면서 html,css, javascript등의 기초부터, 반응형css,github이용등까지 배웠던 다양한 내용들을 적용한 클론코딩입니다.</p>
           </div>
@@ -231,9 +246,9 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
               voluptate
               aspernatur.</p>
-          </div>
+          </div> -->
         </div>
-        <div class="port-right1">
+        <div class="port-right1 clearfix">
           <div class="personal-show clearfix">
             <div class="swiper-container personal-swiper">
               <div class="swiper-wrapper">
@@ -251,18 +266,24 @@
                 <button class="app-buttons ap-bt04"></button>
               </div> -->
           </div>
-          <div class="portsummary">
-            <h4>Lorem Ipsum<br>
-              One Page Site
-            </h4>
-            <div class="psview-control">
-              <button class="ps-view-prev"></button>
-              <button class="ps-view-next"></button>
+          <div class="portsummary clearfix">
+            <h2>portfolio</h2>
+            <div class="port-sm-box">
+              <div class="swiper-container psn-title-sw">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                </div>
+              </div>
+              <p></p>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit quaerat.</p>
+            <div class="psn-sw-control">
+              <button class="psn-sw-prev"></button>
+              <button class="psn-sw-next"></button>
+            </div>
           </div>
         </div>
-        <div class="port-right2">
+        <div class="port-right2 clearfix">
           <div class="study-show clearfix">
             <div class="swiper-container study-swiper">
               <div class="swiper-wrapper">
@@ -273,70 +294,73 @@
                 <div class="swiper-slide"><img src="/images/draft/jyg-d.png" alt=""></div>
                 <div class="swiper-slide"><img src="/images/draft/gjyouth-d.png" alt=""></div>
               </div>
+              <div class="st-sw-bar">
+                <div class="st-sw-pgnt swiper-pagination"></div>
+              </div>
             </div>
-            <div class="st-sw-bar">
-              <div class="st-sw-pgnt swiper-pagination"></div>
-            </div>
-            <!-- <div class="app-draw">
-                <button class="app-buttons ap-bt01"></button>
-                <button class="app-buttons ap-bt02"></button>
-                <button class="app-buttons ap-bt03"></button>
-                <button class="app-buttons ap-bt04"></button>
-              </div> -->
           </div>
-          <div class="portsummary">
-            <h4>Lorem Ipsum<br>
-              One Page Site
-            </h4>
-            <div class="stview-control">
-              <button class="st-view-prev"></button>
-              <button class="st-view-next"></button>
+          <div class="portsummary clearfix">
+            <h2>portfolio</h2>
+            <div class="port-sm-box">
+              <button class="st-sw-prev"></button>
+              <div class="swiper-container st-title-sw">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><span>한국수자원공사</span></div>
+                  <div class="swiper-slide"><span>노엘로힐스</span></div>
+                  <div class="swiper-slide"><span>마시그래이</span></div>
+                  <div class="swiper-slide"><span>STX건설</span></div>
+                  <div class="swiper-slide"><span>정육각</span></div>
+                  <div class="swiper-slide"><span>거제청년센터 이룸</span></div>
+                </div>
+              </div>
+              <button class="st-sw-next"></button>
+              <p>Clone Coding</p>
+              <span>Self-Study</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit quaerat.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- life -->
-    <div class="life">
-      <div class="inner">
-        <button class="life-sw-prev">&lt;</button>
-        <div class="swiper-container life-sw">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <h4>Title01</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
-                voluptate aspernatur.</p>
-              <a href="">button</a>
-            </div>
-            <div class="swiper-slide">
-              <h4>Title02</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
-                voluptate aspernatur.</p>
-              <a href="">button</a>
-            </div>
-            <div class="swiper-slide">
-              <h4>Title03</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
-                voluptate aspernatur.</p>
-              <a href="">button</a>
-            </div>
+
           </div>
         </div>
-        <button class="life-sw-next">&gt;</button>
       </div>
-    </div>
-    <!-- contact -->
-    <div class="contact">
-      <div class="inner"></div>
-    </div>
-    <!-- footer -->
-    <footer class="footer">
-      <div class="inner">
-        <p>피드백은 언제나 환영입니다.</p>
-        <span>Thanks for visiting :)</span>
+      <!-- life -->
+      <div class="life">
+        <div class="inner">
+          <button class="life-sw-prev">&lt;</button>
+          <div class="swiper-container life-sw">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h4>Title01</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+                  voluptate aspernatur.</p>
+                <a href="">button</a>
+              </div>
+              <div class="swiper-slide">
+                <h4>Title02</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+                  voluptate aspernatur.</p>
+                <a href="">button</a>
+              </div>
+              <div class="swiper-slide">
+                <h4>Title03</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi magnam qui alias modi, repellat id
+                  voluptate aspernatur.</p>
+                <a href="">button</a>
+              </div>
+            </div>
+          </div>
+          <button class="life-sw-next">&gt;</button>
+        </div>
       </div>
-    </footer>
+      <!-- contact -->
+      <div class="contact">
+        <div class="inner"></div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="inner">
+          <p>피드백은 언제나 환영입니다.</p>
+          <span>Thanks for visiting :)</span>
+        </div>
+      </footer>
 </body>
 
 </html>
