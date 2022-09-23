@@ -2,8 +2,9 @@ window.onload = function () {
   new Swiper(".life-sw", {
     loop: true,
     slidesPerView: 3,
-    spaceBetween: 0,
+    spaceBetween: 100,
     centeredSlides: true,
+
     navigation: {
       prevEl: ".life-sw-prev",
       nextEl: ".life-sw-next",
@@ -16,7 +17,7 @@ window.onload = function () {
 
   const plSW = new Swiper(".portlist-sw", {
     loop: true,
-    speed: 2000,
+    speed: 1200,
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -24,7 +25,7 @@ window.onload = function () {
     coverflowEffect: {
       rotate: 60,
       stretch: 0,
-      depth: 100,
+      depth: 60,
       modifier: 1,
       slideshadow: 0,
     },
@@ -34,9 +35,11 @@ window.onload = function () {
   });
 
   const stttSW = new Swiper(".st-title-sw", {
-    speed: 2000,
+    speed: 1200,
     loop: true,
     allowTouchMove: false,
+    centeredSlides: true,
+    slidesPerView: "3",
   });
 
   plSW.controller.control = stttSW;
@@ -254,5 +257,11 @@ window.onload = function () {
       skillDesc.css("left", x + 5);
       skillDesc.css("top", y + 5);
     });
+  });
+
+  let goTop = $(".gotop");
+
+  goTop.click(function () {
+    $(window).scrollTop(0);
   });
 };
