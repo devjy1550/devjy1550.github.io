@@ -22,10 +22,14 @@ window.onload = function () {
     centeredSlides: true,
     slidesPerView: "3",
     coverflowEffect: {
-      rotate: 40,
-      stretch: 40,
+      rotate: 60,
+      stretch: 0,
       depth: 100,
       modifier: 1,
+      slideshadow: 0,
+    },
+    mousewheel: {
+      invert: false,
     },
   });
 
@@ -36,6 +40,7 @@ window.onload = function () {
   });
 
   plSW.controller.control = stttSW;
+  stttSW.controller.control = plSW;
 
   var bar = new ProgressBar.Circle(html, {
     color: "#ff3f34",
