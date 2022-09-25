@@ -4,7 +4,6 @@ window.onload = function () {
     slidesPerView: 3,
     spaceBetween: 100,
     centeredSlides: true,
-
     navigation: {
       prevEl: ".life-sw-prev",
       nextEl: ".life-sw-next",
@@ -14,6 +13,19 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
+
+
+  new Swiper(".pfNedu-sw", {
+    speed: 1200,
+    loop: true,
+    centeredSlides: true,
+    pagination: {
+      el: '.pf-pgnt',
+      type: 'bullets',
+    }
+  });
+
+
 
   const plSW = new Swiper(".portlist-sw", {
     loop: true,
@@ -34,12 +46,16 @@ window.onload = function () {
     },
   });
 
-  const stttSW = new Swiper(".st-title-sw", {
+  const stttSW = new Swiper(".st-desc-sw", {
     speed: 1200,
     loop: true,
     allowTouchMove: false,
     centeredSlides: true,
     slidesPerView: "3",
+    pagination: {
+      el: '.st-port-pgnt',
+      type: 'bullets',
+    }
   });
 
   plSW.controller.control = stttSW;
@@ -264,4 +280,17 @@ window.onload = function () {
   goTop.click(function () {
     $(window).scrollTop(0);
   });
-};
+
+
+  let roadmapBt = $('.mr-control >button');
+  let mrDesc = $('.my-roadmap .map-review >div');
+
+  mrDesc.eq(0).show();
+
+  $.each(roadmapBt, function(index) {
+    $(this).click(function() {
+      mrDesc.hide();
+      mrDesc.eq(index).show();
+    })
+  })
+}
