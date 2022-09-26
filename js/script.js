@@ -282,11 +282,16 @@ window.onload = function () {
   let mrDesc = $(".my-roadmap .map-review >div");
 
   mrDesc.eq(0).show();
+  roadmapBt.eq(0).addClass('mr-show');
 
   $.each(roadmapBt, function (index) {
     $(this).click(function () {
       mrDesc.hide();
       mrDesc.eq(index).show();
+
+      roadmapBt.removeClass('mr-show');
+      roadmapBt.eq(index).addClass('mr-show');
     });
   });
+
 };
