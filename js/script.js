@@ -14,18 +14,15 @@ window.onload = function () {
     },
   });
 
-
   new Swiper(".pfNedu-sw", {
     speed: 1200,
     loop: true,
     centeredSlides: true,
     pagination: {
-      el: '.pf-pgnt',
-      type: 'bullets',
-    }
+      el: ".pf-pgnt",
+      type: "bullets",
+    },
   });
-
-
 
   const plSW = new Swiper(".portlist-sw", {
     loop: true,
@@ -53,9 +50,9 @@ window.onload = function () {
     centeredSlides: true,
     slidesPerView: "3",
     pagination: {
-      el: '.st-port-pgnt',
-      type: 'bullets',
-    }
+      el: ".st-port-pgnt",
+      type: "bullets",
+    },
   });
 
   plSW.controller.control = stttSW;
@@ -281,16 +278,15 @@ window.onload = function () {
     $(window).scrollTop(0);
   });
 
-
-  let roadmapBt = $('.mr-control >button');
-  let mrDesc = $('.my-roadmap .map-review >div');
+  let roadmapBt = $(".mr-control >button");
+  let mrDesc = $(".my-roadmap .map-review >div");
 
   mrDesc.eq(0).show();
 
-  $.each(roadmapBt, function(index) {
-    $(this).click(function() {
+  $.each(roadmapBt, function (index) {
+    $(this).click(function () {
       mrDesc.hide();
       mrDesc.eq(index).show();
-    })
-  })
-}
+    });
+  });
+};

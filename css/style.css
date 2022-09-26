@@ -52,6 +52,11 @@ strong {
   font-weight: 700;
 }
 
+i {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -127,9 +132,8 @@ h1.logo {
   z-index: 1;
 }
 
-
 .gnb .menu li::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 50%;
@@ -190,7 +194,7 @@ h1.logo {
 .aboutMe {
   position: relative;
   display: block;
-  padding: 50px 0 0 0;
+  padding: 150px 0;
   background-color: rgb(255, 255, 255);
 }
 
@@ -234,16 +238,16 @@ h1.logo {
 .mystory span {
   position: relative;
   display: block;
-  font-size: 24px;
-  line-height: 28px;
-  margin-top: 7px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 8px;
 }
 
 .mystory span.myst-start {
   position: relative;
   display: block;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 32px;
   font-weight: 600;
   margin-top: 0;
 }
@@ -251,31 +255,32 @@ h1.logo {
 .mystory p {
   position: relative;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 36px;
   margin-top: 18px;
-  line-height: 28px;
+  letter-spacing: 2px;
 }
 
 .aboutMe-bottom {
   position: relative;
   display: block;
-  margin-top: 50px;
+  margin-top: 150px;
 }
-
 
 .aboutMe-bottom .profile {
   position: relative;
   display: block;
   float: left;
-  width: 25%;
+  width: 22.5%;
+  white-space: nowrap;
 }
 
 .aboutMe-bottom .profile h3 {
   position: relative;
   display: block;
-  font-size: 40px;
+  font-size: 32px;
   text-align: left;
-  line-height: 48px;
+  line-height: 40px;
   z-index: 1;
 }
 
@@ -291,70 +296,60 @@ h1.logo {
   z-index: -1;
 }
 
-
-
 .pfNedu-sw {
   position: relative;
   display: block;
   font-size: 0;
-  padding-top: 22px;
+  margin-top: 14px;
+  border-top: 1px solid rgb(187, 187, 187);
+  border-bottom: 1px solid rgb(187, 187, 187);
 }
 
+.pfNedu-sw .swiper-slide > h4 {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 5px 0;
+  background-color: rgb(209, 209, 209);
+  letter-spacing: 3px;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
 
 .pfNedu-sw .swiper-slide ul {
   position: relative;
   display: block;
-  border-top: 1px solid rgb(187, 187, 187);
-  border-bottom: 1px solid rgb(187, 187, 187);
 }
 
 .pfNedu-sw .swiper-slide ul li {
   position: relative;
   display: block;
-  padding: 8px 0 0 28px;
+  padding: 12px 0 0 16px;
 }
 
 .pfNedu-sw .swiper-slide ul li:last-child {
-  padding-bottom: 10px;
+  padding-bottom: 24px;
 }
 
-.pfNedu-sw .swiper-slide ul li>span {
+.pfNedu-sw .swiper-slide ul li > span {
   position: relative;
   display: block;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 24px;
   color: #505050;
   font-weight: 300;
+  letter-spacing: 3px;
 }
 
-.pfNedu-sw ul li>p {
+.pfNedu-sw ul li > p {
   position: relative;
   display: block;
-  font-size: 28px;
-  line-height: 32px;
-  padding-left: 30px;
-  font-weight: 500;
-}
-
-.pfNedu-sw ul li>i {
-  position: relative;
-  display: block;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 24px;
-  color: #222222;
-  font-weight: 300;
+  padding-left: 20px;
+  letter-spacing: 1.5px;
 }
-
-
-.pfNedu-sw .swiper-slide>h4 {
-  position: relative;
-  display: block;
-  text-align: center;
-  font-size: 30px;
-  line-height: 30px;
-  margin-top: 8px;
-}
-
 
 .profile .profile-control {
   position: relative;
@@ -362,6 +357,7 @@ h1.logo {
   text-align: center;
   margin-top: 20px;
   font-size: 0;
+  padding-bottom: 3px;
 }
 
 .profile-control .pf-pgnt .swiper-pagination-bullet {
@@ -384,26 +380,24 @@ h1.logo {
   opacity: 1;
 }
 
-
-.aboutMe-bottom .mbti-desc {
+.aboutMe-bottom .posibility {
   position: relative;
   display: block;
   float: left;
-  width: 35%;
-  margin-left: 5%;
+  width: 30%;
+  margin-left: 10%;
 }
 
-
-.mbti-desc h3 {
+.posibility h3 {
   position: relative;
   display: block;
-  font-size: 40px;
+  font-size: 32px;
+  line-height: 40px;
   text-align: center;
-  line-height: 48px;
   z-index: 1;
 }
 
-.mbti-desc h3::before {
+.posibility h3::before {
   content: "";
   position: absolute;
   display: block;
@@ -415,48 +409,82 @@ h1.logo {
   background-color: rgba(152, 164, 180, 0.6);
   z-index: -1;
 }
+.posibility > span {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 300;
+  color: #505050;
+  margin-top: 16px;
+  letter-spacing: 2px;
+}
 
-.mbti-desc>p {
+.posibility > p {
   position: relative;
   display: block;
   margin-top: 20px;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
+.posibility > p strong {
+  position: relative;
+  color: #034ea2;
+  z-index: 1;
+}
 
+.posibility > p strong::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: rgba(107, 158, 218, 0.6);
+  z-index: -1;
+}
+.posibility .psb-box {
+  position: relative;
+  display: block;
+}
 
-.mbti-desc .MBTI {
+.posibility .psb-box .psb-graph {
   position: relative;
   display: block;
   width: 380px;
-  height: 380px;
-  background: url("../images/PTG.png") no-repeat center;
+  height: 280px;
+  background: url("../images/psb-bg.png") no-repeat center;
   background-size: contain;
   margin: 0 auto;
+  margin-top: 40px;
 }
 
-.mbti-desc .MBTI::before {
+.posibility .psb-box .psb-graph::before {
   content: "";
   position: absolute;
   display: block;
-  top: 167px;
-  left: 170px;
+  top: 128px;
+  left: 161px;
   width: 40px;
   height: 40px;
-  background: url("../images/frame.png") no-repeat center;
+  background: url("../images/psb-big.png") no-repeat center;
   background-size: contain;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 
-.MBTI:hover::before {
+.posibility .psb-box .psb-graph:hover::before {
   top: 16px;
-  left: 30px;
-  width: 320px;
-  height: 320px;
+  left: 55px;
+  width: 248px;
+  height: 248px;
 }
 
-.mbti-desc h4::before {
+.posibility h4::before {
   left: 50%;
   transform: translateX(-50%);
 }
@@ -465,16 +493,16 @@ h1.logo {
   position: relative;
   display: block;
   float: left;
-  width: 30%;
-  margin-left: 5%;
+  width: 35%;
+  margin-left: 2.5%;
 }
 
 .my-roadmap h3 {
   position: relative;
   display: block;
-  font-size: 40px;
+  font-size: 32px;
   text-align: right;
-  line-height: 48px;
+  line-height: 40px;
   white-space: nowrap;
   z-index: 1;
 }
@@ -491,19 +519,17 @@ h1.logo {
   z-index: -1;
 }
 
-
-.my-roadmap>p {
+.my-roadmap > p {
   position: relative;
   display: block;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 22px;
   text-align: right;
   font-weight: 300;
   color: #505050;
   margin-top: 4px;
+  letter-spacing: 2px;
 }
-
-
 
 .my-roadmap .map-review {
   position: relative;
@@ -524,32 +550,31 @@ h1.logo {
 .my-roadmap .map-review div h4 {
   position: relative;
   display: block;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 36px;
   padding-top: 4px;
 }
 
-
 .my-roadmap .map-review div p {
   position: relative;
   display: block;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 30px;
   padding-top: 8px;
-
+  letter-spacing: 1.5px;
 }
 
 .my-roadmap .map-review div span {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: block;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 36px;
-padding-top: 14px;
-  font-weight: 600;
   text-align: right;
+  letter-spacing: 4px;
+  padding-bottom: 10px;
 }
-
-
 
 .mr-control {
   position: relative;
@@ -557,19 +582,27 @@ padding-top: 14px;
   justify-content: space-between;
   align-items: center;
   font-size: 0;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .mr-control button {
   position: relative;
   display: block;
   width: 20%;
-  font-size: 14px;
-  line-height: 14px;
-  padding: 8px 0;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 10px 0;
   border-radius: 4px;
+  font-weight: 700;
   border: 0;
   cursor: pointer;
+  background-color: rgba(107, 158, 218, 0.3);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.mr-control button:hover {
+  background-color: rgba(107, 158, 218, 0.6);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* skills */
@@ -577,8 +610,7 @@ padding-top: 14px;
   position: relative;
   display: block;
   background-color: #98a4b4;
-  padding: 100px;
-  padding-bottom: 50px;
+  padding: 150px 0;
   text-align: center;
 }
 
@@ -599,7 +631,6 @@ padding-top: 14px;
   display: block;
   bottom: 0;
   left: 50%;
-  ;
   transform: translateX(-50%);
   width: 60%;
   height: 20px;
@@ -611,10 +642,11 @@ padding-top: 14px;
   position: relative;
   display: block;
   width: 100%;
+  padding: 40px 120px;
   font-size: 0;
 }
 
-.skill-list>li {
+.skill-list > li {
   position: relative;
   display: inline-block;
   margin-right: 12%;
@@ -622,16 +654,17 @@ padding-top: 14px;
   margin-bottom: 120px;
 }
 
-.skill-list>li:nth-child(4n) {
+.skill-list > li:nth-child(4n) {
   margin-right: 0;
 }
 
-.skill-list>li>a {
+.skill-list > li > a {
   position: absolute;
   display: block;
   height: 100%;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 60px;
+  font-weight: 700;
   font-size: 20px;
   text-align: center;
   border-radius: 50%;
@@ -641,7 +674,7 @@ padding-top: 14px;
   text-transform: uppercase;
 }
 
-.skill-list>li>a::before {
+.skill-list > li > a::before {
   content: "";
   position: absolute;
   display: block;
@@ -655,7 +688,7 @@ padding-top: 14px;
   z-index: 99;
 }
 
-.skill-list>li>a::after {
+.skill-list > li > a::after {
   content: "";
   position: absolute;
   display: block;
@@ -689,7 +722,7 @@ padding-top: 14px;
   visibility: visible;
 }
 
-.skill-list>li>a>ul>li {
+.skill-list > li > a > ul > li {
   display: block;
   font-size: 12px;
   line-height: 18px;
@@ -756,7 +789,7 @@ padding-top: 14px;
   z-index: 99;
 }
 
-.portlist-sw .swiper-slide>span {
+.portlist-sw .swiper-slide > span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -765,7 +798,7 @@ padding-top: 14px;
   height: calc(100% - 20px);
 }
 
-.portlist-sw .swiper-slide>span::before {
+.portlist-sw .swiper-slide > span::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -779,7 +812,7 @@ padding-top: 14px;
   z-index: 9;
 }
 
-.portlist-sw .swiper-slide>span::after {
+.portlist-sw .swiper-slide > span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -793,7 +826,7 @@ padding-top: 14px;
   z-index: 10;
 }
 
-.portlist-sw .swiper-slide>a {
+.portlist-sw .swiper-slide > a {
   position: relative;
   display: block;
   width: 100%;
@@ -802,42 +835,42 @@ padding-top: 14px;
   border-radius: 10px;
 }
 
-.portlist-sw .swiper-slide>a.miniport01 {
+.portlist-sw .swiper-slide > a.miniport01 {
   background: url("../images/draft/alpha-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport02 {
+.portlist-sw .swiper-slide > a.miniport02 {
   background: url("../images/draft/gjyouth-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport03 {
+.portlist-sw .swiper-slide > a.miniport03 {
   background: url("../images/draft/jyg-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport04 {
+.portlist-sw .swiper-slide > a.miniport04 {
   background: url("../images/draft/kwater-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport05 {
+.portlist-sw .swiper-slide > a.miniport05 {
   background: url("../images/draft/masi-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport06 {
+.portlist-sw .swiper-slide > a.miniport06 {
   background: url("../images/draft/nhis-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport07 {
+.portlist-sw .swiper-slide > a.miniport07 {
   background: url("../images/draft/noelo-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport08 {
+.portlist-sw .swiper-slide > a.miniport08 {
   background: url("../images/draft/stx-d.png") no-repeat center;
   background-size: 100% 100%;
 }
@@ -921,7 +954,7 @@ padding-top: 14px;
   padding-right: 20px;
 }
 
-.portsummary .st-desc-sw .swiper-slide>span {
+.portsummary .st-desc-sw .swiper-slide > span {
   position: relative;
   display: block;
   font-size: 16px;
@@ -958,8 +991,7 @@ padding-top: 14px;
   line-height: 20px;
 }
 
-
-.showcase{
+.showcase {
   position: absolute;
   display: block;
   bottom: 14px;
@@ -976,7 +1008,7 @@ padding-top: 14px;
   height: 71px;
 }
 
-.showBtSet>a {
+.showBtSet > a {
   position: relative;
   display: block;
   width: 71px;
@@ -987,7 +1019,7 @@ padding-top: 14px;
   box-shadow: 2px 2px 4px 1px rgb(134, 134, 134);
 }
 
-.showBtSet>a>span {
+.showBtSet > a > span {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1002,8 +1034,8 @@ padding-top: 14px;
   letter-spacing: 0px;
 }
 
-.showBtSet>a.showBt01>span::before {
-  content: '';
+.showBtSet > a.showBt01 > span::before {
+  content: "";
   position: absolute;
   top: 5px;
   left: 50%;
@@ -1015,8 +1047,8 @@ padding-top: 14px;
   background-size: 40px 40px;
 }
 
-.showBtSet>a.showBt02>span::before {
-  content: '';
+.showBtSet > a.showBt02 > span::before {
+  content: "";
   position: absolute;
   top: 5px;
   left: 50%;
@@ -1028,8 +1060,8 @@ padding-top: 14px;
   background-size: 40px 40px;
 }
 
-.showBtSet>a.showBt03>span::before {
-  content: '';
+.showBtSet > a.showBt03 > span::before {
+  content: "";
   position: absolute;
   top: 5px;
   left: 50%;
@@ -1041,8 +1073,7 @@ padding-top: 14px;
   background-size: 40px 40px;
 }
 
-
-.showBtSet>a:hover {
+.showBtSet > a:hover {
   background-color: rgba(51, 51, 51, 0.4);
   box-shadow: 2px 2px 6px 1px rgb(226, 226, 226);
 }
@@ -1053,12 +1084,10 @@ padding-top: 14px;
   padding: 10px 0;
 }
 
-
 .portcontrol .st-port-pgnt {
   position: relative;
   display: flex;
   justify-content: space-between;
-
 }
 
 .portcontrol .st-port-pgnt .swiper-pagination-bullet {
@@ -1112,7 +1141,8 @@ padding-top: 14px;
   text-align: center;
 }
 
-.life-sw .swiper-slide.swiper-slide-active h4 {}
+.life-sw .swiper-slide.swiper-slide-active h4 {
+}
 
 .life-sw .swiper-slide p {
   position: relative;
