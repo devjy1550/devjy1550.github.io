@@ -9,7 +9,7 @@ window.onload = function () {
       nextEl: ".life-sw-next",
     },
     autoplay: {
-      delay: 2000,
+      delay: 50000,
       disableOnInteraction: false,
     },
   });
