@@ -1,27 +1,20 @@
 window.onload = function () {
-
   const nowstart = document.querySelector(".talk-start");
-  const saying =  ["안녕하십니까,"]
+  const saying = ["안녕하십니까,"];
 
-  
   const text = document.querySelector(".talk-on");
-  const textlast= document.querySelector(".talk-last");
+  const textlast = document.querySelector(".talk-last");
   const myname = document.querySelector(".myname");
   const textend = document.querySelector(".talk-end");
   const context1 = [
-    "꾸준한", "현실에 안주하지 않고, 꾸준한 배움을 통해 발전을 꿈꾸는"
+    "꾸준한",
+    "현실에 안주하지 않고, 꾸준한 배움을 통해 발전을 꿈꾸는",
   ];
-  const context2 = [
-   "프론트엔드 개발자 지망생"
-  ];
+  const context2 = ["프론트엔드 개발자 지망생"];
 
-  const context3 = [
-    " '김 정 용'  "
-   ];
+  const context3 = [" '김 정 용'  "];
 
-   const context4 = [
-    "입니다."
-   ];
+  const context4 = ["입니다."];
 
   const speed = 100;
   let ts = 0;
@@ -36,7 +29,7 @@ window.onload = function () {
     await wait(600);
 
     if (saying[ts + 1]) remove();
-  }
+  };
   const remove = async () => {
     const letter = saying[ts].split("");
 
@@ -48,9 +41,7 @@ window.onload = function () {
     }
     ts++;
     typing();
-  }
-
-
+  };
 
   let i = 0;
 
@@ -64,7 +55,7 @@ window.onload = function () {
     await wait(600);
 
     if (context1[i + 1]) remove1();
-  }
+  };
   const remove1 = async () => {
     const letter = context1[i].split("");
 
@@ -76,11 +67,9 @@ window.onload = function () {
     }
     i++;
     typing1();
-  }
- 
+  };
 
-
-let i2 = 0;
+  let i2 = 0;
   const typing2 = async () => {
     const letter = context2[i2].split("");
     while (letter.length) {
@@ -91,9 +80,7 @@ let i2 = 0;
     await wait(600);
 
     if (context2[i2 + 1]) remove2();
-  }
-
-
+  };
 
   let i3 = 0;
   const typing3 = async () => {
@@ -106,10 +93,7 @@ let i2 = 0;
     await wait(600);
 
     if (context3[i3 + 1]) remove3();
-  }
-
-
-
+  };
 
   let i4 = 0;
   const typing4 = async () => {
@@ -122,11 +106,10 @@ let i2 = 0;
     await wait(600);
 
     if (context4[i4 + 1]) remove4();
-  }
-
+  };
 
   function wait(ms) {
-    return new Promise(res => setTimeout(res, ms))
+    return new Promise((res) => setTimeout(res, ms));
   }
 
   // 초기 실행
@@ -135,7 +118,6 @@ let i2 = 0;
   setTimeout(typing2, 8400);
   setTimeout(typing3, 10050);
   setTimeout(typing4, 11100);
-
 
   new Swiper(".life-sw", {
     loop: true,
@@ -432,18 +414,15 @@ let i2 = 0;
     });
   });
 
-  let musicPicSet = $('.music-box span')
-
-  $.each(musicPicSet, function (index) {
-    $(this).mouseenter(function () {
-      musicPicSet.eq(index).addClass('expand')
-    })
-    $(this).mouseleave(function () {
-      musicPicSet.removeClass('expand')
-    })
-  })
+  let lifeTitleBt = $(".life-sw .swiper-slide .title-button");
+  lifeTitleBt.click(function () {
+    if (lifeTitleBt.hasClass("wide")) {
+      lifeTitleBt.removeClass("wide");
+    } else {
+      lifeTitleBt.addClass("wide");
+    }
+  });
 };
-
 
 $(window).ready(function () {
   AOS.init();

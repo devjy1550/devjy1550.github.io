@@ -329,8 +329,6 @@ h1.logo {
   background-size: contain;
 }
 
-
-
 .visual-right span.talk-start {
   position: relative;
   display: inline-block;
@@ -368,7 +366,6 @@ h1.logo {
   height: 5px;
   background-color: white;
 }
-
 
 /* AboutMe */
 .aboutMe {
@@ -467,7 +464,7 @@ h1.logo {
   border-bottom: 1px solid rgb(187, 187, 187);
 }
 
-.pfNedu-sw .swiper-slide>h4 {
+.pfNedu-sw .swiper-slide > h4 {
   position: relative;
   display: block;
   text-align: center;
@@ -490,7 +487,7 @@ h1.logo {
   padding-left: 14px;
 }
 
-.pfNedu-sw .swiper-slide ul li>span {
+.pfNedu-sw .swiper-slide ul li > span {
   position: relative;
   display: block;
   font-size: 12px;
@@ -500,7 +497,7 @@ h1.logo {
   letter-spacing: 3px;
 }
 
-.pfNedu-sw ul li>p {
+.pfNedu-sw ul li > p {
   position: relative;
   display: block;
   font-size: 24px;
@@ -509,7 +506,7 @@ h1.logo {
   letter-spacing: 1.5px;
 }
 
-.pfNedu-sw ul li>i {
+.pfNedu-sw ul li > i {
   position: relative;
   display: block;
   font-size: 12px;
@@ -518,9 +515,8 @@ h1.logo {
   letter-spacing: 1.5px;
   text-decoration: none;
   font-weight: 300;
-  color: #333 ;
+  color: #333;
 }
-
 
 .profile .profile-control {
   position: relative;
@@ -559,7 +555,7 @@ h1.logo {
   margin-left: 6%;
 }
 
-.posibility .psb-top{
+.posibility .psb-top {
   position: relative;
   display: block;
 }
@@ -585,7 +581,7 @@ h1.logo {
   z-index: -1;
 }
 
-.psb-top>span {
+.psb-top > span {
   position: relative;
   display: block;
   font-size: 14px;
@@ -600,13 +596,13 @@ h1.logo {
 .posibility .psb-desc {
   position: relative;
   display: block;
-margin-top: 20px;
-padding: 10px 0;
-border-top: 1px solid rgb(187, 187, 187);
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 1px solid rgb(187, 187, 187);
   border-bottom: 1px solid rgb(187, 187, 187);
 }
 
-.posibility> .psb-desc p {
+.posibility > .psb-desc p {
   position: relative;
   display: block;
   font-size: 18px;
@@ -615,13 +611,13 @@ border-top: 1px solid rgb(187, 187, 187);
   text-align: right;
 }
 
-.posibility> .psb-desc p strong {
+.posibility > .psb-desc p strong {
   position: relative;
   color: #034ea2;
   z-index: 1;
 }
 
-.posibility> .psb-desc p strong::before {
+.posibility > .psb-desc p strong::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -636,7 +632,6 @@ border-top: 1px solid rgb(187, 187, 187);
 .posibility .psb-box {
   position: relative;
   display: block;
-
 }
 
 .posibility .psb-box .psb-graph {
@@ -648,7 +643,6 @@ border-top: 1px solid rgb(187, 187, 187);
   background-size: contain;
   margin: 0 auto;
   margin-top: 16px;
-
 }
 
 .posibility .psb-box .psb-graph .psb-graphS {
@@ -706,7 +700,7 @@ border-top: 1px solid rgb(187, 187, 187);
   z-index: -1;
 }
 
-.my-roadmap>p {
+.my-roadmap > p {
   position: relative;
   display: block;
   font-size: 14px;
@@ -843,7 +837,7 @@ border-top: 1px solid rgb(187, 187, 187);
   font-size: 0;
 }
 
-.skill-list>li {
+.skill-list > li {
   position: relative;
   display: inline-block;
   margin-right: 12%;
@@ -851,11 +845,11 @@ border-top: 1px solid rgb(187, 187, 187);
   margin-bottom: 120px;
 }
 
-.skill-list>li:nth-child(4n) {
+.skill-list > li:nth-child(4n) {
   margin-right: 0;
 }
 
-.skill-list>li>a {
+.skill-list > li > a {
   position: absolute;
   display: block;
   height: 100%;
@@ -871,7 +865,7 @@ border-top: 1px solid rgb(187, 187, 187);
   text-transform: uppercase;
 }
 
-.skill-list>li>a::before {
+.skill-list > li > a::before {
   content: "";
   position: absolute;
   display: block;
@@ -885,7 +879,7 @@ border-top: 1px solid rgb(187, 187, 187);
   z-index: 99;
 }
 
-.skill-list>li>a::after {
+.skill-list > li > a::after {
   content: "";
   position: absolute;
   display: block;
@@ -919,7 +913,7 @@ border-top: 1px solid rgb(187, 187, 187);
   visibility: visible;
 }
 
-.skill-list>li>a>ul>li {
+.skill-list > li > a > ul > li {
   display: block;
   font-size: 12px;
   line-height: 18px;
@@ -1000,7 +994,7 @@ border-top: 1px solid rgb(187, 187, 187);
   z-index: 99;
 }
 
-.portlist-sw .swiper-slide>span {
+.portlist-sw .swiper-slide > span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1009,7 +1003,7 @@ border-top: 1px solid rgb(187, 187, 187);
   height: calc(100% - 20px);
 }
 
-.portlist-sw .swiper-slide>span::before {
+.portlist-sw .swiper-slide > span::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -1024,7 +1018,7 @@ border-top: 1px solid rgb(187, 187, 187);
   z-index: 9;
 }
 
-.portlist-sw .swiper-slide>span::after {
+.portlist-sw .swiper-slide > span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1038,7 +1032,7 @@ border-top: 1px solid rgb(187, 187, 187);
   z-index: 10;
 }
 
-.portlist-sw .swiper-slide>a {
+.portlist-sw .swiper-slide > a {
   position: relative;
   display: block;
   width: 100%;
@@ -1047,42 +1041,42 @@ border-top: 1px solid rgb(187, 187, 187);
   border-radius: 10px;
 }
 
-.portlist-sw .swiper-slide>a.miniport01 {
+.portlist-sw .swiper-slide > a.miniport01 {
   background: url("../images/draft/alpha-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport02 {
+.portlist-sw .swiper-slide > a.miniport02 {
   background: url("../images/draft/gjyouth-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport03 {
+.portlist-sw .swiper-slide > a.miniport03 {
   background: url("../images/draft/jyg-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport04 {
+.portlist-sw .swiper-slide > a.miniport04 {
   background: url("../images/draft/kwater-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport05 {
+.portlist-sw .swiper-slide > a.miniport05 {
   background: url("../images/draft/masi-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport06 {
+.portlist-sw .swiper-slide > a.miniport06 {
   background: url("../images/draft/nhis-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport07 {
+.portlist-sw .swiper-slide > a.miniport07 {
   background: url("../images/draft/noelo-d.png") no-repeat center;
   background-size: 100% 100%;
 }
 
-.portlist-sw .swiper-slide>a.miniport08 {
+.portlist-sw .swiper-slide > a.miniport08 {
   background: url("../images/draft/stx-d.png") no-repeat center;
   background-size: 100% 100%;
 }
@@ -1166,7 +1160,7 @@ border-top: 1px solid rgb(187, 187, 187);
   padding-right: 20px;
 }
 
-.portsummary .st-desc-sw .swiper-slide>span {
+.portsummary .st-desc-sw .swiper-slide > span {
   position: relative;
   display: block;
   font-size: 16px;
@@ -1203,14 +1197,14 @@ border-top: 1px solid rgb(187, 187, 187);
   line-height: 20px;
 }
 
-.portsummary .st-desc-sw .swiper-slide .overview>p {
+.portsummary .st-desc-sw .swiper-slide .overview > p {
   position: relative;
   display: block;
   font-size: 24px;
   line-height: 30px;
 }
 
-.portsummary .st-desc-sw .swiper-slide .overview>span {
+.portsummary .st-desc-sw .swiper-slide .overview > span {
   position: relative;
   display: block;
   font-size: 12px;
@@ -1235,7 +1229,7 @@ border-top: 1px solid rgb(187, 187, 187);
   height: 71px;
 }
 
-.showBtSet>a {
+.showBtSet > a {
   position: relative;
   display: block;
   width: 71px;
@@ -1246,7 +1240,7 @@ border-top: 1px solid rgb(187, 187, 187);
   box-shadow: 2px 2px 4px 1px rgb(134, 134, 134);
 }
 
-.showBtSet>a>span {
+.showBtSet > a > span {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1261,7 +1255,7 @@ border-top: 1px solid rgb(187, 187, 187);
   letter-spacing: 0px;
 }
 
-.showBtSet>a.showBt01>span::before {
+.showBtSet > a.showBt01 > span::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -1274,7 +1268,7 @@ border-top: 1px solid rgb(187, 187, 187);
   background-size: 40px 40px;
 }
 
-.showBtSet>a.showBt02>span::before {
+.showBtSet > a.showBt02 > span::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -1287,7 +1281,7 @@ border-top: 1px solid rgb(187, 187, 187);
   background-size: 40px 40px;
 }
 
-.showBtSet>a.showBt03>span::before {
+.showBtSet > a.showBt03 > span::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -1300,7 +1294,7 @@ border-top: 1px solid rgb(187, 187, 187);
   background-size: 40px 40px;
 }
 
-.showBtSet>a:hover {
+.showBtSet > a:hover {
   background-color: rgba(51, 51, 51, 0.4);
   box-shadow: 2px 2px 6px 1px rgb(226, 226, 226);
 }
@@ -1402,135 +1396,218 @@ border-top: 1px solid rgb(187, 187, 187);
   position: absolute;
   top: 0;
   right: 0;
-  width: 130px;
+  width: 50%;
   height: 200px;
+  text-align: center;
+  padding-top: 15px;
   display: block;
   z-index: 3;
 }
 
-.life-sw .swiper-slide h4.music-title>span {
+.life-sw .swiper-slide h4.music-title .title-button {
   position: absolute;
   bottom: 20px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  background: #bdbdbd url("../images/v-mute.png") no-repeat center;
-  border-radius: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background: #bdbdbd url("../images/face.png") no-repeat center;
+  background-size: 30px 30px;
   border: 2px solid #37373b;
-  background-size: 20px 20px;
+  border-radius: 50px;
   box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
+  padding: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 9px;
+  color: transparent;
+  white-space: nowrap;
+  letter-spacing: -9px;
+
+  transition: all 0.1s;
+  z-index: 2;
 }
 
-.life-sw .swiper-slide h4.music-title>span:hover {
+.life-sw .swiper-slide h4.music-title .title-button:hover {
   position: absolute;
   bottom: 20px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  background: #838383 url("../images/v-on.png") no-repeat center;
-  border-radius: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background: #838383 url("../images/headp.png") no-repeat center;
+  background-size: 30px 30px;
   border: 2px solid #37373b;
-  background-size: 20px 20px;
+  border-radius: 50px;
   box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.life-sw .swiper-slide h4.music-title .title-button.wide {
+  display: block;
+
+  font-size: 12px;
+  line-height: 24px;
+  color: rgb(237, 237, 237);
+  letter-spacing: 2px;
+
+  background: rgba(62, 62, 62, 0.8) url("../images/melody.png") no-repeat center;
+  background-size: contain;
+
+  border-radius: 25px;
+  border: 2px solid #37373b;
+  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
+  transition: all 0.3s;
+  z-index: 3;
 }
 
 .life-sw .swiper-slide h4.photo-title {
   position: absolute;
   top: 200px;
   left: 0;
-  width: 130px;
+  width: 50%;
   height: 200px;
   display: block;
   padding-left: 15px;
   padding-top: 15px;
 }
 
-.life-sw .swiper-slide h4.photo-title>span {
+.life-sw .swiper-slide h4.photo-title .title-button {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  background: #bdbdbd url("../images/camera-before.png") no-repeat center;
-  border-radius: 50px;
+  bottom: 15px;
+  left: 15px;
+  display: block;
+  background: #bdbdbd url("../images/mark.png") no-repeat center;
+  background-size: 20px 20px;
   border: 2px solid #37373b;
-  background-size: 30px 30px;
+  border-radius: 50px;
   box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
+  padding: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 9px;
+  color: transparent;
+  white-space: nowrap;
+  letter-spacing: -9px;
+
+  transition: all 0.2s;
+  z-index: 2;
 }
 
-.life-sw .swiper-slide h4.photo-title>span:hover {
+.life-sw .swiper-slide h4.photo-title .title-button:hover {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  background: #838383 url("../images/camera-after.png") no-repeat center;
-  border-radius: 50px;
-  border: 2px solid #37373b;
+  bottom: 15px;
+  left: 15px;
+  display: block;
+  background: #838383 url("../images/pola-C.png") no-repeat center;
   background-size: 30px 30px;
+  border: 2px solid #37373b;
+  border-radius: 50px;
   box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
+
+  cursor: pointer;
+
+  z-index: 2;
 }
 
+.life-sw .swiper-slide h4.photo-title .title-button.wide {
+  display: block;
+  padding: 10px;
+
+  font-size: 12px;
+  line-height: 24px;
+  color: rgb(237, 237, 237);
+  letter-spacing: 0.5px;
+
+  background: rgba(62, 62, 62, 0.8) url("../images/pola.png") no-repeat center;
+  background-size: contain;
+  border: 2px solid #37373b;
+  border-radius: 25px;
+
+  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
+  transition: all 0.2s;
+  z-index: 3;
+}
 .life-sw .swiper-slide h4.exp-title {
   position: absolute;
-  bottom: 0;
+  top: 400px;
   right: 0;
-  width: 130px;
+  width: 50%;
   height: 200px;
   display: block;
   padding-right: 15px;
-  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 3;
   text-align: right;
+}
+
+.life-sw .swiper-slide h4.exp-title span {
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 15px;
+}
+
+.life-sw .swiper-slide h4.exp-title .title-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: block;
+  background: #bdbdbd url("../images/bulb.png ") no-repeat center;
+  background-size: 30px 30px;
+  border: 2px solid #37373b;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
+  padding: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 9px;
+  color: transparent;
+  white-space: nowrap;
+  letter-spacing: -9px;
+
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.life-sw .swiper-slide h4.exp-title .title-button:hover {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: block;
+  background: #838383 url("../images/activity.png") no-repeat center;
+  background-size: 25px 25px;
+  border: 2px solid #37373b;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
+
+  cursor: pointer;
+
+  z-index: 2;
+}
+
+.life-sw .swiper-slide h4.exp-title .title-button.wide {
+  display: block;
+  padding: 10px;
+
+  font-size: 12px;
+  line-height: 24px;
+  color: rgb(237, 237, 237);
+  letter-spacing: 0.5px;
+
+  background: rgba(62, 62, 62, 0.8) url("../images/idea.png") no-repeat center;
+  background-size: contain;
+  border: 2px solid #37373b;
+  border-radius: 25px;
+
+  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
+  transition: all 0.2s;
   z-index: 3;
 }
-
-.life-sw .swiper-slide h4.exp-title>span {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 50px;
-  height: 50px;
-  background: #bdbdbd url("../images/bulb.png") no-repeat center;
-  border-radius: 50px;
-  border: 2px solid #37373b;
-  background-size: 60% 60%;
-  box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
-}
-
-.life-sw .swiper-slide h4.exp-title>span:hover {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 50px;
-  height: 50px;
-  background: #838383 url("../images/bulb-on.png") no-repeat center;
-  border-radius: 50px;
-  border: 2px solid #37373b;
-  background-size: 60% 60%;
-  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
-}
-
-.life-sw .swiper-slide p {
-  position: relative;
-  display: block;
-  font-size: 24px;
-  margin-top: 60px;
-  text-align: center;
-}
-
-.life-sw .swiper-slide a {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 60%;
-  height: 60px;
-  background-color: rgb(71, 122, 169);
-  margin-top: 20px;
-  text-align: center;
-  font-size: 40px;
-  line-height: 60px;
-}
-
 .life-sw .swiper-slide span {
   position: absolute;
   display: block;
@@ -1548,11 +1625,11 @@ border-top: 1px solid rgb(187, 187, 187);
 
 .life-sw .swiper-slide span.photo-pic02 {
   top: 200px;
-  left: 130px;
-  width: 265px;
+  left: 200px;
+  width: 200px;
   height: 200px;
   background: url("../images/lifepic02-1.png") no-repeat center;
-  background-size: 100%;
+  background-size: 100% 100%;
   transition: all 1s;
 }
 
@@ -1588,6 +1665,7 @@ border-top: 1px solid rgb(187, 187, 187);
 
 .life-sw .swiper-slide span.photo-pic02:hover {
   background: url("../images/lifepic02-2.png") no-repeat center;
+  background-size: 100% 100%;
 }
 
 .life-sw .swiper-slide span.photo-pic02:hover::before {
@@ -1811,7 +1889,6 @@ border-top: 1px solid rgb(187, 187, 187);
   z-index: 1;
 }
 
-
 .life-sw .swiper-slide span.music-pic01 {
   top: 0px;
   left: 0px;
@@ -1819,6 +1896,7 @@ border-top: 1px solid rgb(187, 187, 187);
   height: 200px;
   background: red;
   z-index: 2;
+  transition: all 0.2s;
 }
 
 .life-sw .swiper-slide span.music-pic02 {
@@ -1857,25 +1935,17 @@ border-top: 1px solid rgb(187, 187, 187);
   z-index: 2;
 }
 
-.life-sw .swiper-slide span.music-pic01.expand {
+.life-sw .swiper-slide span.music-pic01:hover {
   width: 60%;
-  /* transition: all 0.4s ease-in-out; */
 }
-
-.life-sw .swiper-slide span.music-pic03.expand,
-.life-sw .swiper-slide span.music-pic05.expand {
+.life-sw .swiper-slide span.music-pic02:hover,
+.life-sw .swiper-slide span.music-pic03:hover,
+.life-sw .swiper-slide span.music-pic04:hover,
+.life-sw .swiper-slide span.music-pic05:hover {
   width: 60%;
   height: 40%;
   z-index: 9;
-  /* transition: all 0.4s ease-in-out; */
-}
-
-.life-sw .swiper-slide span.music-pic02.expand,
-.life-sw .swiper-slide span.music-pic04.expand {
-  width: 60%;
-  height: 40%;
-  z-index: 9;
-  /* transition: all 0.4s ease-in-out; */
+  transition: all 0.2s;
 }
 
 .life-sw .swiper-slide span.music-pic01:hover::before {
@@ -1922,7 +1992,6 @@ border-top: 1px solid rgb(187, 187, 187);
   box-shadow: 4px 4px 6px 2px rgb(58 64 66);
 }
 
-
 .life-sw .swiper-slide span.exp-pic02 {
   top: -10px;
   left: 100px;
@@ -1964,7 +2033,6 @@ border-top: 1px solid rgb(187, 187, 187);
   background-size: 100% 100%;
   box-shadow: 4px 4px 6px 2px rgb(58 64 66);
 }
-
 
 .life button {
   position: absolute;
@@ -2038,7 +2106,7 @@ border-top: 1px solid rgb(187, 187, 187);
   width: 60%;
 }
 
-.contact-right>div p {
+.contact-right > div p {
   position: relative;
   display: block;
   font-size: 16px;
@@ -2047,7 +2115,7 @@ border-top: 1px solid rgb(187, 187, 187);
   margin-bottom: 12px;
 }
 
-.contact-right>div span {
+.contact-right > div span {
   position: relative;
   display: block;
   font-size: 24px;
@@ -2057,7 +2125,7 @@ border-top: 1px solid rgb(187, 187, 187);
   margin-bottom: 16px;
 }
 
-.contact-right>div span::after {
+.contact-right > div span::after {
   content: "";
   position: absolute;
   top: 0;
