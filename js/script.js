@@ -182,7 +182,7 @@ window.onload = function () {
     color: "#ff3f34",
     trailColor: "#E9F8F0",
     trailWidth: 1,
-    duration: 2500,
+    duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
@@ -211,7 +211,7 @@ window.onload = function () {
     color: "#ffd32a",
     trailColor: "#E9F8F0",
     trailWidth: 1,
-    duration: 2500,
+    duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
@@ -239,7 +239,7 @@ window.onload = function () {
     color: "#04c56b",
     trailColor: "#E9F8F0",
     trailWidth: 1,
-    duration: 2500,
+    duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
@@ -267,7 +267,7 @@ window.onload = function () {
     color: "#00d8d6",
     trailColor: "#E9F8F0",
     trailWidth: 1,
-    duration: 2500,
+    duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
@@ -295,7 +295,7 @@ window.onload = function () {
     color: "#3d40c6",
     trailColor: "#E9F8F0",
     trailWidth: 1,
-    duration: 2500,
+    duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
@@ -323,7 +323,7 @@ window.onload = function () {
     color: "#694fb6",
     trailColor: "#E9F8F0",
     trailWidth: 1,
-    duration: 2500,
+    duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
@@ -351,7 +351,7 @@ window.onload = function () {
     color: "#48545f",
     trailColor: "#E9F8F0",
     trailWidth: 1,
-    duration: 2500,
+    duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
@@ -415,12 +415,14 @@ window.onload = function () {
   });
 
   let lifeTitleBt = $(".life-sw .swiper-slide .title-button");
-  lifeTitleBt.click(function () {
-    if (lifeTitleBt.hasClass("wide")) {
-      lifeTitleBt.removeClass("wide");
-    } else {
-      lifeTitleBt.addClass("wide");
-    }
+  $.each(lifeTitleBt, function (index) {
+    $(this).click(function () {
+      if (lifeTitleBt.hasClass("wide")) {
+        lifeTitleBt.removeClass("wide");
+      } else {
+        lifeTitleBt.eq(index).addClass("wide");
+      }
+    });
   });
 };
 
