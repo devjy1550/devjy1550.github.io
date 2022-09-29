@@ -763,7 +763,9 @@ h1.logo {
   justify-content: space-between;
   align-items: center;
   font-size: 0;
-  margin-top: 20px;
+  margin-top: 16px;
+  padding-bottom: 4px;
+  padding-right: 4px;
 }
 
 .mr-control button {
@@ -1991,7 +1993,7 @@ h1.logo {
 .life-sw .swiper-slide span.music-pic02:hover,
 .life-sw .swiper-slide span.music-pic03:hover,
 .life-sw .swiper-slide span.music-pic04:hover,
-.life-sw .swiper-slide span.music-pic05:hover {s
+.life-sw .swiper-slide span.music-pic05:hover {
 }
 
 .life-sw .swiper-slide span.music-pic01:hover::before {
@@ -2106,26 +2108,6 @@ h1.logo {
   right: -100px;
 }
 
-/* contact */
-.contact {
-  position: relative;
-  display: block;
-  padding: 50px 0;
-}
-
-.contact .inner {
-  position: relative;
-  display: block;
-}
-
-.contact .inner h2 {
-  position: relative;
-  display: block;
-  font-size: 48px;
-  line-height: 48px;
-  margin-bottom: 60px;
-}
-
 .contact .inner h2::before {
   content: "";
   position: absolute;
@@ -2137,57 +2119,6 @@ h1.logo {
   background-color: #98a4b4;
 }
 
-.contact-left {
-  position: relative;
-  display: block;
-  float: left;
-  width: 40%;
-  padding: 20px 0;
-}
-
-.contact-right {
-  position: relative;
-  display: block;
-  float: left;
-  width: 60%;
-}
-
-.contact-right > div p {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 300;
-  margin-bottom: 12px;
-}
-
-.contact-right > div span {
-  position: relative;
-  display: block;
-  font-size: 24px;
-  line-height: 24px;
-  background-color: rgba(187, 187, 187, 0.3);
-  padding: 8px 0;
-  margin-bottom: 16px;
-}
-
-.contact-right > div span::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 24px;
-  padding: 8px 4px;
-  background: rgba(90, 148, 249, 0.3) url("../images/here.png") no-repeat center;
-  background-size: contain;
-  display: block;
-}
-
-span.mail:hover a {
-  color: blue;
-}
-
 /* footer */
 .footer {
   position: relative;
@@ -2195,6 +2126,73 @@ span.mail:hover a {
   background-color: rgb(81, 89, 101);
   padding: 50px 0;
 }
+
+.footer .inner {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.footer .inner h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 60px;
+  z-index: 1;
+}
+
+.footer .inner h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 14px;
+  background-color: rgba(152, 164, 180, 0.6);
+  z-index: -1;
+}
+
+.footer .inner .social-box {
+  position: relative;
+  display: block;
+  font-size: 0;
+}
+
+.social-box a {
+  position: relative;
+  display: inline-block;
+}
+
+.mail {
+  width: 50px;
+  height: 50px;
+  background: url("../images/git-off.png") no-repeat center;
+  background-size: contain;
+}
+
+.mail.msov {background: url('../images/git-on.png');
+
+.kt {
+  width: 50px;
+  height: 50px;
+  background: url("../images/mail-off.png") no-repeat center;
+  background-size: contain;
+}
+
+.kt.msov {background: url('../images/mail-on.png');
+
+.git {
+  width: 50px;
+  height: 50px;
+  background: url("../images/talk-off.png") no-repeat center;
+  background-size: contain;
+}
+
+.git.msov {background: url('../images/talk-on.png');
+
 
 .footer p {
   position: relative;
