@@ -147,7 +147,6 @@ window.onload = function () {
   const plSW = new Swiper(".portlist-sw", {
     loop: true,
     speed: 1200,
-    effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "3",
@@ -399,7 +398,7 @@ window.onload = function () {
   });
 
   let roadmapBt = $(".mr-control >button");
-  let mrDesc = $(".my-roadmap .map-review >div");
+  let mrDesc = $(".my-roadmap .map-review ul.mr-content >li");
 
   mrDesc.eq(0).show();
   roadmapBt.eq(0).addClass("mr-show");
