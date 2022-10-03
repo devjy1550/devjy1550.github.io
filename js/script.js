@@ -145,20 +145,17 @@ window.onload = function () {
   });
 
   const plSW = new Swiper(".portlist-sw", {
-    loop: true,
-    speed: 1200,
-    grabCursor: true,
+    effect: "coverflow",
+    speed: 1500,
+    loop : true,
     centeredSlides: true,
     slidesPerView: "3",
     coverflowEffect: {
-      rotate: 60,
+      rotate: 50,
       stretch: 0,
-      depth: 60,
+      depth: 100,
       modifier: 1,
-      slideshadow: 0,
-    },
-    mousewheel: {
-      invert: false,
+      slideShadows: true,
     },
   });
 
