@@ -191,12 +191,9 @@ strong {
 .header {
   position: relative;
   display: block;
-  /* background-color: #d9f1ff; */
   background-color: #c3e9ff;
   padding: 20px 0;
 }
-
-
 
 h1.logo {
   position: relative;
@@ -253,7 +250,6 @@ h1.logo {
   position: relative;
   display: block;
   padding: 150px 0 250px 0;
-  /* background-color: #d9f1ff; */
   background-color: #c3e9ff;
 }
 
@@ -262,7 +258,7 @@ h1.logo {
   display: block;
   float: left;
   border-radius: 20px;
-  background-color: rgb(106, 115, 130);
+  background-color: #6dcaff;
   width: 40%;
   padding: 40px;
   text-align: left;
@@ -299,10 +295,10 @@ h1.logo {
   content: "";
   position: absolute;
   top: 0;
-right: 0;
+  right: 0;
   display: block;
   width: 640px;
-  height:640px;
+  height: 640px;
   background: url("../images/profile.png") no-repeat center;
   background-size: contain;
 }
@@ -370,7 +366,7 @@ right: 0;
   position: relative;
   display: block;
   padding: 100px 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #fcfcfc;
 }
 
 .aboutMe-top {
@@ -381,7 +377,7 @@ right: 0;
 .aboutMe-top h2 {
   position: relative;
   display: inline-block;
-  font-size: 64px;
+  font-size: 48px;
   line-height: 64px;
   letter-spacing: 2px;
   z-index: 1;
@@ -408,8 +404,8 @@ right: 0;
 .mystory p {
   position: relative;
   display: block;
-  font-size: 24px;
-  line-height: 60px;
+  font-size: 22px;
+  line-height: 48px;
   letter-spacing: 2px;
   z-index: 2;
 }
@@ -426,7 +422,6 @@ right: 0;
   color: rgba(154, 187, 225, 0.3);
   z-index: 1;
 }
-
 
 .aboutMe-bottom {
   position: relative;
@@ -461,54 +456,58 @@ right: 0;
   z-index: -1;
 }
 
-
 .profile .profile-left {
   position: relative;
   display: block;
   float: left;
   width: 40%;
-  padding: 50px;
+  margin-top: 40px;
 }
 
-.profile .profile-left>span {
+.profile .profile-left .myname {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  display: block;
+  z-index: 10;
+}
+
+.profile .profile-left .myname > span {
   position: relative;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   color: #505050;
   font-weight: 300;
   letter-spacing: 3px;
 }
 
-.profile .profile-left>p {
+.profile .profile-left .myname > p {
   position: relative;
   display: block;
   font-size: 24px;
   line-height: 32px;
-  padding-left: 20px;
-  letter-spacing: 1.5px;
+  letter-spacing: 4px;
+  padding: 4px 0 4px 20px;
 }
 
-.profile .profile-left>span.pic {
+.profile .profile-left > span.pic {
   position: relative;
   display: block;
   width: 360px;
   height: 480px;
-  margin: 40px 0;
-  background: url('../images/body1.png') no-repeat center;
+  background: url("../images/body1.png") no-repeat center;
   background-size: contain;
 }
 
-.profile .profile-left>span.pic:hover {
+.profile .profile-left > span.pic:hover {
   position: relative;
   display: block;
   width: 360px;
   height: 480px;
-  background: url('../images/moving-new.gif') no-repeat center;
-  background-size: contain;
+  background: url("../images/moving-new.gif") no-repeat center;
+  background-size: cover;
 }
-
-
 
 .profile .profile-right {
   position: relative;
@@ -518,41 +517,79 @@ right: 0;
   padding: 100px 0 50px;
 }
 
-.profile .profile-right>div {
+.profile .profile-right > div {
   position: relative;
   display: block;
   float: left;
 }
 
+.profile-right .education {
+  padding-left: 60px;
+}
 
-.profile .profile-right>div ul {
+.profile .profile-right > div ul {
   position: relative;
   display: block;
 }
 
-.profile .profile-right>div ul li {
+.profile .profile-right > div ul > span {
   position: relative;
   display: block;
-  padding: 5px 0 5px 15px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #505050;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding-top: 10px;
 }
 
-.profile .profile-right>div ul li>span {
+.profile .profile-right > div ul li {
   position: relative;
   display: block;
-  font-size: 12px;
+  padding: 10px 20px;
+}
+
+.profile .profile-right > div ul li > span {
+  position: relative;
+  display: block;
+  font-size: 14px;
   line-height: 18px;
   color: #505050;
   font-weight: 300;
   letter-spacing: 3px;
 }
 
-.profile .profile-right>div ul li>p {
+.profile .profile-right > div > ul > li > p {
   position: relative;
   display: block;
   font-size: 24px;
   line-height: 32px;
-  padding-left: 20px;
   letter-spacing: 1.5px;
+  padding: 4px 0 4px 20px;
+}
+
+.profile .profile-right > div ul li > i {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #505050;
+  letter-spacing: 3px;
+}
+
+.profile .profile-right > div.education > ul > li > p {
+  padding: 0;
+}
+
+.profile .profile-right > div.education > ul > li > span {
+  line-height: 28px;
+}
+
+.aboutMe-bottom .psbNrm {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .aboutMe-bottom .posibility {
@@ -561,7 +598,6 @@ right: 0;
   float: left;
   width: 40%;
 }
-
 
 .posibility .psb-top h3 {
   position: relative;
@@ -585,7 +621,7 @@ right: 0;
   z-index: -1;
 }
 
-.psb-top>p {
+.psb-top > p {
   position: relative;
   display: block;
   font-size: 16px;
@@ -606,7 +642,7 @@ right: 0;
   border-bottom: 1px solid rgb(187, 187, 187);
 }
 
-.posibility>.psb-desc p {
+.posibility > .psb-desc p {
   position: relative;
   display: block;
   font-size: 18px;
@@ -614,13 +650,13 @@ right: 0;
   letter-spacing: 2px;
 }
 
-.posibility>.psb-desc p strong {
+.posibility > .psb-desc p strong {
   position: relative;
   color: #034ea2;
   z-index: 1;
 }
 
-.posibility>.psb-desc p strong::before {
+.posibility > .psb-desc p strong::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -647,7 +683,6 @@ right: 0;
   margin: 0 auto;
   margin-top: 16px;
 }
-
 
 .posibility .psb-box .psb-graph .psb-graphS {
   content: "";
@@ -707,7 +742,7 @@ right: 0;
   z-index: -1;
 }
 
-.my-roadmap>p {
+.my-roadmap > p {
   position: relative;
   display: block;
   font-size: 16px;
@@ -777,7 +812,6 @@ right: 0;
   margin-top: 20px;
 }
 
-
 .my-roadmap .mr-control {
   position: absolute;
   bottom: 30px;
@@ -845,7 +879,7 @@ right: 0;
   transform: translateX(-50%);
   width: 60%;
   height: 20px;
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: rgba(12, 77, 162, 0.4);
   z-index: -1;
 }
 
@@ -857,7 +891,7 @@ right: 0;
   font-size: 0;
 }
 
-.skill-list>li {
+.skill-list > li {
   position: relative;
   display: inline-block;
   margin-right: 12%;
@@ -865,11 +899,11 @@ right: 0;
   margin-bottom: 120px;
 }
 
-.skill-list>li:nth-child(4n) {
+.skill-list > li:nth-child(4n) {
   margin-right: 0;
 }
 
-.skill-list>li>a {
+.skill-list > li > a {
   position: absolute;
   display: block;
   height: 100%;
@@ -885,7 +919,7 @@ right: 0;
   text-transform: uppercase;
 }
 
-.skill-list>li>a::before {
+.skill-list > li > a::before {
   content: "";
   position: absolute;
   display: block;
@@ -899,7 +933,7 @@ right: 0;
   z-index: 99;
 }
 
-.skill-list>li>a::after {
+.skill-list > li > a::after {
   content: "";
   position: absolute;
   display: block;
@@ -933,7 +967,7 @@ right: 0;
   visibility: visible;
 }
 
-.skill-list>li>a>ul>li {
+.skill-list > li > a > ul > li {
   display: block;
   font-size: 12px;
   line-height: 18px;
@@ -987,7 +1021,7 @@ right: 0;
 }
 
 .portlist-sw .swiper-slide::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   top: 50%;
@@ -995,11 +1029,11 @@ right: 0;
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  background: url('../images/mu-blue.png') no-repeat center;
+  background: url("../images/mu-blue.png") no-repeat center;
   background-size: contain;
 }
 
-.portlist-sw .swiper-slide>a {
+.portlist-sw .swiper-slide > a {
   position: absolute;
   display: block;
   top: 50%;
@@ -1014,8 +1048,8 @@ right: 0;
   background-color: black;
 }
 
-.portlist-sw .swiper-slide>a::before {
-  content: '';
+.portlist-sw .swiper-slide > a::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -1023,13 +1057,13 @@ right: 0;
   display: block;
   width: 100%;
   height: 160%;
-  background-color: rgba(214, 214, 214, 0.5);
+  background-color: rgba(120, 120, 120, 0.5);
   z-index: 2;
   transition: all 0.8s;
 }
 
-.portlist-sw .swiper-slide>a:hover::before {
-  content: '';
+.portlist-sw .swiper-slide > a:hover::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -1041,19 +1075,14 @@ right: 0;
   z-index: 2;
 }
 
-
-
-
-
-
-.portlist-sw .swiper-slide>a>img {
+.portlist-sw .swiper-slide > a > img {
   position: relative;
   display: block;
   width: 100%;
   height: 160%;
 }
 
-.portlist-sw .swiper-slide>div.control-bar {
+.portlist-sw .swiper-slide > div.control-bar {
   position: absolute;
   display: block;
   bottom: 3%;
@@ -1062,15 +1091,15 @@ right: 0;
   width: 72%;
   height: 80px;
   border-radius: 24px;
-  background-color: rgb(157, 157, 157, 0.4);
+  background-color: rgba(59, 69, 73, 0.4);
   transition: all 0.8s;
 }
 
-.portlist-sw .swiper-slide>div.control-bar:hover{
-  background-color: rgb(157, 157, 157, 0.8);
+.portlist-sw .swiper-slide > div.control-bar:hover {
+  background-color: rgba(119, 119, 119, 0.2);
 }
 
-.portlist-sw .swiper-slide>div.control-bar>.controlButtons {
+.portlist-sw .swiper-slide > div.control-bar > .controlButtons {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -1079,9 +1108,7 @@ right: 0;
   height: 80px;
 }
 
-
-
-.control-bar>.controlButtons>a {
+.control-bar > .controlButtons > a {
   position: relative;
   display: block;
   width: 56px;
@@ -1089,27 +1116,21 @@ right: 0;
   border-radius: 7px;
   border: 2px solid rgb(81, 89, 102);
   cursor: pointer;
-  box-shadow: 2px 2px 4px 1px rgb(134, 134, 134);
 }
 
-
 a.showBt01 {
-  /* background-color: #60EF59; */
   background-color: rgba(151, 217, 255, 0.7);
 }
 
 a.showBt02 {
-  /* background-color: #2AB2FF; */
   background-color: rgba(151, 217, 255, 0.7);
 }
 
 a.showBt03 {
-  /* background-color: #FF4338; */
   background-color: rgba(151, 217, 255, 0.7);
 }
 
-
-.control-bar>.controlButtons>a>span {
+.control-bar > .controlButtons > a > span {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1124,7 +1145,7 @@ a.showBt03 {
   letter-spacing: 0px;
 }
 
-.control-bar>.controlButtons>a.showBt01>span::before {
+.control-bar > .controlButtons > a.showBt01 > span::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -1137,7 +1158,7 @@ a.showBt03 {
   background-size: contain;
 }
 
-.control-bar>.controlButtons>a.showBt02>span::before {
+.control-bar > .controlButtons > a.showBt02 > span::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -1150,7 +1171,7 @@ a.showBt03 {
   background-size: contain;
 }
 
-.control-bar>.controlButtons>a.showBt03>span::before {
+.control-bar > .controlButtons > a.showBt03 > span::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -1163,9 +1184,114 @@ a.showBt03 {
   background-size: contain;
 }
 
-.control-bar>.controlButtons>a:hover {
-  background-color: rgba(51, 51, 51, 0.4);
-  box-shadow: 2px 2px 6px 1px rgb(226, 226, 226);
+.control-bar > .controlButtons > a:hover {
+  background-color: rgba(98, 197, 255, 0.7);
+}
+
+.portlist-sw .swiper-slide > div.control-bar-vue {
+  position: absolute;
+  display: block;
+  bottom: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  height: 80px;
+  border-radius: 24px;
+  background-color: rgba(59, 69, 73, 0.4);
+  transition: all 0.8s;
+}
+
+.portlist-sw .swiper-slide > div.control-bar:hover {
+  background-color: rgba(119, 119, 119, 0.2);
+}
+
+.portlist-sw .swiper-slide > div.control-bar-vue > .controlButtons {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+.control-bar-vue > .controlButtons > a {
+  position: relative;
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 7px;
+  border: 2px solid rgb(81, 89, 102);
+  cursor: pointer;
+}
+
+.control-bar-vue a.showBt01 {
+  background-color: rgba(0, 193, 128, 0.7);
+}
+
+.control-bar-vue a.showBt02 {
+  background-color: rgba(0, 193, 128, 0.7);
+}
+
+.control-bar-vue a.showBt03 {
+  background-color: rgba(0, 193, 128, 0.7);
+}
+
+.control-bar-vue > .controlButtons > a > span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  line-height: 10px;
+  padding-top: 38px;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.control-bar-vue > .controlButtons > a.showBt01 > span::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/mywork.png") no-repeat center;
+  background-size: contain;
+}
+
+.control-bar-vue > .controlButtons > a.showBt02 > span::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/git.png") no-repeat center center;
+  background-size: contain;
+}
+
+.control-bar-vue > .controlButtons > a.showBt03 > span::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/original.png") no-repeat center center;
+  background-size: contain;
+}
+
+.control-bar-vue > .controlButtons > a:hover {
+  background-color: rgba(0, 150, 100, 0.7);
 }
 
 .swiper-container-3d .swiper-slide-shadow-left {
@@ -1210,11 +1336,9 @@ a.showBt03 {
   left: 0;
   width: 60%;
   height: 20px;
-  background-color: rgba(152, 164, 180, 0.6);
+  background-color: rgba(171, 204, 249, 0.6);
   z-index: -1;
 }
-
-
 
 .portsummary {
   margin-top: 10px;
@@ -1225,7 +1349,7 @@ a.showBt03 {
 
 .st-desc-sw {
   position: relative;
-  top: 0;
+  left: -320px;
   display: block;
   width: 960px;
   height: 510px;
@@ -1261,7 +1385,7 @@ a.showBt03 {
   padding: 20px 10px;
 }
 
-.portsummary .st-desc-sw .swiper-slide>span {
+.portsummary .st-desc-sw .swiper-slide > span {
   position: relative;
   display: block;
   font-size: 16px;
@@ -1297,44 +1421,105 @@ a.showBt03 {
   line-height: 20px;
 }
 
-.portsummary .st-desc-sw .swiper-slide .overview>p {
-  position  : relative;
+.portsummary .st-desc-sw .swiper-slide .overview > p {
+  position: relative;
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 24px;
   padding-top: 18px;
   text-align: left;
 }
 
-.portsummary .st-desc-sw .swiper-slide .overview>span {
+.portsummary .st-desc-sw .swiper-slide .overview > span {
   position: relative;
   display: block;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 4px;
   text-align: left;
-
 }
 
-.portsummary .st-desc-sw .swiper-slide .overview .memo{
+.portsummary .st-desc-sw .swiper-slide .overview .used,
+.portsummary .st-desc-sw .swiper-slide .overview .used02 {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+}
+.portsummary .st-desc-sw .swiper-slide .overview .used > p,
+.portsummary .st-desc-sw .swiper-slide .overview .used02 > p {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.portsummary .st-desc-sw .swiper-slide .overview .used ul {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portsummary .st-desc-sw .swiper-slide .overview .used02 ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portsummary .st-desc-sw .swiper-slide .overview .used ul li,
+.portsummary .st-desc-sw .swiper-slide .overview .used02 ul li {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 85px;
+}
+
+li.usedS01 {
+  background: url("../images/skill01.png") no-repeat center;
+  background-size: contain;
+}
+li.usedS02 {
+  background: url("../images/skill02.png") no-repeat center;
+  background-size: contain;
+}
+li.usedS03 {
+  background: url("../images/skill03.png") no-repeat center;
+  background-size: contain;
+}
+
+li.usedS04 {
+  background: url("../images/skill04.png") no-repeat center;
+  background-size: contain;
+}
+
+.portsummary .st-desc-sw .swiper-slide .overview .memo {
   position: relative;
   display: block;
   color: #a9a9a9;
+  padding-left: 10px;
 }
 
-.portsummary .st-desc-sw .swiper-slide .overview .memo>p{
+.portsummary .st-desc-sw .swiper-slide .overview .memo > p {
   position: relative;
   display: block;
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: left;
-
 }
-.portsummary .st-desc-sw .swiper-slide .overview .memo>span{
+
+.portsummary .st-desc-sw .swiper-slide .overview .memo > span {
   position: relative;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
 }
-
 
 .portcontrol {
   position: relative;
@@ -1371,11 +1556,14 @@ a.showBt03 {
 .life {
   position: relative;
   display: block;
-  padding-top: 150px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: #d9f1ff;
 }
 
 .life .inner .life-top {
+  position: relative;
+  display: block;
   text-align: center;
 }
 
@@ -1398,30 +1586,32 @@ a.showBt03 {
   transform: translateX(-50%);
   width: 80%;
   height: 20px;
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: rgba(12, 77, 162, 0.4);
   z-index: -1;
 }
 
-.life-sw {
+.life-bottom {
   position: relative;
-  display: block;
-  height: 800px;
+  display: flex;
+  justify-content: space-around;
   padding: 60px 0 40px 0;
+  font-size: 0;
+  height: 100%;
   width: 100%;
-  padding-right: 15px;
+  text-align: center;
 }
 
-.life-sw .swiper-slide {
+.life-bottom .life-content {
   position: relative;
-  display: block;
+  display: inline-block;
   height: 600px;
+  width: 395px;
   background-color: #ffffff;
-  padding: 50px 25px;
   z-index: 9;
   box-shadow: 5px 5px 10px 2px rgb(58 64 66);
 }
 
-.life-sw .swiper-slide h4 {
+.life-bottom .life-content h4 {
   position: relative;
   display: block;
   font-size: 20px;
@@ -1429,7 +1619,7 @@ a.showBt03 {
   letter-spacing: 0px;
 }
 
-.life-sw .swiper-slide h4.music-title {
+.life-bottom .life-content h4.music-title {
   position: absolute;
   top: 0;
   right: 0;
@@ -1441,22 +1631,22 @@ a.showBt03 {
   z-index: 3;
 }
 
-.life-sw .swiper-slide h4.music-title .title-button {
+.life-bottom .life-content h4.music-title .title-button {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  width: 60px;
   display: block;
   background: #bdbdbd url("../images/face.png") no-repeat center;
   background-size: 30px 30px;
   border: 2px solid #37373b;
   border-radius: 50px;
   box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
-  padding: 10px;
+  padding: 4px;
 
   font-size: 16px;
-  font-weight: 400;
-  line-height: 9px;
+  line-height: 8px;
   color: transparent;
   white-space: nowrap;
   letter-spacing: -9px;
@@ -1465,7 +1655,7 @@ a.showBt03 {
   z-index: 2;
 }
 
-.life-sw .swiper-slide h4.music-title .title-button:hover {
+.life-bottom .life-content h4.music-title .title-button:hover {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -1482,13 +1672,14 @@ a.showBt03 {
   z-index: 2;
 }
 
-.life-sw .swiper-slide h4.music-title .title-button.wide {
+.life-bottom .life-content h4.music-title .title-button.wide {
   display: block;
-
-  font-size: 12px;
+  width: 164px;
+  font-size: 14px;
   line-height: 24px;
   color: rgb(237, 237, 237);
   letter-spacing: 0.5px;
+  padding: 10px;
 
   background: rgba(62, 62, 62, 0.8) url("../images/melody.png") no-repeat center;
   background-size: contain;
@@ -1500,44 +1691,47 @@ a.showBt03 {
   z-index: 3;
 }
 
-.life-sw .swiper-slide h4.photo-title {
+.life-bottom .life-content h4.photo-title {
   position: absolute;
-  top: 200px;
-  left: 0;
+  top: 0;
+  right: 0;
   width: 50%;
   height: 200px;
-  display: block;
-  padding-left: 15px;
+  text-align: center;
   padding-top: 15px;
+  display: block;
+  z-index: 3;
 }
 
-.life-sw .swiper-slide h4.photo-title .title-button {
+.life-bottom .life-content h4.photo-title .title-button {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
   display: block;
   background: #bdbdbd url("../images/mark.png") no-repeat center;
   background-size: 20px 20px;
   border: 2px solid #37373b;
   border-radius: 50px;
   box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
-  padding: 10px;
+  padding: 4px;
 
   font-size: 16px;
-  font-weight: 400;
-  line-height: 9px;
+  line-height: 8px;
   color: transparent;
   white-space: nowrap;
   letter-spacing: -9px;
 
-  transition: all 0.2s;
+  transition: all 0.1s;
   z-index: 2;
 }
 
-.life-sw .swiper-slide h4.photo-title .title-button:hover {
+.life-bottom .life-content h4.photo-title .title-button:hover {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   background: #838383 url("../images/pola-C.png") no-repeat center;
   background-size: 30px 30px;
@@ -1550,272 +1744,191 @@ a.showBt03 {
   z-index: 2;
 }
 
-.life-sw .swiper-slide h4.photo-title .title-button.wide {
+.life-bottom .life-content h4.photo-title .title-button.wide {
   display: block;
-  padding: 10px;
-
-  font-size: 12px;
+  width: 164px;
+  font-size: 14px;
   line-height: 24px;
   color: rgb(237, 237, 237);
   letter-spacing: 0.5px;
+  padding: 10px 16px;
 
   background: rgba(62, 62, 62, 0.8) url("../images/pola.png") no-repeat center;
   background-size: contain;
-  border: 2px solid #37373b;
+
   border-radius: 25px;
-
+  border: 2px solid #37373b;
   box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
-  transition: all 0.2s;
+  transition: all 0.3s;
   z-index: 3;
 }
 
-.life-sw .swiper-slide h4.exp-title {
-  position: absolute;
-  top: 400px;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  display: block;
-  text-align: right;
-  padding-right: 15px;
-  padding-top: 15px;
-  z-index: 3;
-}
-
-.life-sw .swiper-slide h4.exp-title .title-button {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  display: block;
-  background: #bdbdbd url("../images/bulb.png") no-repeat center;
-  background-size: 28px 28px;
-  border: 2px solid #37373b;
-  border-radius: 50px;
-  box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
-  padding: 10px;
-
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 9px;
-  color: transparent;
-  white-space: nowrap;
-  letter-spacing: -9px;
-
-  transition: all 0.2s;
-  z-index: 2;
-}
-
-.life-sw .swiper-slide h4.exp-title .title-button:hover {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  display: block;
-  background: #838383 url("../images/activity.png") no-repeat center;
-  background-size: 30px 30px;
-  border: 2px solid #37373b;
-  border-radius: 50px;
-  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
-
-  cursor: pointer;
-
-  z-index: 2;
-}
-
-.life-sw .swiper-slide h4.exp-title .title-button.wide {
-  display: block;
-  padding: 10px;
-
-  font-size: 12px;
-  line-height: 24px;
-  color: rgb(237, 237, 237);
-  letter-spacing: 0.5px;
-
-  background: rgba(62, 62, 62, 0.8) url("../images/bulb-on.png") no-repeat center;
-  background-size: contain;
-  border: 2px solid #37373b;
-  border-radius: 25px;
-
-  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
-  transition: all 0.2s;
-  z-index: 3;
-}
-
-.life-sw .swiper-slide span {
+.life-bottom .life-content span {
   position: absolute;
   display: block;
 }
 
-.life-sw .swiper-slide span.photo-pic01 {
+.life-bottom .life-content span.photo-pic01 {
   top: 0px;
   left: 0px;
-  width: 395px;
+  width: 50%;
   height: 200px;
   background: url("../images/lifepic01-1.png") no-repeat center;
-  background-size: 100%;
-  transition: all 1s;
+  z-index: 2;
+  transition: all 0.5s;
 }
 
-.life-sw .swiper-slide span.photo-pic02 {
-  top: 200px;
-  left: 197.5px;
-  width: 197.5px;
-  height: 200px;
-  background: url("../images/lifepic02-1.png") no-repeat center;
-  background-size: 100% 100%;
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic03 {
-  top: 400px;
-  left: 0;
-  width: 275px;
-  height: 200px;
-  background: url("../images/lifepic03-1.png") no-repeat center;
-  background-size: 100%;
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic04 {
-  top: 400px;
-  left: 275px;
-  width: 120px;
-  height: 200px;
-  background: url("../images/lifepic04-1.png") no-repeat center;
-  background-size: 100%;
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic01:hover {
+.life-bottom .life-content span.photo-pic01:hover {
+  width: 60%;
   background: url("../images/lifepic01-2.png") no-repeat center;
 }
 
-.life-sw .swiper-slide span.photo-pic01:hover::before {
+.life-bottom .life-content span.photo-pic01:hover::before {
   content: "";
   position: absolute;
   display: block;
 }
 
-.life-sw .swiper-slide span.photo-pic02:hover {
+.life-bottom .life-content span.photo-pic01::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic01::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  display: block;
+  width: 2px;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic01:hover::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.life-bottom .life-content span.photo-pic01:hover::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  display: block;
+  width: 2px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic02 {
+  top: 200px;
+  left: 0px;
+  width: 50%;
+  height: 200px;
+  background: url("../images/lifepic02-1.png") no-repeat center;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic02:hover {
+  width: 60%;
   background: url("../images/lifepic02-2.png") no-repeat center;
-  background-size: 100% 100%;
+  z-index: 5;
 }
 
-.life-sw .swiper-slide span.photo-pic02:hover::before {
+.life-bottom .life-content span.photo-pic02:hover::before {
   content: "";
   position: absolute;
   display: block;
 }
 
-.life-sw .swiper-slide span.photo-pic03:hover {
+.life-bottom .life-content span.photo-pic02::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: block;
+  width: 2px;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic02::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  width: 2px;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic02:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  width: 2px;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+}
+
+.life-bottom .life-content span.photo-pic02:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  width: 2px;
+  height: 80px;
+
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic03 {
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 200px;
+  background: url("../images/lifepic03-1.png") no-repeat center;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic03:hover {
+  width: 60%;
   background: url("../images/lifepic03-2.png") no-repeat center;
+  z-index: 5;
 }
 
-.life-sw .swiper-slide span.photo-pic03:hover::before {
+.life-bottom .life-content span.photo-pic03:hover::before {
   content: "";
   position: absolute;
   display: block;
 }
 
-.life-sw .swiper-slide span.photo-pic04:hover {
-  background: url("../images/lifepic04-2.png") no-repeat center;
-}
-
-.life-sw .swiper-slide span.photo-pic01::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  display: block;
-  width: 0px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic01::after {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 0;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic01:hover::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  display: block;
-  width: 120px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-sw .swiper-slide span.photo-pic01:hover::after {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 0;
-  display: block;
-  width: 2px;
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic02::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic02::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic02:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-sw .swiper-slide span.photo-pic02:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 120px;
-
-  background-color: rgb(255, 255, 255);
-  transition: all 1s;
-}
-
-.life-sw .swiper-slide span.photo-pic03::before {
+.life-bottom .life-content span.photo-pic03::before {
   content: "";
   position: absolute;
   bottom: 10px;
@@ -1824,10 +1937,10 @@ a.showBt03 {
   width: 0px;
   height: 2px;
   background-color: rgb(255, 255, 255);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
-.life-sw .swiper-slide span.photo-pic03::after {
+.life-bottom .life-content span.photo-pic03::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -1836,10 +1949,10 @@ a.showBt03 {
   width: 2px;
   height: 0px;
   background-color: rgb(255, 255, 255);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
-.life-sw .swiper-slide span.photo-pic03:hover::before {
+.life-bottom .life-content span.photo-pic03:hover::before {
   content: "";
   position: absolute;
   bottom: 10px;
@@ -1850,7 +1963,7 @@ a.showBt03 {
   background-color: rgb(255, 255, 255);
 }
 
-.life-sw .swiper-slide span.photo-pic03:hover::after {
+.life-bottom .life-content span.photo-pic03:hover::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -1859,22 +1972,32 @@ a.showBt03 {
   width: 2px;
   height: 120px;
   background-color: rgb(255, 255, 255);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
-.life-sw .swiper-slide span.photo-pic04::before {
+.life-bottom .life-content span.photo-pic04 {
+  top: 200px;
+  right: 0;
+  width: 50%;
+  height: 200px;
+  background: url("../images/lifepic05-1.png") no-repeat center;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic04:hover {
+  width: 60%;
+  background: url("../images/lifepic05-2.png") no-repeat center;
+  z-index: 5;
+}
+
+.life-bottom .life-content span.photo-pic04:hover::before {
   content: "";
   position: absolute;
-  bottom: 10px;
-  right: 0;
   display: block;
-  width: 0px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 1s;
 }
 
-.life-sw .swiper-slide span.photo-pic04::after {
+.life-bottom .life-content span.photo-pic04::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1883,30 +2006,111 @@ a.showBt03 {
   width: 2px;
   height: 0px;
   background-color: rgb(255, 255, 255);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
-.life-sw .swiper-slide span.photo-pic04:hover::before {
+.life-bottom .life-content span.photo-pic04::after {
   content: "";
   position: absolute;
-  bottom: 10px;
-  right: 0;
+  top: 0;
+  right: 10px;
   display: block;
-  width: 60px;
-  height: 2px;
+  width: 2px;
+  height: 0px;
   background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
 }
 
-.life-sw .swiper-slide span.photo-pic04:hover::after {
+.life-bottom .life-content span.photo-pic04:hover::before {
   content: "";
   position: absolute;
-  top: 0px;
+  bottom: 0;
   right: 10px;
   display: block;
   width: 2px;
   height: 60px;
   background-color: rgb(255, 255, 255);
-  transition: all 1s;
+}
+
+.life-bottom .life-content span.photo-pic04:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  width: 2px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic05 {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 200px;
+  background: url("../images/lifepic04-1.png") no-repeat center;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic05:hover {
+  width: 60%;
+  background: url("../images/lifepic04-2.png") no-repeat center;
+  z-index: 5;
+}
+
+.life-bottom .life-content span.photo-pic05:hover::before {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.life-bottom .life-content span.photo-pic05::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  display: block;
+  width: 2px;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic05::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content span.photo-pic05:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  display: block;
+  width: 2px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+}
+
+.life-bottom .life-content span.photo-pic05:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
 }
 
 /* musicslide */
@@ -1921,7 +2125,7 @@ a.showBt03 {
   z-index: 1;
 }
 
-.life-sw .swiper-slide span.music-pic01 {
+.life-bottom .life-content span.music-pic01 {
   top: 0px;
   left: 0px;
   width: 50%;
@@ -1931,43 +2135,47 @@ a.showBt03 {
   transition: all 0.2s;
 }
 
-.life-sw .swiper-slide span.music-pic02 {
+.life-bottom .life-content span.music-pic02 {
   top: 200px;
   left: 0px;
   width: 50%;
   height: 200px;
   background: yellow;
   z-index: 2;
+  transition: all 0.2s;
 }
 
-.life-sw .swiper-slide span.music-pic03 {
+.life-bottom .life-content span.music-pic03 {
   bottom: 0;
   left: 0;
   width: 50%;
   height: 200px;
   background: green;
   z-index: 2;
+  transition: all 0.2s;
 }
 
-.life-sw .swiper-slide span.music-pic04 {
+.life-bottom .life-content span.music-pic04 {
   top: 200px;
   right: 0;
   width: 50%;
   height: 200px;
   background: blue;
   z-index: 2;
+  transition: all 0.2s;
 }
 
-.life-sw .swiper-slide span.music-pic05 {
+.life-bottom .life-content span.music-pic05 {
   bottom: 0;
   right: 0;
   width: 50%;
   height: 200px;
   background: purple;
   z-index: 2;
+  transition: all 0.2s;
 }
 
-.music-box>span>p {
+.music-box > span > p {
   position: absolute;
   top: 0;
   left: 0;
@@ -1979,28 +2187,32 @@ a.showBt03 {
   overflow: hidden;
 }
 
-.life-sw .swiper-slide span.music-pic01:hover {
+.life-bottom .life-content span.music-pic01:hover {
   width: 60%;
 }
 
-.life-sw .swiper-slide span.music-pic02:hover,
-.life-sw .swiper-slide span.music-pic03:hover,
-.life-sw .swiper-slide span.music-pic04:hover,
-.life-sw .swiper-slide span.music-pic05:hover {}
+.life-bottom .life-content span.music-pic02:hover,
+.life-bottom .life-content span.music-pic03:hover,
+.life-bottom .life-content span.music-pic04:hover,
+.life-bottom .life-content span.music-pic05:hover {
+  width: 60%;
+  height: 240px;
+  z-index: 6;
+}
 
-.life-sw .swiper-slide span.music-pic01:hover::before {
+.life-bottom .life-content span.music-pic01:hover::before {
   content: "";
   position: absolute;
   display: block;
 }
 
-.life-sw .swiper-slide span.music-pic02:hover::before {
+.life-bottom .life-content span.music-pic02:hover::before {
   content: "";
   position: absolute;
   display: block;
 }
 
-.life-sw .swiper-slide span.music-pic03:hover::before {
+.life-bottom .life-content span.music-pic03:hover::before {
   content: "";
   position: absolute;
   display: block;
@@ -2018,86 +2230,54 @@ a.showBt03 {
   z-index: 1;
 }
 
-.life-sw .swiper-slide span.exp-pic01 {
-  top: -120px;
-  left: -120px;
-  width: 240px;
-  height: 240px;
-  transform: rotate(-10deg);
+.life-bottom .life-content span.exp-pic01 {
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 200px;
+  background: red;
   z-index: 2;
-  border: 20px solid white;
-  border-bottom: 100px solid white;
-  background: url("../images/mypic.jpg") no-repeat center;
-  background-size: 100% 100%;
-  box-shadow: 4px 4px 6px 2px rgb(58 64 66);
+  transition: all 0.2s;
 }
 
-.life-sw .swiper-slide span.exp-pic02 {
-  top: -10px;
-  left: 100px;
-  width: 320px;
-  height: 340px;
-  transform: rotate(2deg);
-  border: 20px solid white;
-  border-bottom: 100px solid white;
-  background: url("../images/mypic.jpg") no-repeat center;
-  background-size: 100% 100%;
+.life-bottom .life-content span.exp-pic02 {
+  top: 200px;
+  left: 0px;
+  width: 50%;
+  height: 200px;
+  background: yellow;
   z-index: 2;
-  box-shadow: 4px 4px 6px 2px rgb(58 64 66);
+  transition: all 0.2s;
 }
 
-.life-sw .swiper-slide span.exp-pic03 {
-  top: 180px;
-  left: -30px;
-  width: 300px;
-  height: 300px;
-  transform: rotate(-2deg);
+.life-bottom .life-content span.exp-pic03 {
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 200px;
+  background: green;
   z-index: 2;
-  border: 20px solid white;
-  border-bottom: 100px solid white;
-  background: url("../images/mypic.jpg") no-repeat center;
-  background-size: 100% 100%;
-  box-shadow: 4px 4px 6px 2px rgb(58 64 66);
+  transition: all 0.2s;
 }
 
-.life-sw .swiper-slide span.exp-pic04 {
-  top: 410px;
-  left: 25px;
-  width: 260px;
-  height: 240px;
-  transform: rotate(2deg);
+.life-bottom .life-content span.exp-pic04 {
+  top: 200px;
+  right: 0;
+  width: 50%;
+  height: 200px;
+  background: blue;
   z-index: 2;
-  border: 20px solid white;
-  border-bottom: 60px solid white;
-  background: url("../images/mypic.jpg") no-repeat center;
-  background-size: 100% 100%;
-  box-shadow: 4px 4px 6px 2px rgb(58 64 66);
+  transition: all 0.2s;
 }
 
-.life button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 0;
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: rgb(80, 88, 101);
-  border-radius: 10px;
-  cursor: pointer;
-  z-index: 9;
-  color: rgb(218, 219, 221);
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 700;
-}
-
-.life-sw-prev {
-  left: -100px;
-}
-
-.life-sw-next {
-  right: -100px;
+.life-bottom .life-content span.exp-pic05 {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 200px;
+  background: purple;
+  z-index: 2;
+  transition: all 0.2s;
 }
 
 .contact .inner h2::before {
@@ -2115,7 +2295,7 @@ a.showBt03 {
 .footer {
   position: relative;
   display: block;
-  background-color: rgb(81, 89, 101);
+  background-color: #aae0ff;
   padding: 50px 0;
 }
 
@@ -2143,7 +2323,7 @@ a.showBt03 {
   transform: translateX(-50%);
   width: 60%;
   height: 14px;
-  background-color: rgba(152, 164, 180, 0.6);
+  background-color: rgba(12, 77, 162, 0.4);
   z-index: -1;
 }
 
@@ -2156,6 +2336,7 @@ a.showBt03 {
 .social-box a {
   position: relative;
   display: inline-block;
+  margin: 0 20px;
 }
 
 .mail {
@@ -2165,59 +2346,68 @@ a.showBt03 {
   background-size: contain;
 }
 
-.mail.msov {
-  background: url('../images/git-on.png');
+.mail:hover {
+  background: url("../images/git-on.png");
+  background-size: contain;
+}
+.kt {
+  width: 50px;
+  height: 50px;
+  background: url("../images/mail-off.png") no-repeat center;
+  background-size: contain;
+}
 
-  .kt {
-    width: 50px;
-    height: 50px;
-    background: url("../images/mail-off.png") no-repeat center;
-    background-size: contain;
-  }
+.kt:hover {
+  background: url("../images/mail-on.png");
+  background-size: contain;
+}
+.git {
+  width: 50px;
+  height: 50px;
+  background: url("../images/talk-off.png") no-repeat center;
+  background-size: contain;
+}
 
-  .kt.msov {
-    background: url('../images/mail-on.png');
+.git:hover {
+  background: url("../images/talk-on.png");
+  background-size: contain;
+}
 
-    .git {
-      width: 50px;
-      height: 50px;
-      background: url("../images/talk-off.png") no-repeat center;
-      background-size: contain;
-    }
+.footer .finish-comment {
+  position: relative;
+  display: block;
+  padding-top: 20px;
+}
 
-    .git.msov {
-      background: url('../images/talk-on.png');
+.footer p {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
 
+.footer span {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+}
 
-      .footer p {
-        position: relative;
-        display: block;
-        text-align: center;
-        font-size: 20px;
-        line-height: 24px;
-        color: #fff;
-      }
-
-      .footer span {
-        position: relative;
-        display: block;
-        text-align: center;
-        font-size: 30px;
-        line-height: 36px;
-        color: #fff;
-      }
-
-      /* gotop 기능*/
-      .gotop {
-        position: fixed;
-        display: block;
-        bottom: 30px;
-        right: 30px;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #333;
-        border-radius: 3px;
-        background: url("../images/gotop.png") no-repeat center;
-        background-size: contain;
-        cursor: pointer;
-      }
+/* gotop 기능*/
+.gotop {
+  position: fixed;
+  display: block;
+  bottom: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  background: url("../images/gotop.png") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}

@@ -121,7 +121,7 @@ window.onload = function () {
 
   new Swiper(".life-sw", {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 100,
     centeredSlides: true,
     navigation: {
@@ -147,7 +147,7 @@ window.onload = function () {
   const plSW = new Swiper(".portlist-sw", {
     effect: "coverflow",
     speed: 1500,
-    loop : true,
+    loop: true,
     centeredSlides: true,
     slidesPerView: "3",
     coverflowEffect: {
@@ -410,7 +410,7 @@ window.onload = function () {
     });
   });
 
-  let lifeTitleBt = $(".life-sw .swiper-slide .title-button");
+  let lifeTitleBt = $(".life-bottom .life-content >h4 .title-button");
   $.each(lifeTitleBt, function (index) {
     $(this).click(function () {
       if (lifeTitleBt.hasClass("wide")) {
