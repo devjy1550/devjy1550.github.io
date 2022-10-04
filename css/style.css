@@ -298,12 +298,12 @@ h1.logo {
 .visual-right::before {
   content: "";
   position: absolute;
-  top: 180px;
-  right: 60px;
+  top: 0;
+right: 0;
   display: block;
-  width: 300px;
-  height: 600px;
-  background: url("../images/chr.png") no-repeat center;
+  width: 640px;
+  height:640px;
+  background: url("../images/profile.png") no-repeat center;
   background-size: contain;
 }
 
@@ -360,7 +360,7 @@ h1.logo {
   bottom: 50px;
   left: 0;
   display: block;
-  width: 65%;
+  width: 55%;
   height: 5px;
   background-color: white;
 }
@@ -492,12 +492,22 @@ h1.logo {
 .profile .profile-left>span.pic {
   position: relative;
   display: block;
-  width: 100%;
-  height: 520px;
+  width: 360px;
+  height: 480px;
   margin: 40px 0;
-  background: url('../images/.jpg') no-repeat center;
-  background-size: cover;
+  background: url('../images/body1.png') no-repeat center;
+  background-size: contain;
 }
+
+.profile .profile-left>span.pic:hover {
+  position: relative;
+  display: block;
+  width: 360px;
+  height: 480px;
+  background: url('../images/moving-new.gif') no-repeat center;
+  background-size: contain;
+}
+
 
 
 .profile .profile-right {
