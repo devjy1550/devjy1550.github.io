@@ -179,7 +179,7 @@ window.onload = function () {
 
   var bar = new ProgressBar.Circle(html, {
     color: "#F67925",
-    trailColor: "#E9F8F0",
+    trailColor: "#FFE6D6",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
@@ -197,7 +197,7 @@ window.onload = function () {
 
   var bar2 = new ProgressBar.Circle(css, {
     color: "#008ED8",
-    trailColor: "#E9F8F0",
+    trailColor: "#5DC0FF",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
@@ -215,7 +215,7 @@ window.onload = function () {
 
   var bar3 = new ProgressBar.Circle(scss, {
     color: "#CD679A",
-    trailColor: "#E9F8F0",
+    trailColor: "#FFBADD",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
@@ -233,7 +233,7 @@ window.onload = function () {
 
   var bar4 = new ProgressBar.Circle(js, {
     color: "#FFDC62",
-    trailColor: "#E9F8F0",
+    trailColor: "#FFE596",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
@@ -251,7 +251,7 @@ window.onload = function () {
 
   var bar5 = new ProgressBar.Circle(jq, {
     color: "#1169AE",
-    trailColor: "#E9F8F0",
+    trailColor: "#95D0FF",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
@@ -269,13 +269,13 @@ window.onload = function () {
 
   var bar6 = new ProgressBar.Circle(vue, {
     color: "#4DBA87",
-    trailColor: "#E9F8F0",
+    trailColor: "#00FB8B",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
-      color: "  #CAFDEA",
+      color: "  #00FB8B",
       a: 0,
     },
     to: {
@@ -287,7 +287,7 @@ window.onload = function () {
 
   var bar7 = new ProgressBar.Circle(git, {
     color: "#333333",
-    trailColor: "#E9F8F0",
+    trailColor: "#C5C1C1",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
@@ -305,7 +305,7 @@ window.onload = function () {
 
   var bar8 = new ProgressBar.Circle(bootstrap, {
     color: "#7312F7",
-    trailColor: "#E9F8F0",
+    trailColor: "#BF90FF",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
@@ -323,13 +323,13 @@ window.onload = function () {
 
   var bar9 = new ProgressBar.Circle(gf, {
     color: "#4AFFE9",
-    trailColor: "#E9F8F0",
+    trailColor: "#A8FFE2",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
-      color: "#EBF3F7",
+      color: "#A8FFE2",
       a: 0,
     },
     to: {
@@ -341,13 +341,13 @@ window.onload = function () {
 
   var bar10 = new ProgressBar.Circle(fm, {
     color: "#3747D6",
-    trailColor: "#E9F8F0",
+    trailColor: "#B1B9FF",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
-      color: "#EBF3F7",
+      color: "#B1B9FF",
       a: 0,
     },
     to: {
