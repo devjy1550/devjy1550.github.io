@@ -157,6 +157,10 @@ window.onload = function () {
       modifier: 1,
       slideShadows: true,
     },
+    navigation: {
+      prevEl: ".ptsum-left",
+      nextEl: ".ptsum-right",
+    },
   });
 
   const stttSW = new Swiper(".st-desc-sw", {
@@ -172,10 +176,9 @@ window.onload = function () {
   });
 
   plSW.controller.control = stttSW;
-  stttSW.controller.control = plSW;
 
   var bar = new ProgressBar.Circle(html, {
-    color: "#ff3f34",
+    color: "#F67925",
     trailColor: "#E9F8F0",
     trailWidth: 1,
     duration: 2400,
@@ -186,81 +189,86 @@ window.onload = function () {
       a: 0,
     },
     to: {
-      color: "#ff3f34",
+      color: "#F67925",
       a: 1,
-    },
-    // Set default step function for all animate calls
-    step: function (state, circle) {
-      circle.path.setAttribute("stroke", state.color);
-
-      var value = Math.round(circle.value() * 98);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
     },
   });
   bar.animate(0.98);
 
-  var bar2 = new ProgressBar.Circle(scss, {
-    color: "#ffd32a",
+  var bar2 = new ProgressBar.Circle(css, {
+    color: "#008ED8",
     trailColor: "#E9F8F0",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
-      color: "#FFF9D4",
+      color: "#5DC0FF",
       a: 0,
     },
     to: {
-      color: "#ffd32a",
+      color: "#008ED8",
       a: 1,
-    },
-    // Set default step function for all animate calls
-    step: function (state, circle) {
-      circle.path.setAttribute("stroke", state.color);
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
     },
   });
   bar2.animate(0.91);
 
-  var bar3 = new ProgressBar.Circle(js, {
-    color: "#04c56b",
+  var bar3 = new ProgressBar.Circle(scss, {
+    color: "#CD679A",
     trailColor: "#E9F8F0",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
-      color: "#CAFCD1",
+      color: "#FFBADD",
       a: 0,
     },
     to: {
-      color: "#04c56b",
+      color: "#CD679A",
       a: 1,
     },
-    // Set default step function for all animate calls
-    step: function (state, circle) {
-      circle.path.setAttribute("stroke", state.color);
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
+  });
+  bar3.animate(0.65);
+
+  var bar4 = new ProgressBar.Circle(js, {
+    color: "#FFDC62",
+    trailColor: "#E9F8F0",
+    trailWidth: 1,
+    duration: 2400,
+    easing: "bounce",
+    strokeWidth: 12,
+    from: {
+      color: "#FFE596",
+      a: 0,
+    },
+    to: {
+      color: "#FFDC62",
+      a: 1,
     },
   });
-  bar3.animate(0.9);
+  bar4.animate(0.82);
 
-  var bar4 = new ProgressBar.Circle(vue, {
-    color: "#00d8d6",
+  var bar5 = new ProgressBar.Circle(jq, {
+    color: "#1169AE",
+    trailColor: "#E9F8F0",
+    trailWidth: 1,
+    duration: 2400,
+    easing: "bounce",
+    strokeWidth: 12,
+    from: {
+      color: "#95D0FF",
+      a: 0,
+    },
+    to: {
+      color: "#1169AE",
+      a: 1,
+    },
+  });
+  bar5.animate(0.9);
+
+  var bar6 = new ProgressBar.Circle(vue, {
+    color: "#4DBA87",
     trailColor: "#E9F8F0",
     trailWidth: 1,
     duration: 2400,
@@ -271,80 +279,50 @@ window.onload = function () {
       a: 0,
     },
     to: {
-      color: "#00d8d6",
+      color: "#4DBA87",
       a: 1,
     },
-    // Set default step function for all animate calls
-    step: function (state, circle) {
-      circle.path.setAttribute("stroke", state.color);
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
-    },
   });
-  bar4.animate(0.9);
+  bar6.animate(0.52);
 
-  var bar5 = new ProgressBar.Circle(git, {
-    color: "#3d40c6",
+  var bar7 = new ProgressBar.Circle(git, {
+    color: "#333333",
     trailColor: "#E9F8F0",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
-      color: "#D9DAFC",
+      color: "#C5C1C1",
       a: 0,
     },
     to: {
-      color: "#3d40c6",
+      color: "#333333",
       a: 1,
     },
-    // Set default step function for all animate calls
-    step: function (state, circle) {
-      circle.path.setAttribute("stroke", state.color);
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
-    },
   });
-  bar5.animate(0.92);
+  bar7.animate(0.76);
 
-  var bar6 = new ProgressBar.Circle(bootstrap, {
-    color: "#694fb6",
+  var bar8 = new ProgressBar.Circle(bootstrap, {
+    color: "#7312F7",
     trailColor: "#E9F8F0",
     trailWidth: 1,
     duration: 2400,
     easing: "bounce",
     strokeWidth: 12,
     from: {
-      color: "#E9DEFB",
+      color: "#BF90FF",
       a: 0,
     },
     to: {
-      color: "#694fb6",
+      color: "#7312F7",
       a: 1,
     },
-    // Set default step function for all animate calls
-    step: function (state, circle) {
-      circle.path.setAttribute("stroke", state.color);
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
-    },
   });
-  bar6.animate(0.94);
+  bar8.animate(0.85);
 
-  var bar7 = new ProgressBar.Circle(gf, {
-    color: "#48545f",
+  var bar9 = new ProgressBar.Circle(gf, {
+    color: "#4AFFE9",
     trailColor: "#E9F8F0",
     trailWidth: 1,
     duration: 2400,
@@ -355,21 +333,29 @@ window.onload = function () {
       a: 0,
     },
     to: {
-      color: "#48545f",
+      color: "#4AFFE9",
       a: 1,
     },
-    // Set default step function for all animate calls
-    step: function (state, circle) {
-      circle.path.setAttribute("stroke", state.color);
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
+  });
+  bar9.animate(0.78);
+
+  var bar10 = new ProgressBar.Circle(fm, {
+    color: "#3747D6",
+    trailColor: "#E9F8F0",
+    trailWidth: 1,
+    duration: 2400,
+    easing: "bounce",
+    strokeWidth: 12,
+    from: {
+      color: "#EBF3F7",
+      a: 0,
+    },
+    to: {
+      color: "#3747D6",
+      a: 1,
     },
   });
-  bar7.animate(0.93);
+  bar10.animate(0.5);
 
   let skillList = $(".skill-list >li >a");
   let skillDesc = $(".skilldesc-box >.skilldesc");
@@ -410,7 +396,7 @@ window.onload = function () {
     });
   });
 
-  let lifeTitleBt = $(".life-bottom .life-content >h4 .title-button");
+  let lifeTitleBt = $(".life-bottom .life-content  .title-button");
   $.each(lifeTitleBt, function (index) {
     $(this).click(function () {
       if (lifeTitleBt.hasClass("wide")) {

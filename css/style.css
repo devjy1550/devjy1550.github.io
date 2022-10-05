@@ -637,7 +637,7 @@ h1.logo {
   position: relative;
   display: block;
   margin-top: 20px;
-  padding: 10px 0;
+  padding: 10px 20px;
   border-top: 1px solid rgb(187, 187, 187);
   border-bottom: 1px solid rgb(187, 187, 187);
 }
@@ -647,7 +647,7 @@ h1.logo {
   display: block;
   font-size: 18px;
   line-height: 36px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 .posibility > .psb-desc p strong {
@@ -706,6 +706,41 @@ h1.logo {
   background-size: contain;
 }
 
+.psb-graph span {
+  position: absolute;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.psb-graph span.part01 {
+  top: 65px;
+  right: 0;
+}
+.psb-graph span.part02 {
+  bottom: 80px;
+  right: 0;
+}
+.psb-graph span.part03 {
+  top: 80px;
+  left: 0;
+}
+.psb-graph span.part04 {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.psb-graph span.part05 {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.psb-graph span.part06 {
+  bottom: 80px;
+  left: 0;
+}
+
 .posibility h4::before {
   left: 50%;
   transform: translateX(-50%);
@@ -762,7 +797,7 @@ h1.logo {
   font-size: 0;
   border-top: 1px solid rgb(187, 187, 187);
   border-bottom: 1px solid rgb(187, 187, 187);
-  padding: 45px 0 60px 0;
+  padding: 45px 0 50px 0;
 }
 
 .my-roadmap .map-review ul.mr-content {
@@ -779,24 +814,24 @@ h1.logo {
 .mr-content li h4 {
   position: relative;
   display: block;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 28px;
   padding-top: 4px;
 }
 
 .mr-content li p {
   position: relative;
   display: block;
-  font-size: 24px;
-  line-height: 44px;
+  font-size: 22px;
+  line-height: 36px;
   letter-spacing: 4px;
 }
 
 .mr-content li p i {
   position: relative;
   display: block;
-  font-size: 28px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 40px;
   letter-spacing: 4px;
   text-decoration: underline;
   text-underline-position: under;
@@ -806,8 +841,8 @@ h1.logo {
 .mr-content li span {
   position: relative;
   display: block;
-  font-size: 28px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 42px;
   letter-spacing: 2px;
   margin-top: 20px;
 }
@@ -815,7 +850,7 @@ h1.logo {
 .my-roadmap .mr-control {
   position: absolute;
   bottom: 30px;
-  right: 90px;
+  right: 100px;
   display: block;
   width: 10%;
 }
@@ -906,17 +941,67 @@ h1.logo {
 .skill-list > li > a {
   position: absolute;
   display: block;
+}
+
+.skill01 > a {
   height: 100%;
   width: 100%;
-  padding-top: 60px;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  border-radius: 50%;
-  transition: all 1s;
-  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.45);
-  z-index: 99;
-  text-transform: uppercase;
+  background: url("../images/sklist01.png") no-repeat center 50px;
+  background-size: 45px;
+}
+.skill02 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist02.png") no-repeat center 50px;
+  background-size: 45px;
+}
+.skill03 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist03.png") no-repeat center 50px;
+  background-size: 60px;
+}
+.skill04 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist04.png") no-repeat center 50px;
+  background-size: 45px;
+}
+.skill05 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist05.png") no-repeat center 50px;
+  background-size: 50px;
+}
+.skill06 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist06.png") no-repeat center 50px;
+  background-size: 50px;
+}
+.skill07 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist07.png") no-repeat center 50px;
+  background-size: 50px;
+}
+.skill08 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist08.png") no-repeat center 50px;
+  background-size: 55px;
+}
+.skill09 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist09.png") no-repeat center 50px;
+  background-size: 50px;
+}
+.skill10 > a {
+  height: 100%;
+  width: 100%;
+  background: url("../images/sklist10.png") no-repeat center 50px;
+  background-size: 50px;
 }
 
 .skill-list > li > a::before {
@@ -945,6 +1030,18 @@ h1.logo {
   border-radius: 50%;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
   z-index: 9;
+}
+
+.skill-list > li > a > span {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .skilldesc {
@@ -1059,7 +1156,7 @@ h1.logo {
   height: 160%;
   background-color: rgba(120, 120, 120, 0.5);
   z-index: 2;
-  transition: all 0.8s;
+  transition: all 0.2s;
 }
 
 .portlist-sw .swiper-slide > a:hover::before {
@@ -1421,35 +1518,48 @@ a.showBt03 {
   line-height: 20px;
 }
 
-.portsummary .st-desc-sw .swiper-slide .overview > p {
+.portsummary .st-desc-sw .swiper-slide .overview .period,
+.portsummary .st-desc-sw .swiper-slide .overview .publishing {
   position: relative;
   display: block;
-  font-size: 20px;
-  line-height: 24px;
-  padding-top: 18px;
-  text-align: left;
+  padding-top: 7px;
 }
 
-.portsummary .st-desc-sw .swiper-slide .overview > span {
+.portsummary .st-desc-sw .swiper-slide .overview .period p,
+.portsummary .st-desc-sw .swiper-slide .overview .publishing p {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.portsummary .st-desc-sw .swiper-slide .overview .period span,
+.portsummary .st-desc-sw .swiper-slide .overview .publishing span {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+.portsummary .st-desc-sw .swiper-slide .overview .publishing {
   position: relative;
   display: block;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 4px;
-  text-align: left;
+  padding-top: 7px;
 }
 
 .portsummary .st-desc-sw .swiper-slide .overview .used,
 .portsummary .st-desc-sw .swiper-slide .overview .used02 {
   position: relative;
   display: block;
-  padding: 20px 0;
+  padding-top: 7px;
 }
+
 .portsummary .st-desc-sw .swiper-slide .overview .used > p,
 .portsummary .st-desc-sw .swiper-slide .overview .used02 > p {
   position: relative;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   text-align: left;
 }
@@ -1484,10 +1594,12 @@ li.usedS01 {
   background: url("../images/skill01.png") no-repeat center;
   background-size: contain;
 }
+
 li.usedS02 {
   background: url("../images/skill02.png") no-repeat center;
   background-size: contain;
 }
+
 li.usedS03 {
   background: url("../images/skill03.png") no-repeat center;
   background-size: contain;
@@ -1501,16 +1613,14 @@ li.usedS04 {
 .portsummary .st-desc-sw .swiper-slide .overview .memo {
   position: relative;
   display: block;
-  color: #a9a9a9;
-  padding-left: 10px;
+  padding-top: 7px;
 }
 
 .portsummary .st-desc-sw .swiper-slide .overview .memo > p {
   position: relative;
-  display: block;
+  display: inline-block;
   font-size: 16px;
-  line-height: 20px;
-  text-align: left;
+  line-height: 24px;
 }
 
 .portsummary .st-desc-sw .swiper-slide .overview .memo > span {
@@ -1519,6 +1629,36 @@ li.usedS04 {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 2px;
+  padding-left: 12px;
+}
+
+.portsummary .ptsum-left {
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  transform: translateX(-50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/left-rounded-arrow.png") no-repeat center;
+  background-size: contain;
+  z-index: 9;
+  cursor: pointer;
+  border: 0;
+}
+.portsummary .ptsum-right {
+  position: absolute;
+  bottom: 20px;
+  left: 60%;
+  transform: translateX(-50%) rotate(180deg);
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/left-rounded-arrow.png") no-repeat center;
+  background-size: contain;
+  z-index: 9;
+  cursor: pointer;
+  border: 0;
 }
 
 .portcontrol {
@@ -1598,51 +1738,82 @@ li.usedS04 {
   font-size: 0;
   height: 100%;
   width: 100%;
-  text-align: center;
 }
 
 .life-bottom .life-content {
   position: relative;
   display: inline-block;
   height: 600px;
-  width: 395px;
+  width: 400px;
   background-color: #ffffff;
   z-index: 9;
-  box-shadow: 5px 5px 10px 2px rgb(58 64 66);
+  box-shadow: 5px 5px 10px 2px rgb(201, 218, 224);
 }
 
-.life-bottom .life-content h4 {
+.life-bottom .life-content .lfct-top {
   position: relative;
   display: block;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 0px;
+  width: 100%;
+  height: 200px;
 }
 
-.life-bottom .life-content h4.music-title {
+.lfct-top.music-top .lfct-pic {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+
+  display: inline-block;
+  width: 50%;
+  height: 200px;
+  background: url("../images/lifepic01-1.png") no-repeat center;
+  transition: all 1s;
+}
+
+.lfct-top.photo-top .lfct-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 50%;
+  height: 200px;
+  background: url("../images/lifepic01-1.png") no-repeat center;
+  transition: all 1s;
+}
+
+.lfct-top.music-top .lfct-pic:hover {
+  background: url("../images/lifepic01-2.png") no-repeat center;
+}
+
+.lfct-top.photo-top .lfct-pic:hover {
+  background: url("../images/lifepic01-2.png") no-repeat center;
+}
+
+.life-bottom .life-content .lfct-top .lfct-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
   width: 50%;
   height: 200px;
   text-align: center;
-  padding-top: 15px;
-  display: block;
-  z-index: 3;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  padding-top: 20px;
+  background-color: #ace1ff;
 }
 
-.life-bottom .life-content h4.music-title .title-button {
+.life-bottom .life-content .title-button {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
   display: block;
-  background: #bdbdbd url("../images/face.png") no-repeat center;
-  background-size: 30px 30px;
   border: 2px solid #37373b;
   border-radius: 50px;
-  box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
+
   padding: 4px;
 
   font-size: 16px;
@@ -1655,24 +1826,21 @@ li.usedS04 {
   z-index: 2;
 }
 
-.life-bottom .life-content h4.music-title .title-button:hover {
+.life-bottom .life-content .title-button:hover {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  background: #838383 url("../images/headp.png") no-repeat center;
-  background-size: 30px 30px;
   border: 2px solid #37373b;
   border-radius: 50px;
-  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
 
   cursor: pointer;
 
   z-index: 2;
 }
 
-.life-bottom .life-content h4.music-title .title-button.wide {
+.life-bottom .life-content .title-button.wide {
   display: block;
   width: 164px;
   font-size: 14px;
@@ -1686,387 +1854,376 @@ li.usedS04 {
 
   border-radius: 25px;
   border: 2px solid #37373b;
-  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
+
   transition: all 0.3s;
   z-index: 3;
 }
 
-.life-bottom .life-content h4.photo-title {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  text-align: center;
-  padding-top: 15px;
-  display: block;
-  z-index: 3;
+.music-top .title-button {
+  background: #bdbdbd url("../images/face.png") no-repeat center;
+  background-size: 30px 30px;
 }
 
-.life-bottom .life-content h4.photo-title .title-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  display: block;
+.music-top .title-button:hover {
+  background: #838383 url("../images/headp.png") no-repeat center;
+  background-size: 30px 30px;
+}
+
+.photo-top .title-button {
   background: #bdbdbd url("../images/mark.png") no-repeat center;
   background-size: 20px 20px;
-  border: 2px solid #37373b;
-  border-radius: 50px;
-  box-shadow: 2px 2px 4px 1px rgb(84, 88, 89);
-  padding: 4px;
-
-  font-size: 16px;
-  line-height: 8px;
-  color: transparent;
-  white-space: nowrap;
-  letter-spacing: -9px;
-
-  transition: all 0.1s;
-  z-index: 2;
 }
 
-.life-bottom .life-content h4.photo-title .title-button:hover {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
+.photo-top .title-button:hover {
   background: #838383 url("../images/pola-C.png") no-repeat center;
   background-size: 30px 30px;
-  border: 2px solid #37373b;
-  border-radius: 50px;
-  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
-
-  cursor: pointer;
-
-  z-index: 2;
 }
 
-.life-bottom .life-content h4.photo-title .title-button.wide {
+.life-content .lfct-bottom {
+  position: relative;
   display: block;
-  width: 164px;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgb(237, 237, 237);
-  letter-spacing: 0.5px;
-  padding: 10px 16px;
-
-  background: rgba(62, 62, 62, 0.8) url("../images/pola.png") no-repeat center;
-  background-size: contain;
-
-  border-radius: 25px;
-  border: 2px solid #37373b;
-  box-shadow: 2px 2px 4px 1px rgb(200, 202, 203);
-  transition: all 0.3s;
-  z-index: 3;
+  width: 100%;
+  height: 400px;
 }
 
-.life-bottom .life-content span {
+.life-content .lfct-bottom > span {
   position: absolute;
   display: block;
 }
 
-.life-bottom .life-content span.photo-pic01 {
+.lfct-bottom .pic01 {
   top: 0px;
   left: 0px;
   width: 50%;
   height: 200px;
-  background: url("../images/lifepic01-1.png") no-repeat center;
-  z-index: 2;
   transition: all 0.5s;
 }
-
-.life-bottom .life-content span.photo-pic01:hover {
-  width: 60%;
-  background: url("../images/lifepic01-2.png") no-repeat center;
-}
-
-.life-bottom .life-content span.photo-pic01:hover::before {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-.life-bottom .life-content span.photo-pic01::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  display: block;
-  width: 0px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic01::after {
-  content: "";
-  position: absolute;
-  left: 10px;
+.lfct-bottom .pic02 {
   top: 0;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic01:hover::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  display: block;
-  width: 120px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-bottom .life-content span.photo-pic01:hover::after {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 0;
-  display: block;
-  width: 2px;
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic02 {
-  top: 200px;
-  left: 0px;
+  right: 0px;
   width: 50%;
   height: 200px;
-  background: url("../images/lifepic02-1.png") no-repeat center;
-  z-index: 2;
+  transition: all 0.5s;
+}
+.lfct-bottom .pic03 {
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 200px;
+  transition: all 0.5s;
+}
+.lfct-bottom .pic04 {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 200px;
   transition: all 0.5s;
 }
 
-.life-bottom .life-content span.photo-pic02:hover {
+.lfct-bottom.music-box .pic01 {
+  background: #e99ec0 url("../images/album01.jpg") no-repeat center;
+  background-size: 100% 100%;
+}
+.lfct-bottom.music-box .pic01 img {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.lfct-bottom.music-box .pic01:hover {
+  background: #e99ec0;
+}
+.lfct-bottom.music-box .pic01:hover img {
+  opacity: 1;
+  border-radius: 50%;
+  animation: rotate_image 8s linear infinite;
+  transform-origin: 50% 50%;
+  z-index: 5;
+}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lfct-bottom.music-box .pic02 {
+  background: #000 url("../images/album02.png") no-repeat center;
+  background-size: 100%;
+}
+
+.lfct-bottom.music-box .pic02 img {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.lfct-bottom.music-box .pic02:hover {
+  background: #fff url("../images/singerlogo.png") no-repeat center;
+  background-size: contain;
+  z-index: 5;
+}
+
+.lfct-bottom.music-box .pic02:hover img:nth-child(1) {
+  z-index: 2;
+  opacity: 1;
+  transform: translate(-200px, -200px);
+}
+.lfct-bottom.music-box .pic02:hover img:nth-child(2) {
+  z-index: 2;
+  opacity: 1;
+  transform: translate(-200px, 0);
+}
+.lfct-bottom.music-box .pic02:hover img:nth-child(3) {
+  z-index: 2;
+  opacity: 1;
+  transform: translate(-200px, 200px);
+}
+
+.lfct-bottom.music-box .pic03 {
+  background: #8ddbff url("../images/album03.jpg") no-repeat left;
+  background-size: 100% 100%;
+}
+.lfct-bottom.music-box .pic03 img {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  display: block;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: -1;
+}
+
+.lfct-bottom.music-box .pic03:hover {
+  background: #8ddbff;
+}
+.lfct-bottom.music-box .pic03:hover img {
+  opacity: 1;
+  border-radius: 50%;
+  animation: rotate_image 8s linear infinite;
+  transform-origin: 50% 50%;
+  z-index: 5;
+}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lfct-bottom.music-box .pic04 {
+  background: #592a3f url("../images/album04.jpg") no-repeat left;
+  background-size: 100% 100%;
+}
+.lfct-bottom.music-box .pic04 img {
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  display: block;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: -1;
+}
+
+.lfct-bottom.music-box .pic04:hover {
+  background: #592a3f;
+}
+.lfct-bottom.music-box .pic04:hover img {
+  opacity: 1;
+  border-radius: 50%;
+  animation: rotate_image 8s linear infinite;
+  transform-origin: 50% 50%;
+  z-index: 5;
+}
+
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lfct-bottom.photo-box .pic01 {
+  background: url("../images/lifepic02-1.png") no-repeat center;
+}
+.lfct-bottom.photo-box .pic02 {
+  background: url("../images/lifepic03-1.png") no-repeat center;
+}
+.lfct-bottom.photo-box .pic03 {
+  background: url("../images/lifepic05-1.png") no-repeat center;
+}
+.lfct-bottom.photo-box .pic04 {
+  background: url("../images/lifepic04-1.png") no-repeat center;
+}
+
+.lfct-bottom.photo-box .pic01:hover {
   width: 60%;
   background: url("../images/lifepic02-2.png") no-repeat center;
-  z-index: 5;
+  z-index: 10;
 }
-
-.life-bottom .life-content span.photo-pic02:hover::before {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-.life-bottom .life-content span.photo-pic02::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic02::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic02:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 80px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-bottom .life-content span.photo-pic02:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 80px;
-
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic03 {
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 200px;
-  background: url("../images/lifepic03-1.png") no-repeat center;
-  z-index: 2;
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic03:hover {
+.lfct-bottom.photo-box .pic02:hover {
   width: 60%;
   background: url("../images/lifepic03-2.png") no-repeat center;
-  z-index: 5;
+  z-index: 10;
 }
-
-.life-bottom .life-content span.photo-pic03:hover::before {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-.life-bottom .life-content span.photo-pic03::before {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  display: block;
-  width: 0px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic03::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic03:hover::before {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  display: block;
-  width: 120px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-bottom .life-content span.photo-pic03:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic04 {
-  top: 200px;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  background: url("../images/lifepic05-1.png") no-repeat center;
-  z-index: 2;
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic04:hover {
+.lfct-bottom.photo-box .pic03:hover {
   width: 60%;
   background: url("../images/lifepic05-2.png") no-repeat center;
-  z-index: 5;
+  z-index: 10;
 }
-
-.life-bottom .life-content span.photo-pic04:hover::before {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-.life-bottom .life-content span.photo-pic04::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic04::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic04:hover::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 60px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-bottom .life-content span.photo-pic04:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 60px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic05 {
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  background: url("../images/lifepic04-1.png") no-repeat center;
-  z-index: 2;
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content span.photo-pic05:hover {
+.lfct-bottom.photo-box .pic04:hover {
   width: 60%;
   background: url("../images/lifepic04-2.png") no-repeat center;
-  z-index: 5;
+  z-index: 10;
 }
 
-.life-bottom .life-content span.photo-pic05:hover::before {
+.life-bottom .life-content .photo-box .pic01::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 10px;
   display: block;
+  width: 2px;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
 }
 
-.life-bottom .life-content span.photo-pic05::before {
+.life-bottom .life-content .photo-box .pic01::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content .photo-box .pic01:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: block;
+  width: 2px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+}
+
+.life-bottom .life-content .photo-box .pic01:hover::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  display: block;
+  width: 120px;
+  height: 2px;
+
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content .photo-box .pic02::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  width: 2px;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content .photo-box .pic02::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content .photo-box .pic02:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  width: 2px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+}
+
+.life-bottom .life-content .photo-box .pic02:hover::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content .photo-box .pic03::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content .photo-box .pic03::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  display: block;
+  width: 2px;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content .photo-box .pic03:hover::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.life-bottom .life-content .photo-box .pic03:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  display: block;
+  width: 2px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+.life-bottom .life-content .photo-box .pic04::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2078,7 +2235,7 @@ li.usedS04 {
   transition: all 0.5s;
 }
 
-.life-bottom .life-content span.photo-pic05::after {
+.life-bottom .life-content .photo-box .pic04::after {
   content: "";
   position: absolute;
   bottom: 10px;
@@ -2090,7 +2247,7 @@ li.usedS04 {
   transition: all 0.5s;
 }
 
-.life-bottom .life-content span.photo-pic05:hover::before {
+.life-bottom .life-content .photo-box .pic04:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2101,7 +2258,7 @@ li.usedS04 {
   background-color: rgb(255, 255, 255);
 }
 
-.life-bottom .life-content span.photo-pic05:hover::after {
+.life-bottom .life-content .photo-box .pic04:hover::after {
   content: "";
   position: absolute;
   bottom: 10px;
@@ -2111,191 +2268,13 @@ li.usedS04 {
   height: 2px;
   background-color: rgb(255, 255, 255);
   transition: all 0.5s;
-}
-
-/* musicslide */
-.music-box {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 395px;
-  height: 600px;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.life-bottom .life-content span.music-pic01 {
-  top: 0px;
-  left: 0px;
-  width: 50%;
-  height: 200px;
-  background: red;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.life-bottom .life-content span.music-pic02 {
-  top: 200px;
-  left: 0px;
-  width: 50%;
-  height: 200px;
-  background: yellow;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.life-bottom .life-content span.music-pic03 {
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 200px;
-  background: green;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.life-bottom .life-content span.music-pic04 {
-  top: 200px;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  background: blue;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.life-bottom .life-content span.music-pic05 {
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  background: purple;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.music-box > span > p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 40px;
-  height: 40px;
-  transform: rotate(45deg);
-  background-color: black;
-  overflow: hidden;
-}
-
-.life-bottom .life-content span.music-pic01:hover {
-  width: 60%;
-}
-
-.life-bottom .life-content span.music-pic02:hover,
-.life-bottom .life-content span.music-pic03:hover,
-.life-bottom .life-content span.music-pic04:hover,
-.life-bottom .life-content span.music-pic05:hover {
-  width: 60%;
-  height: 240px;
-  z-index: 6;
-}
-
-.life-bottom .life-content span.music-pic01:hover::before {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-.life-bottom .life-content span.music-pic02:hover::before {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-.life-bottom .life-content span.music-pic03:hover::before {
-  content: "";
-  position: absolute;
-  display: block;
-}
-
-/* experience */
-.exp-box {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 395px;
-  height: 600px;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.life-bottom .life-content span.exp-pic01 {
-  top: 0px;
-  left: 0px;
-  width: 50%;
-  height: 200px;
-  background: red;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.life-bottom .life-content span.exp-pic02 {
-  top: 200px;
-  left: 0px;
-  width: 50%;
-  height: 200px;
-  background: yellow;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.life-bottom .life-content span.exp-pic03 {
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 200px;
-  background: green;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.life-bottom .life-content span.exp-pic04 {
-  top: 200px;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  background: blue;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.life-bottom .life-content span.exp-pic05 {
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  background: purple;
-  z-index: 2;
-  transition: all 0.2s;
-}
-
-.contact .inner h2::before {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10%;
-  height: 8px;
-  background-color: #98a4b4;
 }
 
 /* footer */
 .footer {
   position: relative;
   display: block;
-  background-color: #aae0ff;
+  background-color: #fff;
   padding: 50px 0;
 }
 
@@ -2350,6 +2329,7 @@ li.usedS04 {
   background: url("../images/git-on.png");
   background-size: contain;
 }
+
 .kt {
   width: 50px;
   height: 50px;
@@ -2361,6 +2341,7 @@ li.usedS04 {
   background: url("../images/mail-on.png");
   background-size: contain;
 }
+
 .git {
   width: 50px;
   height: 50px;
@@ -2385,7 +2366,7 @@ li.usedS04 {
   text-align: center;
   font-size: 20px;
   line-height: 24px;
-  color: #fff;
+  color: #333;
 }
 
 .footer span {
@@ -2394,7 +2375,7 @@ li.usedS04 {
   text-align: center;
   font-size: 30px;
   line-height: 36px;
-  color: #fff;
+  color: #333;
 }
 
 /* gotop 기능*/
