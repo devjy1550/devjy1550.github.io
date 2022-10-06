@@ -36,6 +36,9 @@
   <script src="js/prefixfree.min.js"></script>
   <script src="js/respond.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <script src="js/jquery.waypoints.js"></script>
+
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
 
@@ -82,15 +85,20 @@
       <h1 class="logo"></h1>
       <div class="gnb">
         <ul class="menu">
-          <li>visual
+          <li class="menuBt">
+            <a href="#aboutme">AboutMe</a>
           </li>
-          <li>skills
+         <li class="menuBt">
+            <a href="#skills">Skills</a>
           </li>
-          <li>portfolio
+         <li class="menuBt">
+            <a href="#portfolio">Portfolio</ahref=>
           </li>
-          <li>life
+         <li class="menuBt">
+            <a href="#life">Life</ahref=>
           </li>
-          <li>contact
+         <li class="menuBt">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -120,9 +128,9 @@
     </div>
   </div>
   <!-- whoamI -->
-  <div class="aboutMe">
+  <div class="aboutme" id="aboutme">
     <div class="inner">
-      <div class="aboutMe-top clearfix">
+      <div class="aboutme-top clearfix">
         <h2>ABOUT<br> ME</h2>
         <div class="mystory">
           <p>뷰(Vue)통합 프론트엔트 개발 교육 과정에 참여하여 HTML, CSS, JavaScript의 기초를 익히고,
@@ -135,7 +143,7 @@
             YONG</span>
         </div>
       </div>
-      <div class="aboutMe-bottom clearfix">
+      <div class="aboutme-bottom clearfix">
         <div class="profile clearfix">
           <h3>introduce</h3>
           <div class="profile-left clearfix">
@@ -343,19 +351,19 @@
       <ul class="skilldesc">
         <li>필요한 자바스크립트 코딩이 가능합니다.</li>
       </ul>
-     <ul class="skilldesc">
-      <li>라이브러리(Vanilla JS & Jquery)<br>
-        활용이 가능합니다.</li>
+      <ul class="skilldesc">
+        <li>라이브러리(Vanilla JS & Jquery)<br>
+          활용이 가능합니다.</li>
       </ul>
       <ul class="skilldesc">
         <li>필요한 기능의 컴포넌트<br>
           구현이 가능합니다.</li>
-          <li>DB 연동 웹 어플리케이션(php,MariaDB)<br>
-            제작해본 경험이 있습니다.
-          </li>
+        <li>DB 연동 웹 어플리케이션(php,MariaDB)<br>
+          제작해본 경험이 있습니다.
+        </li>
       </ul>
       <ul class="skilldesc">
-        <li>버전관리를 위해 적극활용합니다.</li>
+        <li>버전 관리를 위해 적극 활용합니다.</li>
         <li> 브랜치를 통한 협업이 가능합니다.</li>
       </ul>
       <ul class="skilldesc">
@@ -366,7 +374,7 @@
       <ul class="skilldesc"></ul>
       <ul class="skilldesc">
         <li>좀 더 효율적인 코딩으로 <br>
-        반응형 작업이 가능합니다.</li>
+          반응형 작업이 가능합니다.</li>
       </ul>
       <ul class="skilldesc">
         <li>프로젝트의 전반적인 레이아웃과<br>
@@ -375,7 +383,7 @@
     </div>
   </div>
   <!-- portfolio -->
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <div class="inner clearfix">
       <div class="port-left clearfix">
         <div class="swiper-container portlist-sw">
@@ -596,7 +604,7 @@
                   <div class="used02">
                     <p>&#91;SKILLS&#93;</p>
                     <ul>
-                    <li class="usedS01"><span>html</span></li>
+                      <li class="usedS01"><span>html</span></li>
                       <li class="usedS02"><span>csss</span></li>
                       <li class="usedS03"><span>javascript</span></li>
                       <li class="usedS04"><span>vue</span></li>
@@ -626,7 +634,7 @@
                   <div class="used">
                     <p>&#91;SKILLS&#93;</p>
                     <ul>
-                    <li class="usedS01"><span>html</span></li>
+                      <li class="usedS01"><span>html</span></li>
                       <li class="usedS02"><span>csss</span></li>
                       <li class="usedS03"><span>javascript</span></li>
                     </ul>
@@ -654,7 +662,7 @@
                   <div class="used">
                     <p>&#91;SKILLS&#93;</p>
                     <ul>
-                    <li class="usedS01"><span>html</span></li>
+                      <li class="usedS01"><span>html</span></li>
                       <li class="usedS02"><span>csss</span></li>
                       <li class="usedS03"><span>javascript</span></li>
                     </ul>
@@ -682,7 +690,7 @@
                   <div class="used02">
                     <p>&#91;SKILLS&#93;</p>
                     <ul>
-                    <li class="usedS01"><span>html</span></li>
+                      <li class="usedS01"><span>html</span></li>
                       <li class="usedS02"><span>csss</span></li>
                       <li class="usedS03"><span>javascript</span></li>
                       <li class="usedS04"><span>vue</span></li>
@@ -712,7 +720,7 @@
                   <div class="used">
                     <p>&#91;SKILLS&#93;</p>
                     <ul>
-                    <li class="usedS01"><span>html</span></li>
+                      <li class="usedS01"><span>html</span></li>
                       <li class="usedS02"><span>csss</span></li>
                       <li class="usedS03"><span>javascript</span></li>
                     </ul>
@@ -740,7 +748,7 @@
                   <div class="used02">
                     <p>&#91;SKILLS&#93;</p>
                     <ul>
-                    <li class="usedS01"><span>html</span></li>
+                      <li class="usedS01"><span>html</span></li>
                       <li class="usedS02"><span>csss</span></li>
                       <li class="usedS03"><span>javascript</span></li>
                       <li class="usedS04"><span>vue</span></li>
@@ -770,7 +778,7 @@
                   <div class="used02">
                     <p>&#91;SKILLS&#93;</p>
                     <ul>
-                    <li class="usedS01"><span>html</span></li>
+                      <li class="usedS01"><span>html</span></li>
                       <li class="usedS02"><span>csss</span></li>
                       <li class="usedS03"><span>javascript</span></li>
                       <li class="usedS04"><span>vue</span></li>
@@ -800,7 +808,7 @@
                   <div class="used02">
                     <p>&#91;SKILLS&#93;</p>
                     <ul>
-                    <li class="usedS01"><span>html</span></li>
+                      <li class="usedS01"><span>html</span></li>
                       <li class="usedS02"><span>csss</span></li>
                       <li class="usedS03"><span>javascript</span></li>
                       <li class="usedS04"><span>vue</span></li>
@@ -824,7 +832,7 @@
     </div>
   </div>
   <!-- life -->
-  <div class="life">
+  <div class="life" id="life">
     <div class="inner">
       <div class="life-top">
         <h2>IN MY LIFE</h2>
@@ -832,24 +840,20 @@
       <div class="life-bottom">
         <div class="life-content content01">
           <span class="lfct-top music-top">
-            <img src="/images/cd-title.png" alt="">
-            <div class="lfct-title">
-              ENJOY<br>MUSIC
+            <img src="/images/cd-title-02.png" alt="">
               <p class="title-button">
-                좋아하는 음악과<br>
-                함께 흥얼거리며<br>
+                좋아하는 음악과 함께, 흥얼거리며
                 스트레스를 해소합니다.
               </p>
-            </div>
           </span>
           <div class="lfct-bottom music-box">
-            <span class="pic01"><img src="/images/cd01-2.png" alt="">
+            <span class="pic01"><p></p><img src="/images/cd01-2.png" alt="">
             </span>
-            <span class="pic02"><img src="/images/cd02.png" alt="">
+            <span class="pic02"><p></p><img src="/images/cd02.png" alt="">
             </span>
-            <span class="pic03"><img src="/images/cd03.png" alt="">
+            <span class="pic03"><p></p><img src="/images/cd03.png" alt="">
             </span>
-            <span class="pic04"><img src="/images/cd04.png" alt="">
+            <span class="pic04"><p></p><img src="/images/cd04.png" alt="">
             </span>
           </div>
         </div>
@@ -880,7 +884,7 @@
     </div>
   </div>
   <!-- footer -->
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="inner">
       <h2>Contact</h2>
       <div class="social-box">

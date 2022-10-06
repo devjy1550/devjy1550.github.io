@@ -1,4 +1,18 @@
 window.onload = function () {
+  // 메뉴버튼 클릭이동
+  let gnbBtSet = $(".menu a");
+  $.each(gnbBtSet, function () {
+    $(this).click(function (e) {
+      e.preventDefault();
+      let target = $(this).attr("href");
+      $("html")
+        .stop()
+        .animate({
+          scrollTop: $(target).offset().top,
+        });
+    });
+  });
+
   const nowstart = document.querySelector(".talk-start");
   const saying = ["안녕하십니까,"];
 
@@ -193,7 +207,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar.animate(0.98);
 
   var bar2 = new ProgressBar.Circle(css, {
     color: "#008ED8",
@@ -211,7 +224,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar2.animate(0.91);
 
   var bar3 = new ProgressBar.Circle(scss, {
     color: "#CD679A",
@@ -229,7 +241,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar3.animate(0.65);
 
   var bar4 = new ProgressBar.Circle(js, {
     color: "#FFDC62",
@@ -247,7 +258,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar4.animate(0.82);
 
   var bar5 = new ProgressBar.Circle(jq, {
     color: "#1169AE",
@@ -265,7 +275,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar5.animate(0.9);
 
   var bar6 = new ProgressBar.Circle(vue, {
     color: "#4DBA87",
@@ -283,7 +292,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar6.animate(0.52);
 
   var bar7 = new ProgressBar.Circle(git, {
     color: "#333333",
@@ -301,7 +309,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar7.animate(0.76);
 
   var bar8 = new ProgressBar.Circle(bootstrap, {
     color: "#7312F7",
@@ -319,7 +326,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar8.animate(0.85);
 
   var bar9 = new ProgressBar.Circle(gf, {
     color: "#4AFFE9",
@@ -337,7 +343,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar9.animate(0.78);
 
   var bar10 = new ProgressBar.Circle(fm, {
     color: "#3747D6",
@@ -355,7 +360,6 @@ window.onload = function () {
       a: 1,
     },
   });
-  bar10.animate(0.5);
 
   let skillList = $(".skill-list >li >a");
   let skillDesc = $(".skilldesc-box >.skilldesc");
@@ -385,23 +389,43 @@ window.onload = function () {
   let roadmapBtT = $(".mr-control >button>p");
   let roadmapBtCT = $(".mr-control >button>i");
   let mrDesc = $(".my-roadmap .map-review ul.mr-content >li");
+  let myRoadmap = $(".my-roadmap");
 
-  mrDesc.eq(0).show();
-  roadmapBtB.eq(0).addClass("mr-show");
-  roadmapBtT.eq(0).addClass("mr-show");
-  roadmapBtCT.eq(0).addClass("mr-show");
+  let roadmapBtTotal = roadmapBt.length;
+  let roadmapBtIndex = 0;
+  let roadmapSpeed = 2000;
+
+  function changeRoadMap() {
+    mrDesc.hide();
+    mrDesc.eq(roadmapBtIndex).show();
+    roadmapBtB.removeClass("mr-show");
+    roadmapBtB.eq(roadmapBtIndex).addClass("mr-show");
+    roadmapBtT.removeClass("mr-show");
+    roadmapBtT.eq(roadmapBtIndex).addClass("mr-show");
+    roadmapBtCT.removeClass("mr-show");
+    roadmapBtCT.eq(roadmapBtIndex).addClass("mr-show");
+
+    roadmapBtIndex++;
+    if (roadmapBtIndex >= roadmapBtTotal) {
+      roadmapBtIndex = 0;
+    }
+  }
+  myRoadmap.mouseenter(function () {
+    clearInterval(radmapTimer);
+  });
+
+  myRoadmap.mouseleave(function () {
+    clearInterval(radmapTimer);
+    radmapTimer = setInterval(changeRoadMap, roadmapSpeed);
+  });
+
+  let radmapTimer = setInterval(changeRoadMap, roadmapSpeed);
+  changeRoadMap();
 
   $.each(roadmapBt, function (index) {
     $(this).click(function () {
-      mrDesc.hide();
-      mrDesc.eq(index).show();
-
-      roadmapBtB.removeClass("mr-show");
-      roadmapBtB.eq(index).addClass("mr-show");
-      roadmapBtT.removeClass("mr-show");
-      roadmapBtT.eq(index).addClass("mr-show");
-      roadmapBtCT.removeClass("mr-show");
-      roadmapBtCT.eq(index).addClass("mr-show");
+      roadmapBtIndex = index;
+      changeRoadMap();
     });
   });
 
@@ -414,6 +438,48 @@ window.onload = function () {
         lifeTitleBt.eq(index).addClass("wide");
       }
     });
+  });
+
+  new Waypoint({
+    element: $(".psbNrm"),
+    handler: function (direction) {
+      if (direction == "down") {
+        $(".psb-graphS").addClass("slideExpandUp");
+      } else if (direction == "up") {
+        $(".psb-graphS").removeClass("slideExpandUp");
+      }
+    },
+    offset: "50%",
+  });
+
+  new Waypoint({
+    element: $(".skills"),
+    handler: function (direction) {
+      if (direction == "down") {
+        bar.animate(0.98);
+        bar2.animate(0.91);
+        bar3.animate(0.65);
+        bar4.animate(0.82);
+        bar5.animate(0.9);
+        bar6.animate(0.52);
+        bar7.animate(0.76);
+        bar8.animate(0.85);
+        bar9.animate(0.78);
+        bar10.animate(0.5);
+      } else if (direction == "up") {
+        bar.animate(0.0);
+        bar2.animate(0.0);
+        bar3.animate(0.0);
+        bar4.animate(0.0);
+        bar5.animate(0.0);
+        bar6.animate(0.0);
+        bar7.animate(0.0);
+        bar8.animate(0.0);
+        bar9.animate(0.0);
+        bar10.animate(0.0);
+      }
+    },
+    offset: "50%",
   });
 };
 
