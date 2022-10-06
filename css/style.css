@@ -1731,24 +1731,37 @@ a.showBt03 {
   height: 85px;
 }
 
+.portsummary .st-desc-sw .swiper-slide .overview .used ul li span,
+.portsummary .st-desc-sw .swiper-slide .overview .used02 ul li span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 li.usedS01 {
-  background: url("../images/skill01.png") no-repeat center;
-  background-size: contain;
+  background: url("../images/sklist01.png") no-repeat top;
+  background-size: 60px 64px;
 }
 
 li.usedS02 {
-  background: url("../images/skill02.png") no-repeat center;
-  background-size: contain;
+  background: url("../images/sklist02.png") no-repeat top;
+  background-size: 60px 64px;
 }
 
 li.usedS03 {
-  background: url("../images/skill03.png") no-repeat center;
-  background-size: contain;
+  background: url("../images/sklist04.png") no-repeat top;
+  background-size: 60px 64px;
 }
 
 li.usedS04 {
-  background: url("../images/skill04.png") no-repeat center;
-  background-size: contain;
+  background: url("../images/sklist06.png") no-repeat top;
+  background-size: 54px 64px;
 }
 
 .portsummary .st-desc-sw .swiper-slide .overview .memo {
