@@ -381,18 +381,27 @@ window.onload = function () {
   });
 
   let roadmapBt = $(".mr-control >button");
+  let roadmapBtB = $(".mr-control >button>span");
+  let roadmapBtT = $(".mr-control >button>p");
+  let roadmapBtCT = $(".mr-control >button>i");
   let mrDesc = $(".my-roadmap .map-review ul.mr-content >li");
 
   mrDesc.eq(0).show();
-  roadmapBt.eq(0).addClass("mr-show");
+  roadmapBtB.eq(0).addClass("mr-show");
+  roadmapBtT.eq(0).addClass("mr-show");
+  roadmapBtCT.eq(0).addClass("mr-show");
 
   $.each(roadmapBt, function (index) {
     $(this).click(function () {
       mrDesc.hide();
       mrDesc.eq(index).show();
 
-      roadmapBt.removeClass("mr-show");
-      roadmapBt.eq(index).addClass("mr-show");
+      roadmapBtB.removeClass("mr-show");
+      roadmapBtB.eq(index).addClass("mr-show");
+      roadmapBtT.removeClass("mr-show");
+      roadmapBtT.eq(index).addClass("mr-show");
+      roadmapBtCT.removeClass("mr-show");
+      roadmapBtCT.eq(index).addClass("mr-show");
     });
   });
 

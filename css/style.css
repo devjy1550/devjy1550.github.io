@@ -802,7 +802,7 @@ h1.logo {
   font-size: 0;
   border-top: 1px solid rgb(187, 187, 187);
   border-bottom: 1px solid rgb(187, 187, 187);
-  padding: 50px 0;
+  padding: 78px 0;
 }
 
 .my-roadmap .map-review ul.mr-content {
@@ -821,7 +821,7 @@ h1.logo {
   display: block;
   font-size: 20px;
   line-height: 28px;
-  padding-top: 2px;
+  letter-spacing: 4px;
 }
 
 .mr-content li p {
@@ -854,7 +854,7 @@ h1.logo {
 
 .my-roadmap .mr-control {
   position: absolute;
-  bottom: -30px;
+  bottom: 0;
   right: 135px;
   display: block;
   width: 10%;
@@ -868,7 +868,7 @@ h1.logo {
   width: 100%;
   padding: 7px 0;
   margin: 80px 0;
-  border-radius: 4px;
+  border-radius: 8px;
   font-weight: 600;
   color: #565252;
   border: 0;
@@ -876,16 +876,55 @@ h1.logo {
   background-color: rgba(107, 158, 218, 0.3);
 }
 
-.mr-control button.mr-show {
-  color: #37373b;
-  font-weight: 700;
-  background-color: rgba(107, 158, 218, 0.6);
+.mr-control button p {
+  position: absolute;
+  bottom: 29px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  width: 84px;
+  height: 80px;
+  background-size: contain;
 }
 
-.mr-control button:hover {
-  color: #37373b;
-  font-weight: 700;
-  background-color: rgba(107, 158, 218, 0.6);
+.mr-control button:nth-child(1) p {
+  background: url("../images/1y.png") no-repeat center;
+  background-size: contain;
+}
+.mr-control button:nth-child(2) p {
+  background: url("../images/3y.png") no-repeat center;
+  background-size: contain;
+}
+.mr-control button:nth-child(3) p {
+  background: url("../images/5y.png") no-repeat center;
+  background-size: contain;
+}
+.mr-control button:nth-child(4) p {
+  background: url("../images/10y.png") no-repeat center;
+  background-size: contain;
+}
+
+.mr-control button span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  width: 84px;
+  height: 30px;
+  background: url("../images/dirt-hover.png") no-repeat center;
+  background-size: contain;
+  border-radius: 6px;
+}
+
+.mr-control button p.mr-show {
+  display: block;
+  z-index: 2;
+}
+
+.mr-control button span.mr-show {
+  display: block;
+  z-index: 1;
 }
 
 /* skills */
