@@ -429,13 +429,32 @@ window.onload = function () {
     });
   });
 
-  let lifeTitleBt = $(".life-bottom .life-content  .title-button");
-  $.each(lifeTitleBt, function (index) {
+  let lifeBottom = $(".life-bottom");
+  let cdCaseTop = $(".case-top >p");
+  let cdCaseBottom = $(".case-bottom");
+  let cdCaseBottomA = $(".case-bottom p");
+  let cdContent = $(".music-content >div");
+  let cdContentImg = $(".music-content >div>Img");
+
+  $.each(cdCaseTop, function (index) {
     $(this).click(function () {
-      if (lifeTitleBt.hasClass("wide")) {
-        lifeTitleBt.removeClass("wide");
+      if (cdCaseBottom.eq(index).hasClass("show")) {
+        lifeBottom.removeClass("show");
+        cdCaseBottom.removeClass("show");
+        cdCaseBottomA.removeClass("show");
+        cdContent.removeClass("show");
+        cdContentImg.removeClass("show");
       } else {
-        lifeTitleBt.eq(index).addClass("wide");
+        cdCaseBottom.removeClass("show");
+        cdCaseBottomA.removeClass("show");
+        cdContent.removeClass("show");
+        cdContentImg.removeClass("show");
+
+        lifeBottom.addClass("show");
+        cdCaseBottom.eq(index).addClass("show");
+        cdCaseBottomA.eq(index).addClass("show");
+        cdContent.eq(index).addClass("show");
+        cdContentImg.eq(index).addClass("show");
       }
     });
   });
