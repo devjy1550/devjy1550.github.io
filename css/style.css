@@ -746,8 +746,8 @@ h1.logo {
   position: relative;
   display: block;
   float: left;
-  width: 60%;
-  padding-left: 180px;
+  width: calc(60% - 330px);
+  margin: 0 150px 0 180px;
 }
 
 .my-roadmap h3 {
@@ -787,7 +787,7 @@ h1.logo {
 .my-roadmap .map-review {
   position: relative;
   display: block;
-  width: 65%;
+  width: 80%;
   margin-top: 30px;
   font-size: 0;
   border-top: 1px solid rgb(187, 187, 187);
@@ -839,21 +839,20 @@ h1.logo {
 
 .my-roadmap .mr-control {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 65%;
+  display: block;
+  width: 80%;
   margin-top: 110px;
+  font-size: 0;
 }
 
 .mr-control button {
   position: relative;
-  display: block;
+  display: inline-block;
   font-size: 16px;
   line-height: 16px;
-  width: 100%;
+  width: 19%;
   padding: 7px 0;
-  margin-right: 25px;
+  margin-right: 8%;
 
   border-radius: 8px;
   font-weight: 600;
@@ -874,7 +873,7 @@ h1.logo {
   transform: translateX(-50%);
   display: none;
   width: 84px;
-  height: 80px;
+  height: 84px;
   background-size: contain;
 }
 
@@ -898,27 +897,9 @@ h1.logo {
   background-size: contain;
 }
 
-.mr-control button span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-  width: 84px;
-  height: 30px;
-  background: url("../images/dirt-hover.png") no-repeat center;
-  background-size: contain;
-  border-radius: 6px;
-}
-
 .mr-control button p.mr-show {
   display: block;
   z-index: 2;
-}
-
-.mr-control button span.mr-show {
-  display: block;
-  z-index: 1;
 }
 
 /* skills */
@@ -927,6 +908,7 @@ h1.logo {
   display: block;
   background-color: #e9f7ff;
   padding: 100px 0;
+  text-align: center;
 }
 
 .skills h2 {
@@ -945,7 +927,8 @@ h1.logo {
   position: absolute;
   display: block;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 120%;
   height: 20px;
   background-color: rgba(171, 204, 249, 0.6);
@@ -1324,12 +1307,8 @@ h1.logo {
   width: 72%;
   height: 80px;
   border-radius: 24px;
-  background-color: rgba(59, 69, 73, 0.4);
+  background-color: rgba(90, 189, 255, 0.5);
   transition: all 0.8s;
-}
-
-.portlist-sw .swiper-slide > div.control-bar:hover {
-  background-color: rgba(119, 119, 119, 0.2);
 }
 
 .portlist-sw .swiper-slide > div.control-bar > .controlButtons {
@@ -1352,15 +1331,15 @@ h1.logo {
 }
 
 a.showBt01 {
-  background-color: rgba(151, 217, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 a.showBt02 {
-  background-color: rgba(151, 217, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 a.showBt03 {
-  background-color: rgba(151, 217, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .control-bar > .controlButtons > a > span {
@@ -1418,7 +1397,7 @@ a.showBt03 {
 }
 
 .control-bar > .controlButtons > a:hover {
-  background-color: rgba(98, 197, 255, 0.7);
+  background-color: rgba(255, 255, 255);
 }
 
 .portlist-sw .swiper-slide > div.control-bar-vue {
@@ -1430,12 +1409,8 @@ a.showBt03 {
   width: 72%;
   height: 80px;
   border-radius: 24px;
-  background-color: rgba(59, 69, 73, 0.4);
+  background-color: rgba(0, 255, 110, 0.4);
   transition: all 0.8s;
-}
-
-.portlist-sw .swiper-slide > div.control-bar:hover {
-  background-color: rgba(119, 119, 119, 0.2);
 }
 
 .portlist-sw .swiper-slide > div.control-bar-vue > .controlButtons {
@@ -1458,15 +1433,15 @@ a.showBt03 {
 }
 
 .control-bar-vue a.showBt01 {
-  background-color: rgba(0, 193, 128, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .control-bar-vue a.showBt02 {
-  background-color: rgba(0, 193, 128, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .control-bar-vue a.showBt03 {
-  background-color: rgba(0, 193, 128, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .control-bar-vue > .controlButtons > a > span {
@@ -1524,7 +1499,7 @@ a.showBt03 {
 }
 
 .control-bar-vue > .controlButtons > a:hover {
-  background-color: rgba(0, 150, 100, 0.7);
+  background-color: rgba(255, 255, 255);
 }
 
 .swiper-container-3d .swiper-slide-shadow-left {
@@ -1922,18 +1897,20 @@ li.usedS04 {
   margin-left: 8px;
   margin-top: 8px;
   cursor: pointer;
+  transition: all 0.25s;
 }
 
 .life-bottom .case-top p::after {
   content: "";
   position: absolute;
   left: 1px;
-  bottom: 12px;
+  bottom: 6px;
   display: block;
   width: 24px;
   height: 24px;
-  background: url("../images/hover.png") no-repeat center;
+  background: url("../images/hover02.png") no-repeat center;
   background-size: contain;
+  transition: all 0.25s;
 }
 
 .life-bottom .top01 > p {
@@ -1950,6 +1927,27 @@ li.usedS04 {
 
 .life-bottom .top04 > p {
   background-color: #252323;
+}
+
+.life-bottom .top01 > p:hover {
+  background-color: #e35187;
+}
+
+.life-bottom .top02 > p:hover {
+  background-color: #dfb819;
+}
+
+.life-bottom .top03 > p:hover {
+  background-color: #15bbd9;
+}
+
+.life-bottom .top04 > p:hover {
+  background-color: #adadad;
+}
+
+.life-bottom .case-top p:hover::after {
+  background: url("../images/hover01.png") no-repeat center;
+  background-size: contain;
 }
 
 .life-bottom .case-bottom {
@@ -2044,7 +2042,9 @@ li.usedS04 {
 .music-content > div.show {
   width: 400px;
   height: 400px;
+  border-radius: 50%;
   transform: translateX(600px) translateY(-50%);
+  cursor: pointer;
 }
 
 .music-content > div > img {
