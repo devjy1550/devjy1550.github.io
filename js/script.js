@@ -500,6 +500,50 @@ window.onload = function () {
     },
     offset: "50%",
   });
+
+
+  let cdSleeveFNB = $('.playlist')
+  let cdSleevecover = $('.playlist >i')
+  let cdSleeveHover = $('.playlist>p>span')
+  let TitleCd = $('.playlist >span')
+
+  let TitleCdHover = $('.playlist>span>p');
+
+  let musicContent = $('.music-box .caseset');
+  let musicContentOn = $('.music-box .caseset>p');
+  let musicCds = $('.music-content')
+
+  let lifereset = $('.music-content>div>button')
+
+  cdSleeveHover.click(function () {
+    cdSleevecover.addClass('hoverM')
+    TitleCd.addClass('hoverM')
+    cdSleeveFNB.addClass('hoverM')
+  })
+
+  TitleCdHover.click(function () {
+    cdSleeveFNB.addClass('gone')
+    musicContent.removeClass('caseset');
+    musicCds.addClass('show');
+  })
+
+  lifereset.click(function () {
+    cdSleevecover.removeClass('hoverM')
+    TitleCd.removeClass('hoverM')
+    cdSleeveFNB.removeClass('hoverM')
+    cdSleeveFNB.removeClass('gone')
+
+
+    musicContent.addClass('caseset')
+    musicContent.removeClass('show')
+    musicContentOn.removeClass('show')
+
+    cdContent.removeClass('show')
+    cdContentImg.removeClass('show')
+
+    musicCds.hide();
+    $('.life-bottom').removeClass('show');
+  })
 };
 
 $(window).ready(function () {

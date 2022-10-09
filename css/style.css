@@ -2041,9 +2041,12 @@ li.usedS04 {
   top: 0;
   left: 0;
   display: block;
+  opacity: 0;
   width: 400px;
   height: 400px;
 }
+
+
 
 .music-content>div {
   position: absolute;
@@ -2066,16 +2069,16 @@ li.usedS04 {
 
 .music-content>div>img {
   position: absolute;
-  top: 20px;
+  top: 10px;
   display: block;
-  width: 400px;
-  height: 360px;
+  width: 380px;
+  height: 380px;
   transition: all 1s linear;
 }
 
 .music-content>div>img.show {
   position: absolute;
-  top: 10px;
+  top: 0px;
   display: block;
   width: 400px;
   height: 400px;
@@ -2109,10 +2112,24 @@ li.usedS04 {
   background: url("../images/arrow4.png") no-repeat center;
 }
 
-.music-content>div>img:hover {
+.music-content>div>img {
   animation: rotate_image 8s linear infinite;
   transform-origin: 50% 50%;
+  transition: animation 0.5s 1s;
 }
+
+.music-content>div>button {
+  position: absolute;
+  bottom: 10px;
+  right:10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  cursor: pointer;
+}
+
 
 .playlist {
   position: absolute;
@@ -2126,47 +2143,59 @@ li.usedS04 {
   transition: all 0.5s linear 0s;
 }
 
-/* .playlist:hover{
-transform: translateX(-40px);
-transition: all 0.5s linear 0s;
-} */
+.playlist.hoverM {
+  transform: translateX(-200px);
+  transition: all 0.5s linear 0s;
+}
 
-.playlist span {
+.playlist.gone {
+  opacity: 0;
+  transition: all 1.5s;
+  z-index: -10;
+}
+
+.playlist>span {
   position: absolute;
   left: 0px;
   display: block;
   width: 400px;
   height: 400px;
-  background: url('../images/cd-title-02.png') no-repeat left;
+  background: url('../images/cd-title.png') no-repeat left;
   background-size: 100%;
   transform: translateX(0);
-  transition: all 0.5s 0.3s
+  transition: all 0.5s 0.3s;
 }
 
-/* 
-.playlist:hover span{
+
+.playlist>span.hoverM {
   transform: translateX(400px);
-  transition: all 0.5s 0.7s
-} */
+  transition: all 0.3s linear 0.7s;
+  background: url('../images/cd-title-02.png') no-repeat left;
+}
 
 
-.playlist>p>span{
+.playlist>span.hoverM>p {
   position: absolute;
   display: block;
-  top: calc(50% - 4px);
-  left: calc(50%);
-  transform: translate(-50%, -50%);
+  top: 185px;
+  left: 185px;
   width: 30px;
   height: 30px;
+  background: rgba(247, 251, 255);
+  background-size: 20px 20px;
   border-radius: 50%;
-  background:  url('/images/hover02.png') no-repeat center;
-  background-size: 24px 24px;
+  transition: all 1s 1s;
   cursor: pointer;
+  z-index: 3;
 }
 
-.playlist>p>span:hover{
-  background:  rgb(144, 203, 255) url('/images/hover01.png') no-repeat center;
-  background-size: 24px 24px;
+
+.playlist>span.hoverM>p:hover {
+  width: 30px;
+  height: 30px;
+  background: rgb(144, 203, 255) url('/images/hover01.png') no-repeat center;
+  background-size: 20px 20px;
+  transition: all 0.5s;
 }
 
 
@@ -2180,737 +2209,71 @@ transition: all 0.5s linear 0s;
   height: 408px;
   background: url('../images/sleeve-main.png') no-repeat left;
   background-size: 100% 100%;
+  transition: all 1s;
   z-index: 15;
 }
+
+.playlist>p>span {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(46, 161, 255, 0.67) url('/images/hover02.png') no-repeat center;
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+
+.playlist>p>span:hover {
+  background: rgb(144, 203, 255) url('/images/hover01.png') no-repeat center;
+  background-size: 24px 24px;
+}
+
 
 
 
 .playlist i {
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 360px;
   display: block;
-  width: 40px;
-  height: 403px;
-  background: url('../images/sleeve-cover.png') no-repeat left;
-  background-size: 40px 403px;
+  width: 30px;
+  height: 400px;
+  background: url('../images/sleeve-cover.png') no-repeat center;
+  background-size: 30px 400px;
   z-index: 1;
   transition: all 0.5s ease 1s;
 }
 
-/* .playlist:hover i {
+.playlist i.hoverM {
+  position: absolute;
+  top: 1px;
   left: 396px;
-  z-index: 11;
+  display: block;
   width: 60px;
-  background-size: 60px 410px;
-  opacity: 1;
+  height: 406px;
+  background: url('../images/sleeve-cover.png') no-repeat center;
+  background-size: 60px 406px;
   transition: all 0.5s ease 0.1s;
-} */
-
-/* .playlist {
-  position: absolute;
-  top: 0;
-  left: 200px;
-  display: block;
-  width: 400px;
-  height: 400px;
-  background: url("../images/cd-title.png") no-repeat center;
-  background-size: contain;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-} */
-
-@keyframes rotate_image {
-  100% {
-    transform: rotate(360deg);
-  }
-
-  /* 
-.life-bottom {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  padding: 60px 0 40px 0;
-  font-size: 0;
-  height: 100%;
-  width: 100%;
 }
 
-.life-bottom .life-content {
-  position: relative;
-  display: inline-block;
-  height: 600px;
-  width: 400px;
-  background-color: #ffffff;
-  z-index: 9;
+.music-box div.caseset {
+opacity: 0  ;
 }
 
-.life-bottom .life-content .lfct-top {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 200px;
-  background: #e9f7ff;
-}
-
-.lfct-top.music-top .lfct-pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: inline-block;
-  width: 50%;
-  height: 200px;
-  transition: all 1s;
-}
-
-.lfct-top.photo-top .lfct-pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: 50%;
-  height: 200px;
-  background: url("../images/lifepic01-1.png") no-repeat center;
-  transition: all 1s;
-}
-
-.lfct-top.photo-top .lfct-pic:hover {
-  background: url("../images/lifepic01-2.png") no-repeat center;
-}
-
-.lfct-top.music-top img {
-  position: relative;
-  display: block;
-  width: 400px;
-  height: 400px;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-}
-
-.life-bottom .life-content .title-button {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  display: block;
-  border-radius: 50%;
-  transition: all 0.6s;
-  background-color: #101522;
-  z-index: 3;
-  border: 0;
-  font-size: 0;
-}
-
-.life-bottom .life-content .title-button:hover {
-  cursor: pointer;
-  background: #797979 url("../images/headp.png") no-repeat top;
-  background-size: 20px;
-}
-
-.life-bottom .life-content .title-button.wide {
-  bottom: 25px;
-  width: 94%;
-  font-size: 14px;
-  line-height: 14px;
-  height: 24px;
-  padding: 3px 0;
-  color: rgb(237, 237, 237);
-  letter-spacing: 0.5px;
-  background: rgba(62, 62, 62, 0.8) url("../images/melody.png") no-repeat center;
-  background-size: contain;
-  border: 2px solid rgb(13, 87, 113);
-  border-radius: 12px;
-  text-align: center;
-  transition: all 0.3s;
-  z-index: 3;
-}
-
-.photo-top .title-button {
-  background: #bdbdbd url("../images/mark.png") no-repeat center;
-  background-size: 20px 20px;
-}
-
-.photo-top .title-button:hover {
-  background: #838383 url("../images/pola-C.png") no-repeat center;
-  background-size: 30px 30px;
-}
-
-.life-content .lfct-bottom {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 400px;
-}
-
-.life-content .lfct-bottom > span {
-  position: absolute;
-  display: block;
-}
-
-.lfct-bottom .pic01 {
-  top: 0px;
-  left: 0px;
-  width: 50%;
-  height: 200px;
-  transition: all 0.5s;
-}
-
-.lfct-bottom .pic02 {
-  top: 0;
-  right: 0px;
-  width: 50%;
-  height: 200px;
-  transition: all 0.5s;
-}
-
-.lfct-bottom .pic03 {
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 200px;
-  transition: all 0.5s;
-}
-
-.lfct-bottom .pic04 {
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 200px;
-  transition: all 0.5s;
-}
-
-.lfct-bottom.music-box .pic01 {
-  background-color: #fff;
-  transition: none;
-  z-index: 3;
-}
-
-.lfct-bottom.music-box .pic01 p {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../images/album01.png") no-repeat center;
-  background-size: 100%;
-  z-index: 7;
-  transition: background 0.3s linear;
-}
-
-.lfct-bottom.music-box .pic01 img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: url("../images/cd01-2.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.35;
-  z-index: 6;
-}
-
-.lfct-bottom.music-box .pic01:hover {
-  width: 400px;
-  height: 400px;
-  background-color: #ffd7e9;
-  z-index: 7;
-}
-
-.lfct-bottom.music-box .pic01:hover p {
-  width: 200px;
-  height: 200px;
-  background: url("../images/album01-2.png") no-repeat center;
-  background-size: 100%;
-  z-index: 16;
-}
-
-.lfct-bottom.music-box .pic01:hover img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: url("../images/cd01-2.png") no-repeat center;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-  background-size: contain;
+.music-content.show{
   opacity: 1;
-  z-index: 6;
-  transition: background 0.3s;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-  z-index: 14px;
-}
-
-.lfct-bottom.music-box .pic02 {
-  background-color: #fff;
-  transition: none;
-  z-index: 3;
-}
-
-.lfct-bottom.music-box .pic02 p {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../images/album02.png") no-repeat center;
-  background-size: 100%;
-  z-index: 7;
-  transition: background 0.3s linear;
-}
-
-.lfct-bottom.music-box .pic02 img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: url("../images/cd02.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.35;
-  z-index: 6;
-}
-
-.lfct-bottom.music-box .pic02:hover {
-  width: 400px;
-  height: 400px;
-  background-color: #fff64c;
-  z-index: 7;
-}
-
-.lfct-bottom.music-box .pic02:hover p {
-  width: 200px;
-  height: 200px;
-  background: url("../images/album02-2.png") no-repeat center;
-  background-size: 100%;
-  z-index: 16;
-}
-
-.lfct-bottom.music-box .pic02:hover img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: url("../images/cd02.png") no-repeat center;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-  background-size: contain;
-  opacity: 1;
-  z-index: 6;
-  transition: background 0.3s;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-  z-index: 14px;
-}
-
-.lfct-bottom.music-box .pic03 {
-  background-color: #fff;
-  transition: none;
-  z-index: 3;
-}
-
-.lfct-bottom.music-box .pic03 p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../images/album03.png") no-repeat center;
-  background-size: 100%;
-  z-index: 7;
-  transition: background 0.3s linear;
-}
-
-.lfct-bottom.music-box .pic03 img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: url("../images/cd03.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.35;
-  z-index: 6;
-}
-
-.lfct-bottom.music-box .pic03:hover {
-  width: 400px;
-  height: 400px;
-  background-color: #00d9ff;
-  z-index: 7;
-}
-
-.lfct-bottom.music-box .pic03:hover p {
-  width: 200px;
-  height: 200px;
-  background: url("../images/album03-2.png") no-repeat center;
-  background-size: 100%;
-  z-index: 16;
-}
-
-.lfct-bottom.music-box .pic03:hover img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: url("../images/cd03.png") no-repeat center;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-  background-size: contain;
-  opacity: 1;
-  z-index: 6;
-  transition: background 0.3s;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-  z-index: 14px;
-}
-
-.lfct-bottom.music-box .pic04 {
-  background-color: #fff;
-  transition: none;
-  z-index: 3;
-}
-
-.lfct-bottom.music-box .pic04 p {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../images/album04.png") no-repeat center;
-  background-size: 100%;
-  z-index: 7;
-  transition: background 0.3s linear;
-}
-
-.lfct-bottom.music-box .pic04 img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: url("../images/cd04.png") no-repeat center;
-  background-size: contain;
-  opacity: 0.35;
-  z-index: 6;
-}
-
-.lfct-bottom.music-box .pic04:hover {
-  width: 400px;
-  height: 400px;
-  background-color: #a21f4e;
-  z-index: 7;
-}
-
-.lfct-bottom.music-box .pic04:hover p {
-  width: 200px;
-  height: 200px;
-  background: url("../images/album04-2.png") no-repeat center;
-  background-size: 100%;
-  z-index: 16;
-}
-
-.lfct-bottom.music-box .pic04:hover img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: block;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: url("../images/cd03.png") no-repeat center;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-  background-size: contain;
-  opacity: 1;
-  z-index: 6;
-  transition: background 0.3s;
-  animation: rotate_image 8s linear infinite;
-  transform-origin: 50% 50%;
-  z-index: 14px;
+  transition: all 1s 0.5s;
 }
 
 @keyframes rotate_image {
   100% {
     transform: rotate(360deg);
   }
-} */
-
-  /* .lfct-bottom.music-box .pic02:hover {
-  background: #fff url("../images/singerlogo.png") no-repeat center;
-  background-size: contain;
-  z-index: 5;
 }
 
-.lfct-bottom.music-box .pic02:hover img:nth-child(1) {
-  z-index: 2;
-  opacity: 1;
-  transform: translate(-200px, -200px);
-}
-
-.lfct-bottom.music-box .pic02:hover img:nth-child(2) {
-  z-index: 2;
-  opacity: 1;
-  transform: translate(-200px, 0);
-}
-
-.lfct-bottom.music-box .pic02:hover img:nth-child(3) {
-  z-index: 2;
-  opacity: 1;
-  transform: translate(-200px, 200px);
-} */
-  /* 
-.lfct-bottom.photo-box .pic01 {
-  background: url("../images/lifepic02-1.png") no-repeat center;
-}
-
-.lfct-bottom.photo-box .pic02 {
-  background: url("../images/lifepic03-1.png") no-repeat center;
-}
-
-.lfct-bottom.photo-box .pic03 {
-  background: url("../images/lifepic05-1.png") no-repeat center;
-}
-
-.lfct-bottom.photo-box .pic04 {
-  background: url("../images/lifepic04-1.png") no-repeat center;
-}
-
-.lfct-bottom.photo-box .pic01:hover {
-  width: 60%;
-  background: url("../images/lifepic02-2.png") no-repeat center;
-  z-index: 10;
-}
-
-.lfct-bottom.photo-box .pic02:hover {
-  width: 60%;
-  background: url("../images/lifepic03-2.png") no-repeat center;
-  z-index: 10;
-}
-
-.lfct-bottom.photo-box .pic03:hover {
-  width: 60%;
-  background: url("../images/lifepic05-2.png") no-repeat center;
-  z-index: 10;
-}
-
-.lfct-bottom.photo-box .pic04:hover {
-  width: 60%;
-  background: url("../images/lifepic04-2.png") no-repeat center;
-  z-index: 10;
-}
-
-.life-bottom .life-content .photo-box .pic01::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic01::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  display: block;
-  width: 0px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic01:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-bottom .life-content .photo-box .pic01:hover::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0px;
-  display: block;
-  width: 120px;
-  height: 2px;
-
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic02::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic02::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  display: block;
-  width: 0px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic02:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-bottom .life-content .photo-box .pic02:hover::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  display: block;
-  width: 120px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic03::before {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  display: block;
-  width: 0px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic03::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic03:hover::before {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  display: block;
-  width: 120px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-bottom .life-content .photo-box .pic03:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 10px;
-  display: block;
-  width: 2px;
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic04::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 0px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic04::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  right: 0;
-  display: block;
-  width: 0px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-}
-
-.life-bottom .life-content .photo-box .pic04:hover::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 10px;
-  display: block;
-  width: 2px;
-  height: 120px;
-  background-color: rgb(255, 255, 255);
-}
-
-.life-bottom .life-content .photo-box .pic04:hover::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  right: 0;
-  display: block;
-  width: 120px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.5s;
-} */
-}
 
 /* footer */
 .footer {
