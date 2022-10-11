@@ -520,6 +520,8 @@ window.onload = function () {
     TitleCd.addClass("hoverM");
     cdSleeveFNB.addClass("hoverM");
     $(".photo-box").addClass("hide");
+
+    TitleCdHover.addClass("hoverM");
   });
 
   TitleCdHover.click(function () {
@@ -530,6 +532,7 @@ window.onload = function () {
 
   lifereset.click(function () {
     cdSleeveCover.removeClass("hoverM");
+    cdSleeveHover.removeClass("hide");
     TitleCd.removeClass("hoverM");
     cdSleeveFNB.removeClass("hoverM");
     cdSleeveFNB.removeClass("gone");
