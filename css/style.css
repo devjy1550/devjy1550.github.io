@@ -650,7 +650,7 @@ h1.logo {
   display: block;
   font-size: 15px;
   line-height: 24px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .posibility > .psb-desc p strong {
@@ -755,7 +755,7 @@ h1.logo {
   display: inline-block;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   white-space: nowrap;
   z-index: 1;
 }
@@ -780,8 +780,7 @@ h1.logo {
   font-weight: 300;
   color: #505050;
   margin-top: 16px;
-
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
 .my-roadmap .map-review {
@@ -812,7 +811,7 @@ h1.logo {
   display: block;
   font-size: 15px;
   line-height: 24px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .mr-content li p {
@@ -820,7 +819,7 @@ h1.logo {
   display: block;
   font-size: 15px;
   line-height: 24px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   margin-top: 30px;
 }
 
@@ -829,7 +828,7 @@ h1.logo {
   display: block;
   font-size: 15px;
   line-height: 24px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   margin-top: 30px;
 }
 
