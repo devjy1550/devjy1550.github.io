@@ -501,98 +501,90 @@ window.onload = function () {
     offset: "50%",
   });
 
+  let cdSleeveFNB = $(".playlist");
+  let cdSleeveCover = $(".playlist >i");
+  let cdSleeveHover = $(".playlist>p>span");
+  let TitleCd = $(".playlist >span");
 
-  let cdSleeveFNB = $('.playlist')
-  let cdSleeveCover = $('.playlist >i')
-  let cdSleeveHover = $('.playlist>p>span')
-  let TitleCd = $('.playlist >span')
+  let TitleCdHover = $(".playlist>span>p");
 
-  let TitleCdHover = $('.playlist>span>p');
+  let musicContent = $(".music-box .caseset");
+  let musicContentOn = $(".music-box .caseset>p");
+  let musicCds = $(".music-content");
 
-  let musicContent = $('.music-box .caseset');
-  let musicContentOn = $('.music-box .caseset>p');
-  let musicCds = $('.music-content')
-
-  let lifereset = $('.music-content>div>button')
+  let lifereset = $(".music-content>div>button");
 
   cdSleeveHover.click(function () {
-    cdSleeveCover.addClass('hoverM')
-    cdSleeveHover.addClass('hide')
-    TitleCd.addClass('hoverM')
-    cdSleeveFNB.addClass('hoverM')
-    $('.photo-box').addClass('hide');
-  })
+    cdSleeveCover.addClass("hoverM");
+    cdSleeveHover.addClass("hide");
+    TitleCd.addClass("hoverM");
+    cdSleeveFNB.addClass("hoverM");
+    $(".photo-box").addClass("hide");
+  });
 
   TitleCdHover.click(function () {
-    cdSleeveFNB.addClass('gone')
-    musicContent.removeClass('caseset');
-    musicCds.addClass('show');
-  })
+    cdSleeveFNB.addClass("gone");
+    musicContent.removeClass("caseset");
+    musicCds.addClass("show");
+  });
 
   lifereset.click(function () {
-    cdSleeveCover.removeClass('hoverM')
-    TitleCd.removeClass('hoverM')
-    cdSleeveFNB.removeClass('hoverM')
-    cdSleeveFNB.removeClass('gone')
+    cdSleeveCover.removeClass("hoverM");
+    TitleCd.removeClass("hoverM");
+    cdSleeveFNB.removeClass("hoverM");
+    cdSleeveFNB.removeClass("gone");
 
+    musicContent.addClass("caseset");
+    musicContent.removeClass("show");
+    musicContentOn.removeClass("show");
 
-    musicContent.addClass('caseset')
-    musicContent.removeClass('show')
-    musicContentOn.removeClass('show')
+    cdContent.removeClass("show");
+    cdContentImg.removeClass("show");
 
-    cdContent.removeClass('show')
-    cdContentImg.removeClass('show')
+    musicCds.removeClass("show");
+    lifeBottom.removeClass("show");
+    $(".photo-box").removeClass("hide");
+  });
 
-    musicCds.removeClass('show');
-    lifeBottom.removeClass('show');
-    $('.photo-box').removeClass('hide');
-
-  })
-
-
-
-  let photoAlbumClick = $('.photo-box>.photo-album>p');
-  let photoAlbumTitle = $('.photo-box>span>.photo-titlepic');
-  let photoContent = $('.photo-content')
-  let photoSlide = $('.photo-content>div')
-  let photoSlidePic = $('.photo-content>div>span.slide-photo');
-  let photoAlbumReset = $('.photo-box .photo-album span');
-
+  let photoAlbumClick = $(".photo-box>.photo-album>p");
+  let photoAlbumTitle = $(".photo-box>span>.photo-titlepic");
+  let photoContent = $(".photo-content");
+  let photoSlide = $(".photo-content>div");
+  let photoSlidePic = $(".photo-content>div>span.slide-photo");
+  let photoAlbumReset = $(".photo-box .photo-album span");
 
   photoAlbumClick.click(function () {
-    photoAlbumClick.addClass('show-photo');
-    photoAlbumTitle.addClass('hoverc');
-    photoAlbumReset.addClass('reset');
-    $('.music-box').addClass('hide');
-    $('.photo-box').addClass('music-on');
-    photoContent.addClass('show')
-  })
-
+    photoAlbumClick.addClass("show-photo");
+    photoAlbumTitle.addClass("hoverc");
+    photoAlbumReset.addClass("reset");
+    $(".music-box").addClass("hide");
+    $(".photo-box").addClass("music-on");
+    photoContent.addClass("show");
+  });
 
   $.each(photoSlide, function (index) {
     $(this).click(function () {
-      if (photoSlidePic.eq(index).hasClass('show')) {
-        photoSlidePic.removeClass('show')
+      if (photoSlidePic.eq(index).hasClass("show")) {
+        photoSlidePic.removeClass("show");
       } else {
-        photoSlidePic.removeClass('show')
-        photoSlidePic.eq(index).addClass('show')
+        photoSlidePic.removeClass("show");
+        photoSlidePic.eq(index).addClass("show");
       }
-    })
-  })
+    });
+  });
 
-  photoAlbumReset.click(function(){
-    photoAlbumClick.removeClass('show-photo');
-    photoAlbumTitle.removeClass('hoverc');
-    photoAlbumReset.removeClass('reset');
+  photoAlbumReset.click(function () {
+    photoAlbumClick.removeClass("show-photo");
+    photoAlbumTitle.removeClass("hoverc");
+    photoAlbumReset.removeClass("reset");
 
-    photoContent.removeClass('show')
-    photoSlidePic.removeClass('show')
+    photoContent.removeClass("show");
+    photoSlidePic.removeClass("show");
 
-    $('.music-box').removeClass('hide');
-    $('.photo-box').removeClass('music-on');
-  })
-
-}
+    $(".music-box").removeClass("hide");
+    $(".photo-box").removeClass("music-on");
+  });
+};
 $(window).ready(function () {
   AOS.init();
 });
