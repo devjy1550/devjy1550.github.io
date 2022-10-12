@@ -205,7 +205,7 @@ strong {
   width: 100%;
 }
 
-h1.logo {
+a.logo {
   position: relative;
   display: block;
   float: left;
@@ -264,9 +264,13 @@ h1.logo {
 .gnb .menu li:nth-child(4) > span {
   width: 60%;
 }
+.gnb .menu li a {
+  line-height: 30px;
+}
 
 .gnb .menu li:hover a {
-  color: rgb(35, 116, 186);
+  font-weight: 600;
+  color: rgb(52, 140, 217);
 }
 
 .gnb .menu li:hover > span {
@@ -274,6 +278,7 @@ h1.logo {
 }
 
 .gnb .menu li a.screenon {
+  font-weight: 700;
   color: rgb(35, 116, 186);
 }
 
@@ -2706,7 +2711,7 @@ div.caseset {
   font-size: 12px;
   line-height: 12px;
   padding-top: 22px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   border: 4px solid rgb(178, 190, 202);
   cursor: pointer;
@@ -2716,6 +2721,7 @@ div.caseset {
 }
 
 .pdf-dl:hover {
+  font-weight: 700;
   border: 4px solid #1395ff;
   background-color: #006ec7;
   color: #fff;
