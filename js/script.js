@@ -1,13 +1,20 @@
 window.onload = function () {
   // 메뉴버튼 클릭이동
-  let gnbBt = $(".gnb .menu li");
   let gnbBtSet = $(".gnb .menu li a");
   let gnbBtLine = $(".gnb .menu li span");
 
-  $.each(gnbBtSet, function () {
+  gnbBtSet.removeClass("screenon");
+  gnbBtLine.removeClass("screenon");
+
+  $.each(gnbBtSet, function (index) {
     $(this).click(function (e) {
       e.preventDefault();
       let target = $(this).attr("href");
+      gnbBtSet.removeClass("screenon");
+      gnbBtLine.removeClass("screenon");
+      gnbBtSet.eq(index).addClass("screenon");
+      gnbBtLine.eq(index).addClass("screenon");
+
       $("html")
         .stop()
         .animate({
@@ -16,15 +23,9 @@ window.onload = function () {
     });
   });
 
-  gnbBtSet.removeClass("screenon");
-  gnbBtLine.removeClass("screenon");
-  $.each(gnbBt, function (index) {
-    $(this).click(function () {
-      gnbBtSet.removeClass("screenon");
-      gnbBtSet.eq(index).addClass("screenon");
-      gnbBtLine.removeClass("screenon");
-      gnbBtLine.eq(index).addClass("screenon");
-    });
+  //새로고침 상단위치
+  $("html").stop().animate({
+    scrollTop: 0,
   });
 
   const nowstart = document.querySelector(".talk-start");

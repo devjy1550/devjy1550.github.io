@@ -433,7 +433,7 @@ a.logo {
   left: 0;
   width: 60%;
   height: 20px;
-  background-color: rgba(171, 204, 249, 0.6);
+  background-color: rgba(192, 221, 238, 0.639);
   z-index: -1;
 }
 
@@ -495,7 +495,7 @@ a.logo {
   left: 0;
   width: 20%;
   height: 16px;
-  background-color: rgba(171, 204, 249, 0.6);
+  background-color: rgba(192, 221, 238, 0.639);
   z-index: -1;
 }
 
@@ -670,7 +670,7 @@ a.logo {
   left: 0;
   width: 50%;
   height: 16px;
-  background-color: rgba(171, 204, 249, 0.6);
+  background-color: rgba(192, 221, 238, 0.639);
   z-index: -1;
 }
 
@@ -820,7 +820,7 @@ a.logo {
   left: 0;
   width: 80%;
   height: 16px;
-  background-color: rgba(171, 204, 249, 0.6);
+  background-color: rgba(192, 221, 238, 0.639);
   z-index: -1;
 }
 
@@ -982,7 +982,7 @@ a.logo {
   transform: translateX(-50%);
   width: 120%;
   height: 20px;
-  background-color: rgba(171, 204, 249, 0.6);
+  background-color: rgba(192, 221, 238, 0.639);
   z-index: -1;
 }
 
@@ -1255,6 +1255,29 @@ a.logo {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.portlist-sw::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80px;
+  display: block;
+  width: 120px;
+  height: 100%;
+  background: #fff;
+  z-index: 10;
+}
+.portlist-sw::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 80px;
+  display: block;
+  width: 120px;
+  height: 100%;
+  background: #fff;
+  z-index: 10;
 }
 
 .portlist-sw .swiper-slide {
@@ -1587,12 +1610,12 @@ a.showBt03 {
   left: 0;
   width: 100%;
   height: 20px;
-  background-color: rgba(171, 204, 249, 0.6);
+  background-color: rgba(192, 221, 238, 0.639);
   z-index: -1;
 }
 
 .portsummary {
-  margin-top: 15px;
+  margin-top: 40px;
   position: relative;
   display: block;
   overflow-x: hidden;
@@ -1612,7 +1635,7 @@ a.showBt03 {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 320px;
   width: 10px;
   height: 100%;
   background-color: #fff;
@@ -1623,7 +1646,7 @@ a.showBt03 {
   content: "";
   position: absolute;
   top: 0;
-  left: 310px;
+  left: 630px;
   width: 10px;
   height: 100%;
   background-color: #fff;
@@ -1633,7 +1656,7 @@ a.showBt03 {
 .st-desc-sw .swiper-slide {
   font-size: 32px;
   line-height: 32px;
-  padding: 30px 20px;
+  padding: 36px 18px;
 }
 
 .portsummary .st-desc-sw .swiper-slide > span {
@@ -1648,8 +1671,8 @@ a.showBt03 {
 .portsummary .st-desc-sw .swiper-slide h3 {
   position: relative;
   display: inline-block;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 700;
   color: #000;
 }
@@ -1657,8 +1680,8 @@ a.showBt03 {
 .portsummary .st-desc-sw .swiper-slide p {
   position: relative;
   display: inline-block;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .portsummary .st-desc-sw .swiper-slide .overview {
@@ -1805,7 +1828,7 @@ li.usedS04 {
 
 .portsummary .ptsum-left {
   position: absolute;
-  bottom: 20px;
+  bottom: 36px;
   left: 40%;
   transform: translateX(-50%);
   display: block;
@@ -1820,7 +1843,7 @@ li.usedS04 {
 
 .portsummary .ptsum-right {
   position: absolute;
-  bottom: 20px;
+  bottom: 36px;
   left: 60%;
   transform: translateX(-50%) rotate(180deg);
   display: block;
@@ -1836,7 +1859,7 @@ li.usedS04 {
 .portcontrol {
   position: relative;
   display: block;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .portcontrol .st-port-pgnt {
@@ -1898,7 +1921,7 @@ li.usedS04 {
   transform: translateX(-50%);
   width: 110%;
   height: 20px;
-  background-color: rgba(171, 204, 249, 0.6);
+  background-color: rgba(192, 221, 238, 0.639);
   z-index: -1;
 }
 
@@ -1908,8 +1931,8 @@ li.usedS04 {
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  font-weight: 300;
-  color: #505050;
+  font-weight: 400;
+  color: #353535;
   margin-top: 16px;
   letter-spacing: 0.5px;
 }
@@ -2628,7 +2651,7 @@ div.caseset {
   transform: translateX(-50%);
   width: 110%;
   height: 14px;
-  background-color: rgba(171, 204, 249, 0.6);
+  background-color: rgba(192, 221, 238, 0.639);
   z-index: -1;
 }
 
