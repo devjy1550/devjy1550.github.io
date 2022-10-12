@@ -122,7 +122,7 @@ window.onload = function () {
 
   let i3 = 0;
   const typing3 = async () => {
-    const letter = context3[i2].split("");
+    const letter = context3[i3].split("");
     while (letter.length) {
       await wait(speed);
       myname.innerHTML += letter.shift();
@@ -135,7 +135,7 @@ window.onload = function () {
 
   let i4 = 0;
   const typing4 = async () => {
-    const letter = context4[i2].split("");
+    const letter = context4[i4].split("");
     while (letter.length) {
       await wait(speed);
       textend.innerHTML += letter.shift();
@@ -152,10 +152,10 @@ window.onload = function () {
 
   // 초기 실행
   setTimeout(typing, 2400);
-  setTimeout(typing1, 3200);
-  setTimeout(typing2, 5400);
-  setTimeout(typing3, 10050);
-  setTimeout(typing4, 11100);
+  setTimeout(typing1, 3600);
+  setTimeout(typing2, 7200);
+  setTimeout(typing3, 9200);
+  setTimeout(typing4, 10000);
 
   new Swiper(".life-sw", {
     loop: true,
