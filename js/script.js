@@ -151,11 +151,11 @@ window.onload = function () {
   }
 
   // 초기 실행
-  setTimeout(typing, 2400);
-  setTimeout(typing1, 3600);
-  setTimeout(typing2, 7200);
-  setTimeout(typing3, 9200);
-  setTimeout(typing4, 10000);
+  setTimeout(typing, 1200);
+  setTimeout(typing1, 2400);
+  setTimeout(typing2, 6000);
+  setTimeout(typing3, 8000);
+  setTimeout(typing4, 8800);
 
   new Swiper(".life-sw", {
     loop: true,
