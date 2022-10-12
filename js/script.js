@@ -16,6 +16,8 @@ window.onload = function () {
     });
   });
 
+  gnbBtSet.removeClass("screenon");
+  gnbBtLine.removeClass("screenon");
   $.each(gnbBt, function (index) {
     $(this).click(function () {
       gnbBtSet.removeClass("screenon");
