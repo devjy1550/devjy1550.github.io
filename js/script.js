@@ -1,6 +1,9 @@
 window.onload = function () {
   // 메뉴버튼 클릭이동
-  let gnbBtSet = $(".menu a");
+  let gnbBt = $(".gnb .menu li");
+  let gnbBtSet = $(".gnb .menu li a");
+  let gnbBtLine = $(".gnb .menu li span");
+
   $.each(gnbBtSet, function () {
     $(this).click(function (e) {
       e.preventDefault();
@@ -10,6 +13,15 @@ window.onload = function () {
         .animate({
           scrollTop: $(target).offset().top,
         });
+    });
+  });
+
+  $.each(gnbBt, function (index) {
+    $(this).click(function () {
+      gnbBtSet.removeClass("screenon");
+      gnbBtSet.eq(index).addClass("screenon");
+      gnbBtLine.removeClass("screenon");
+      gnbBtLine.eq(index).addClass("screenon");
     });
   });
 
@@ -24,13 +36,13 @@ window.onload = function () {
     "꾸준한",
     "현실에 안주하지 않고, 꾸준한 배움을 통해 발전을 꿈꾸는",
   ];
-  const context2 = ["프론트엔드 개발자 지망생"];
+  const context2 = ["프런", "프론트엔드 개발자 지망생"];
 
   const context3 = [" '김 정 용'  "];
 
   const context4 = ["입니다."];
 
-  const speed = 100;
+  const speed = 75;
   let ts = 0;
 
   const typing = async () => {
@@ -66,7 +78,7 @@ window.onload = function () {
       text.innerHTML += letter.shift();
     }
 
-    await wait(600);
+    await wait(300);
 
     if (context1[i + 1]) remove1();
   };
@@ -91,9 +103,21 @@ window.onload = function () {
       textlast.innerHTML += letter.shift();
     }
 
-    await wait(600);
+    await wait(300);
 
     if (context2[i2 + 1]) remove2();
+  };
+  const remove2 = async () => {
+    const letter = context2[i2].split("");
+
+    while (letter.length) {
+      await wait(speed);
+
+      letter.pop();
+      textlast.innerHTML = letter.join("");
+    }
+    i2++;
+    typing2();
   };
 
   let i3 = 0;
@@ -104,7 +128,7 @@ window.onload = function () {
       myname.innerHTML += letter.shift();
     }
 
-    await wait(600);
+    await wait(300);
 
     if (context3[i3 + 1]) remove3();
   };
@@ -117,7 +141,7 @@ window.onload = function () {
       textend.innerHTML += letter.shift();
     }
 
-    await wait(600);
+    await wait(300);
 
     if (context4[i4 + 1]) remove4();
   };
@@ -127,9 +151,9 @@ window.onload = function () {
   }
 
   // 초기 실행
-  setTimeout(typing, 1800);
+  setTimeout(typing, 2400);
   setTimeout(typing1, 3200);
-  setTimeout(typing2, 8400);
+  setTimeout(typing2, 5400);
   setTimeout(typing3, 10050);
   setTimeout(typing4, 11100);
 

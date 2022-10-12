@@ -235,25 +235,50 @@ h1.logo {
   font-size: 24px;
   text-align: center;
   line-height: 40px;
-  color: rgb(38, 32, 10);
   width: 120px;
+  color: #333;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 40px;
   font-family: "Poppins", sans-serif;
   z-index: 1;
+  transition: all 1s;
 }
 
-.gnb .menu li::before {
-  content: "";
+.gnb .menu li > span {
   position: absolute;
   bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  width: 60%;
+  width: 100%;
   height: 12px;
   background-color: rgba(242, 247, 255, 0.837);
   z-index: -1;
+  transition: all 0.2s;
+}
+
+.gnb .menu li:nth-child(2) > span {
+  width: 60%;
+}
+
+.gnb .menu li:nth-child(4) > span {
+  width: 60%;
+}
+
+.gnb .menu li:hover a {
+  color: rgb(35, 116, 186);
+}
+
+.gnb .menu li:hover > span {
+  background-color: rgba(210, 217, 230, 0.837);
+}
+
+.gnb .menu li a.screenon {
+  color: rgb(35, 116, 186);
+}
+
+.gnb .menu li > span.screenon {
+  background-color: rgba(210, 217, 230, 0.837);
 }
 
 /* visual */
@@ -291,7 +316,7 @@ h1.logo {
   white-space: nowrap;
   margin-top: 15px;
   padding: 10px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .visual-right {
@@ -417,7 +442,8 @@ h1.logo {
   display: block;
   font-size: 22px;
   line-height: 48px;
-  letter-spacing: 2px;
+  padding-left: 30px;
+  letter-spacing: 0.5px;
   z-index: 2;
 }
 
@@ -450,7 +476,7 @@ h1.logo {
   display: block;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   text-align: left;
   z-index: 1;
 }
@@ -490,7 +516,7 @@ h1.logo {
   line-height: 18px;
   color: #2f6eff;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .profile .profile-left .name-text > p {
@@ -498,7 +524,7 @@ h1.logo {
   display: block;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   padding: 4px 0 4px 20px;
 }
 
@@ -540,9 +566,8 @@ h1.logo {
   font-size: 14px;
   line-height: 18px;
   color: #2f6eff;
-
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .profile-right .education {
@@ -561,7 +586,7 @@ h1.logo {
   line-height: 18px;
   color: #2f6eff;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   padding-top: 10px;
 }
 
@@ -577,7 +602,7 @@ h1.logo {
   font-size: 14px;
   line-height: 18px;
   color: rgb(150, 152, 157);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 3px;
 }
 
@@ -626,7 +651,7 @@ h1.logo {
   display: block;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   text-align: left;
   z-index: 1;
 }
@@ -652,7 +677,7 @@ h1.logo {
   font-weight: 300;
   color: #505050;
   margin-top: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
 .posibility .psb-desc {
@@ -1188,15 +1213,6 @@ h1.logo {
   visibility: visible;
 }
 
-.skill-list > li > a > ul > li {
-  display: block;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 3px;
-  padding-left: 15px;
-  color: #fff;
-}
-
 .progressbar-text {
   padding-top: 20px !important;
   font-size: 40px;
@@ -1210,7 +1226,7 @@ h1.logo {
   display: block;
   height: 860px;
   padding-top: 190px;
-  padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .portfolio .inner {
@@ -1874,7 +1890,7 @@ li.usedS04 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 110%;
   height: 20px;
   background-color: rgba(171, 204, 249, 0.6);
   z-index: -1;
@@ -2134,11 +2150,10 @@ li.usedS04 {
   height: 80px;
   background: url("../images/reset-music.png") no-repeat center;
   background-size: contain;
-  transition: transform 0.8s;
+  transition: transform 0.3s;
   border: 0;
   cursor: pointer;
 }
-
 
 .music-content > div > button:hover {
   transform: rotate(180deg);
@@ -2314,7 +2329,7 @@ div.caseset {
   width: 400px;
   height: 400px;
   transform: translateX(0px);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .life-bottom .photo-box.hide {
@@ -2325,7 +2340,7 @@ div.caseset {
 
 .life-bottom .photo-box.music-on {
   transform: translateX(-240px);
-  transition: all 0.5s;
+  transition: all 0;
 }
 
 .life-bottom .photo-box .photo-album {
@@ -2366,7 +2381,7 @@ div.caseset {
 
 .life-bottom .photo-box .photo-album p.show-photo {
   opacity: 0;
-  transition: all 0.5s 1s;
+  transition: all 0.5s 0.5s;
 }
 
 .life-bottom .photo-box .photo-album span {
@@ -2408,7 +2423,7 @@ div.caseset {
   height: 128px;
   background: url("../images/photo-title-03.png") no-repeat center;
   background-size: contain;
-  transition: all 0.5s 1s;
+  transition: all 0.5s 0.5s;
 }
 
 .photo-titlepic.hoverc {
@@ -2438,7 +2453,6 @@ div.caseset {
   width: 50px;
   height: 100%;
 }
-
 
 .photo-content > div > span {
   position: relative;
@@ -2550,8 +2564,8 @@ div.caseset {
   z-index: 2;
 }
 
-.photo-content > div > span::after{
-  content: '';
+.photo-content > div > span::after {
+  content: "";
   position: absolute;
   display: block;
   width: calc(100% - 15px);
@@ -2560,10 +2574,9 @@ div.caseset {
   transition: all 0.5s;
 }
 
-.photo-content > div > span:hover::after{
-  background-color:transparent;
+.photo-content > div > span:hover::after {
+  background-color: transparent;
 }
-
 
 /* footer */
 .footer {
@@ -2595,7 +2608,7 @@ div.caseset {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 60%;
+  width: 110%;
   height: 14px;
   background-color: rgba(171, 204, 249, 0.6);
   z-index: -1;
