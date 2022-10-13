@@ -23,7 +23,7 @@ window.onload = function () {
     });
   });
 
-  //새로고침 상단위치
+  // 새로고침 상단위치
   $("html").stop().animate({
     scrollTop: 0,
   });
@@ -532,19 +532,20 @@ window.onload = function () {
   let cdSleeveCover = $(".playlist >i");
   let cdSleeveHover = $(".playlist>p>span");
   let TitleCd = $(".playlist >span");
-
+  let turnTable = $(".playlist >span>img");
   let TitleCdHover = $(".playlist>span>p");
 
   let musicContent = $(".music-box .caseset");
   let musicContentOn = $(".music-box .caseset>p");
   let musicCds = $(".music-content");
 
-  let lifereset = $(".music-content>div>button");
+  let musicreset = $(".music-content>div>button");
 
   cdSleeveHover.click(function () {
     cdSleeveCover.addClass("hoverM");
     cdSleeveHover.addClass("hide");
     TitleCd.addClass("hoverM");
+    turnTable.addClass("turnon");
     cdSleeveFNB.addClass("hoverM");
     $(".photo-box").addClass("hide");
 
@@ -555,9 +556,10 @@ window.onload = function () {
     cdSleeveFNB.addClass("gone");
     musicContent.removeClass("caseset");
     musicCds.addClass("show");
+    turnTable.removeClass("turnon");
   });
 
-  lifereset.click(function () {
+  musicreset.click(function () {
     cdSleeveCover.removeClass("hoverM");
     cdSleeveHover.removeClass("hide");
     TitleCd.removeClass("hoverM");

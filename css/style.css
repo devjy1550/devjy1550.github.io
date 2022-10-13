@@ -953,6 +953,37 @@ a.logo {
   z-index: 2;
 }
 
+.mr-control button span > i {
+  position: absolute;
+  bottom: 29px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 84px;
+  height: 84px;
+  background-size: contain;
+}
+
+.mr-control button:nth-child(1) span > i {
+  background: url("../images/1y-cb.png") no-repeat center;
+  background-size: contain;
+}
+
+.mr-control button:nth-child(2) span > i {
+  background: url("../images/3y-cb.png") no-repeat center;
+  background-size: contain;
+}
+
+.mr-control button:nth-child(3) span > i {
+  background: url("../images/5y-cb.png") no-repeat center;
+  background-size: contain;
+}
+
+.mr-control button:nth-child(4) span > i {
+  background: url("../images/10y-cb.png") no-repeat center;
+  background-size: contain;
+}
+
 /* skills */
 .skills {
   position: relative;
@@ -2265,6 +2296,25 @@ li.usedS04 {
   background: rgb(144, 203, 255) url("../images/hover01.png") no-repeat center;
   background-size: 20px 20px;
   transition: all 0.5s;
+}
+
+.playlist > span > img {
+  position: absolute;
+  top: 90px;
+  right: -280px;
+  display: block;
+  opacity: 0;
+  width: 240px;
+  height: 240px;
+  transform: rotate(-45deg);
+  transform-origin: 0% 100%;
+  transition: opacity 1s 0.8s, transform 1s 1.2s;
+}
+
+.playlist > span > img.turnon {
+  display: block;
+  opacity: 1;
+  transform: rotate(-90deg);
 }
 
 .playlist > p {
