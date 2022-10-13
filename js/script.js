@@ -498,6 +498,76 @@ window.onload = function () {
     offset: "50%",
   });
 
+  let menuLi = $(".menuBt .menuli");
+  new Waypoint({
+    element: $(".aboutme"),
+    handler: function (direction) {
+      if (direction == "down") {
+        menuLi.removeClass("screenon");
+        $(".menu-am").addClass("screenon");
+      } else if (direction == "up") {
+        $(".menu-am").removeClass("screenon");
+      }
+    },
+    offset: "50%",
+  });
+
+  new Waypoint({
+    element: $(".skills"),
+    handler: function (direction) {
+      if (direction == "down") {
+        menuLi.removeClass("screenon");
+        $(".menu-s").addClass("screenon");
+      } else if (direction == "up") {
+        $(".menu-am").addClass("screenon");
+        $(".menu-s").removeClass("screenon");
+      }
+    },
+    offset: "50%",
+  });
+
+  new Waypoint({
+    element: $(".portfolio"),
+    handler: function (direction) {
+      if (direction == "down") {
+        menuLi.removeClass("screenon");
+        $(".menu-p").addClass("screenon");
+      } else if (direction == "up") {
+        $(".menu-s").addClass("screenon");
+        $(".menu-p").removeClass("screenon");
+      }
+    },
+    offset: "50%",
+  });
+
+  new Waypoint({
+    element: $(".life"),
+    handler: function (direction) {
+      if (direction == "down") {
+        menuLi.removeClass("screenon");
+        $(".menu-l").addClass("screenon");
+      } else if (direction == "up") {
+        $(".menu-p").addClass("screenon");
+        $(".menu-l").removeClass("screenon");
+      }
+    },
+    offset: "50%",
+  });
+
+  new Waypoint({
+    element: $(".footer"),
+    handler: function (direction) {
+      if (direction == "down") {
+        menuLi.removeClass("screenon");
+        $(".menu-c").addClass("screenon");
+      } else if (direction == "up") {
+        $(".menu-l").addClass("screenon");
+        $(".menu-c").removeClass("screenon");
+      }
+    },
+    offset: "80%",
+  });
+
   new Waypoint({
     element: $(".skills"),
     handler: function (direction) {

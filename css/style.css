@@ -266,12 +266,13 @@ a.logo {
   width: 60%;
 }
 .gnb .menu li a {
+  display: inline-block;
   line-height: 30px;
+  width: 120px;
 }
-
-.gnb .menu li:hover a {
-  font-weight: 600;
-  color: rgb(52, 140, 217);
+.gnb .menu li a.menu-s,
+.gnb .menu li a.menu-l {
+  width: 72px;
 }
 
 .gnb .menu li:hover > span {
@@ -434,6 +435,20 @@ a.logo {
   width: 60%;
   height: 20px;
   background-color: rgba(192, 221, 238, 0.639);
+  z-index: -1;
+}
+
+.aboutme-top h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 30px;
+
+  bottom: 0px;
+  width: 64px;
+  height: 64px;
+  background: url("../images/self.png") no-repeat center;
+  background-size: contain;
   z-index: -1;
 }
 
@@ -846,6 +861,9 @@ a.logo {
   padding: 30px 0;
 }
 
+.my-roadmap .map-review::before {
+}
+
 .my-roadmap .map-review ul.mr-content {
   position: relative;
   display: block;
@@ -855,7 +873,53 @@ a.logo {
 .mr-content li {
   position: relative;
   display: none;
+  padding-right: 60px;
   padding-left: 30px;
+}
+
+.mr-content li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 320px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../images/rm01.png") no-repeat center;
+  background-size: contain;
+}
+.mr-content li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 320px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../images/rm02.png") no-repeat center;
+  background-size: contain;
+}
+.mr-content li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 320px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../images/rm03.png") no-repeat center;
+  background-size: contain;
+}
+.mr-content li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 320px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url("../images/rm04.png") no-repeat center;
+  background-size: contain;
 }
 
 .mr-content li i {
@@ -1014,6 +1078,20 @@ a.logo {
   width: 120%;
   height: 20px;
   background-color: rgba(192, 221, 238, 0.639);
+  z-index: -1;
+}
+
+.skills h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: -45px;
+
+  bottom: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("../images/clickplz.png") no-repeat center;
+  background-size: contain;
   z-index: -1;
 }
 
