@@ -742,6 +742,20 @@ a.logo {
   margin: 0 auto;
 }
 
+.posibility .psb-box .psb-graph::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 120px;
+  left: 120px;
+  width: 60px;
+  height: 60px;
+  background: url("../images/me.png") no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+  z-index: 6;
+}
+
 .posibility .psb-box .psb-graph .psb-graphS {
   content: "";
   position: absolute;
@@ -1078,20 +1092,6 @@ a.logo {
   width: 120%;
   height: 20px;
   background-color: rgba(192, 221, 238, 0.639);
-  z-index: -1;
-}
-
-.skills h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  right: -45px;
-
-  bottom: 0px;
-  width: 50px;
-  height: 50px;
-  background: url("../images/clickplz.png") no-repeat center;
-  background-size: contain;
   z-index: -1;
 }
 
