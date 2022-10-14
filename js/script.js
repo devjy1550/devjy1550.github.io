@@ -190,7 +190,7 @@ window.onload = function () {
     speed: 1500,
     loop: true,
     centeredSlides: true,
-    slidesPerView: "3",
+    slidesPerView: "7",
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -205,11 +205,11 @@ window.onload = function () {
   });
 
   const stttSW = new Swiper(".st-desc-sw", {
-    speed: 1200,
+    speed: 1500,
     loop: true,
     allowTouchMove: false,
     centeredSlides: true,
-    slidesPerView: "3",
+    slidesPerView: "7",
     pagination: {
       el: ".st-port-pgnt",
       type: "bullets",
@@ -413,7 +413,7 @@ window.onload = function () {
 
   let roadmapBt = $(".mr-control >button");
   let roadmapBtB = $(".mr-control >button>span");
-  let roadmapBtT = $(".mr-control >button>p");
+
   let roadmapBtCT = $(".mr-control >button>i");
   let mrDesc = $(".my-roadmap .map-review ul.mr-content >li");
   let myRoadmap = $(".my-roadmap");
@@ -425,10 +425,9 @@ window.onload = function () {
   function changeRoadMap() {
     mrDesc.hide();
     mrDesc.eq(roadmapBtIndex).show();
-    roadmapBtB.removeClass("mr-show");
-    roadmapBtB.eq(roadmapBtIndex).addClass("mr-show");
-    roadmapBtT.removeClass("mr-show");
-    roadmapBtT.eq(roadmapBtIndex).addClass("mr-show");
+    roadmapBt.removeClass("mr-show");
+    roadmapBt.eq(roadmapBtIndex).addClass("mr-show");
+
     roadmapBtCT.removeClass("mr-show");
     roadmapBtCT.eq(roadmapBtIndex).addClass("mr-show");
 
@@ -438,15 +437,15 @@ window.onload = function () {
     }
   }
   myRoadmap.mouseenter(function () {
-    clearInterval(radmapTimer);
+    clearInterval(roadmapTimer);
   });
 
   myRoadmap.mouseleave(function () {
-    clearInterval(radmapTimer);
-    radmapTimer = setInterval(changeRoadMap, roadmapSpeed);
+    clearInterval(roadmapTimer);
+    roadmapTimer = setInterval(changeRoadMap, roadmapSpeed);
   });
 
-  let radmapTimer = setInterval(changeRoadMap, roadmapSpeed);
+  let roadmapTimer = setInterval(changeRoadMap, roadmapSpeed);
   changeRoadMap();
 
   $.each(roadmapBt, function (index) {
