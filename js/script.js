@@ -412,8 +412,6 @@ window.onload = function () {
   });
 
   let roadmapBt = $(".mr-control >button");
-  let roadmapBtB = $(".mr-control >button>span");
-
   let roadmapBtCT = $(".mr-control >button>i");
   let mrDesc = $(".my-roadmap .map-review ul.mr-content >li");
   let myRoadmap = $(".my-roadmap");
@@ -426,9 +424,8 @@ window.onload = function () {
     mrDesc.hide();
     mrDesc.eq(roadmapBtIndex).show();
     roadmapBt.removeClass("mr-show");
-    roadmapBt.eq(roadmapBtIndex).addClass("mr-show");
-
     roadmapBtCT.removeClass("mr-show");
+    roadmapBt.eq(roadmapBtIndex).addClass("mr-show");
     roadmapBtCT.eq(roadmapBtIndex).addClass("mr-show");
 
     roadmapBtIndex++;
