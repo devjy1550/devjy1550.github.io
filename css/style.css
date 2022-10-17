@@ -288,46 +288,41 @@ a.logo {
   background-color: rgba(210, 217, 230, 0.837);
 }
 
-@media all and (max-width: 1440px) {
+
+@media all and (max-width: 480px) {
   a.logo {
-    margin-left: 60px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    float: none;
   }
 
   .gnb {
-    padding: 25px 60px;
+    float: none;
+    padding: 0;
+    padding-bottom: 8px;
   }
+
 
   .gnb .menu {
-    width: 700px;
+    width: 400px;
+
   }
 
-  .inner {
-    max-width: 1320px;
-    padding: 0 40px;
+  .gnb .menu li a {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 0;
+  }
+
+  .gnb .menu li span {
+    height: 8px;
+    bottom: 10px;
+    width: 80%;
   }
 }
 
-@media all and (max-width: 1080px) {
-  a.logo {
-    width: 80px;
-    height: 60px;
-    margin: 15px 0;
-    margin-left: 60px;
-  }
-
-  .gnb {
-    padding: 30px 60px;
-  }
-
-  .gnb .menu {
-    width: 700px;
-  }
-
-  .gnb .menu li {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
 
 /* visual */
 .visual {
@@ -456,95 +451,96 @@ a.logo {
   background-color: white;
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 480px) {
   .visual {
-    padding: 240px 0 200px 0;
+    height: 880px;
+    padding: 175px 0 250px 0;
+  }
+
+  .visual .inner {
+    padding: 0 20px;
   }
 
   .visual-left {
-    padding: 2vw;
+    float: none;
+    width: 100%;
+    padding: 20px 15px;
+    background: #a3d6f4 url('../images/face02.png') no-repeat;
+    background-size: 102px 136px;
+    background-position-x: 313px;
+    background-position-y: 30px;
   }
 
   .visual-left h2 {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 32px;
+    margin-bottom: 10px;
   }
 
   .visual-left span {
     font-size: 20px;
     line-height: 28px;
+    margin-top: 5px;
   }
 
   .visual-right {
-    float: right;
+    float: none;
+    width: 100%;
   }
 
-  .visual-right::before {
-    width: 540px;
-    height: 540px;
-    background: url("../images/profile.png") no-repeat center;
-
-    background-size: 80% 80%;
+  .visual-right:before {
+    width: 360px;
+    height: 360px;
+    top: 100px;
   }
 
   .visual-talk {
-    padding-right: 20px;
+    padding: 20px 60px 0 55px;
   }
 
   .visual-talk::before {
-    width: 60vw;
-    background: url("../images/talk.png") no-repeat top right;
-
-    background-size: 80% 80%;
+    width: 440px;
+    height: 280px;
+    background-size: 100% 85%;
   }
 
   .visual-right span.talk-start {
-    font-size: 28px;
-    line-height: 32px;
-    padding-top: 21px;
-  }
-
-  .visual-right span.talk-on,
-  .visual-right span.talk-last,
-  .visual-right span.talk-end,
-  .myname {
-    font-size: 20px;
-    line-height: 28px;
-    padding-top: 9px;
-  }
-}
-
-@media all and (max-width: 1320px) {
-  .visual {
-    padding: 180px 0 180px 0;
-  }
-
-  .visual-left {
-    width: 45%;
-  }
-
-  .visual-right {
-    width: 55%;
-  }
-
-  .visual-right::before {
-    width: 480px;
-    height: 480px;
-    background: url("../images/profile.png") no-repeat center;
-
-    background-size: 80% 80%;
-  }
-}
-
-@media all and (max-width: 1160px) {
-  .visual-left h2 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 30px;
   }
 
-  .visual-left span {
-    font-size: 16px;
-    line-height: 22px;
+  .visual-right span.talk-on {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 10px;
+    letter-spacing: 0px
+  }
+
+  .visual-right span.talk-last {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 10px;
+    letter-spacing: 0;
+  }
+
+  .visual-right span.talk-end {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    padding: 0;
+  }
+
+  .myname {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 0;
+  }
+
+  .d-line1,
+  .d-line2 {
+    display: none
   }
 }
 
@@ -1162,215 +1158,197 @@ a.logo {
   background-color: rgba(32, 136, 255, 0.744);
 }
 
-@media all and (max-width: 1440px) {
+
+@media all and (max-width:480px) {
   .aboutme {
-    padding: 100px 0 40px 0;
+    padding: 40px 20px;
   }
 
-  .aboutme-top h2 {
-    font-size: 40px;
-    line-height: 54px;
+  .aboutme h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .aboutme h2::after {
+    width: 48px;
+    height: 48px;
+    right: 24px;
   }
 
   .mystory p {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.55px;
   }
 
   .mystory span {
-    top: -160px;
+    top: 88px;
+    font-size: 80px;
+    line-height: 72px;
     text-align: right;
-    color: rgba(154, 187, 225, 0.15);
   }
 
-  .aboutme-bottom .my-roadmap {
-    margin-right: 80px;
-  }
-
-  .my-roadmap .map-review {
-    margin-right: 0;
-    width: 95%;
-  }
-
-
-  .my-roadmap .mr-control {
-    width: 95%;
-  }
-}
-
-@media all and (max-width: 1320px) {
-
-  .aboutme-bottom .profile h3,
-  .posibility .psb-top h3,
-  .my-roadmap h3 {
+  .aboutme-bottom .profile h3 {
     font-size: 28px;
-    line-height: 36px;
+    line-height: 32px;
   }
 
   .profile .profile-left {
-    margin-top: 15px;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  .profile .profile-right {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .profile .profile-left>span.pic {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+    margin-top: 20px;
   }
 
   .profile .profile-left .name-text {
-    top: 0;
-    right: -20px;
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
   }
 
-  .profile-left .pic {
-    top: 80px;
-    width: 300px;
-    height: 420px;
+  
+  .profile .profile-left .name-text span{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .profile .profile-left .name-text p{
+    font-size: 14px;
+    line-height: 16px;
   }
 
-  .aboutme-bottom .profile-right {
-    padding-top: 5px;
-    padding-left: 80px;
+  .profile .profile-right>div.introduce {
+margin-top: 48px;
+    padding: 0;
+
   }
 
-  .profile-right .education {
-    padding-left: 20px;
+  .profile .profile-right>div.introduce ul li {
+    padding: 10px 0;
   }
-}
 
-@media all and (max-width: 1080px) {
-  .aboutme-bottom .posibility {
-    float: none;
+  .profile .profile-right>div.introduce ul li span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .profile .profile-right>div.introduce ul li p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .profile .profile-right>div.education {
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  .profile .profile-right>div.education ul li {
+    padding-right: 0;
+  }
+
+  .profile .profile-right>div.education ul span {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+  }
+
+  .profile .profile-right>div.education ul li p {
+    font-size: 18px;
+    line-height: 20px;
+  
+  }
+
+  .profile .profile-right>div.education ul li i {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .aboutme-bottom .posibility{
+    position: relative;
+    display: block;
     width: 100%;
-    font-size: 0;
-    margin-bottom: 20px;
+    float: none;
   }
 
-  .posibility .psb-box {
+  .posibility .psb-top h3{
+     font-size: 28px;
+    line-height: 32px;
+  }
+
+  .psb-top>p{
     display: inline-block;
-    width: 40%;
-    padding-left: 60px;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
   }
 
-  .posibility .psb-box::after {
-    bottom: 20px;
-    right: -160px;
-    width: 100px;
-    height: 100px;
-    background-size: 80px 80px;
+  .posibility .psb-box{
+    padding: 50px 0  30px 0;
+  }
+
+  .posibility .psb-box::after{
+    bottom: 0;
+    right: 15px;
+
   }
 
   .posibility .psb-desc {
-    display: inline-block;
-    width: 60%;
-    height: 390px;
-    padding: 0;
-    border: 0;
+margin: 0 auto;
+margin-top: 20px;
+padding-left: 15px;
   }
 
-  .posibility .psb-desc p {
-    position: absolute;
+  .aboutme-bottom .my-roadmap{
+    position: relative;
     display: block;
-    font-size: 20px;
-    line-height: 36px;
-    border-radius: 24px;
-    border: 2px solid #8bcbff;
-  }
-
-  .posibility .psb-desc p:nth-child(1) {
-    left: 50px;
-    top: 40px;
-    padding: 10px 20px;
-  }
-
-  .posibility .psb-desc p:nth-child(2) {
-    top: 120px;
-    left: 50px;
-    padding: 10px 20px;
-  }
-
-  .posibility .psb-desc p:nth-child(3) {
-    top: 200px;
-    left: 50px;
-    padding: 10px 20px;
-  }
-
-  .posibility .psb-desc p::before {
-    content: "";
-    position: absolute;
-    bottom: -23px;
-    display: block;
-    width: 30px;
-    height: 40px;
-    background: url("../images/baloon.png") no-repeat center;
-    background-size: contain;
-  }
-
-  .posibility .psb-desc p:nth-child(1)::before {
-    left: 150px;
-  }
-
-  .posibility .psb-desc p:nth-child(2)::before {
-    left: 100px;
-  }
-
-  .posibility .psb-desc p:nth-child(3)::before {
-    left: 50px;
-  }
-
-  .aboutme-bottom .my-roadmap {
+    width: 100%;
     float: none;
-    width: 60%;
     margin: 0;
-    padding: 50px 0;
-  }
-
-  .aboutme-bottom .my-roadmap::after {
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    left:  105%;
-    display: block;
-    width: 420px;
-    height: 560px;
-    background: url('../images/face02.png') no-repeat center;
-    background-size: cover;
+    margin-top: 50px;
   }
 
 
 
-  .mr-content li {
-    padding-left: 80px;
-    padding-right: 100px;
-    margin-right: 60px;
+
+  .my-roadmap h3 {
+
+  font-size: 28px;
+  line-height: 32px;
   }
 
-  .mr-content li::before {
-    display: none !important;
+  .my-roadmap>p{
+    font-size: 14px;
+    line-height: 18px;
   }
 
-  .mr-content li::after {
-    content: '';
-    position: absolute;
-    display: block;
-    bottom: 0;
-    right: -40px;
-    width: 120px;
-    height: 120px;
+  .my-roadmap .map-review{
+    width: 100%;
   }
-
-  .mr-content li:nth-child(1)::after {
-    background: url('../images/rm01.png') no-repeat center;
-    background-size: contain;
+  .my-roadmap .mr-control{
+    width: 100%;
+    margin-top: 20px;
   }
-
-  .mr-content li:nth-child(2)::after {
-    background: url('../images/rm02.png') no-repeat center;
-    background-size: contain;
-  }
-
-  .mr-content li:nth-child(3)::after {
-    background: url('../images/rm03.png') no-repeat center;
-    background-size: contain;
-  }
-
-  .mr-content li:nth-child(4)::after {
-    background: url('../images/rm04.png') no-repeat center;
-    background-size: contain;
+  .mr-content li{
+    padding-left: 60px;
   }
 }
 
@@ -2380,11 +2358,12 @@ li.usedS04 {
 
 
 
-@media all and (max-width:1320px){
+@media all and (max-width:1320px) {
   .port-left {
     left: -900px;
   }
-  .port-right{
+
+  .port-right {
     right: 180px;
   }
 
@@ -3153,11 +3132,12 @@ div.caseset {
   background-color: transparent;
 }
 
-@media all and (max-width:1320px){
+@media all and (max-width:1320px) {
   .port-left {
     left: -900px;
   }
-  .port-right{
+
+  .port-right {
     right: 180px;
   }
 
