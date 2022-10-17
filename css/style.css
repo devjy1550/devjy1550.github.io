@@ -2874,41 +2874,47 @@ div.caseset {
 .social-box a {
   position: relative;
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .mail {
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   background: url("../images/git-off.png") no-repeat center;
-  background-size: contain;
+  background-size: 32px 32px;
 }
 
 .mail:hover {
+  width: 64px;
+  height: 64px;
   background: url("../images/git-on.png");
   background-size: contain;
 }
 
 .kt {
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   background: url("../images/mail-off.png") no-repeat center;
-  background-size: contain;
+  background-size: 32px 32px;
 }
 
 .kt:hover {
+  width: 64px;
+  height: 64px;
   background: url("../images/mail-on.png");
   background-size: contain;
 }
 
 .git {
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   background: url("../images/talk-off.png") no-repeat center;
-  background-size: contain;
+  background-size: 32px 32px;
 }
 
 .git:hover {
+  width: 64px;
+  height: 64px;
   background: url("../images/talk-on.png");
   background-size: contain;
 }

@@ -408,7 +408,9 @@ window.onload = function () {
   let goTop = $(".gotop");
 
   goTop.click(function () {
-    $(window).scrollTop(0);
+    $("html").stop().animate({
+      scrollTop: 0,
+    });
   });
 
   let roadmapBt = $(".mr-control >button");
