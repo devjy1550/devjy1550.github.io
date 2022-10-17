@@ -52,9 +52,6 @@ strong {
   font-weight: 700;
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
 
 /* 공통요소 */
 .clearfix::after {
@@ -1179,6 +1176,7 @@ a.logo {
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.55px;
+    padding-left: 20px;
   }
 
   .mystory span {
@@ -1224,19 +1222,19 @@ a.logo {
     white-space: nowrap;
   }
 
-  
-  .profile .profile-left .name-text span{
+
+  .profile .profile-left .name-text span {
     font-size: 12px;
     line-height: 14px;
   }
-  
-  .profile .profile-left .name-text p{
+
+  .profile .profile-left .name-text p {
     font-size: 14px;
     line-height: 16px;
   }
 
   .profile .profile-right>div.introduce {
-margin-top: 48px;
+    margin-top: 48px;
     padding: 0;
 
   }
@@ -1249,6 +1247,7 @@ margin-top: 48px;
     font-size: 12px;
     line-height: 14px;
   }
+
   .profile .profile-right>div.introduce ul li p {
     font-size: 14px;
     line-height: 16px;
@@ -1273,7 +1272,7 @@ margin-top: 48px;
   .profile .profile-right>div.education ul li p {
     font-size: 18px;
     line-height: 20px;
-  
+
   }
 
   .profile .profile-right>div.education ul li i {
@@ -1282,42 +1281,47 @@ margin-top: 48px;
     letter-spacing: 0.5px;
   }
 
-  .aboutme-bottom .posibility{
+  .aboutme-bottom .posibility {
     position: relative;
     display: block;
     width: 100%;
     float: none;
   }
 
-  .posibility .psb-top h3{
-     font-size: 28px;
+  .posibility .psb-top h3 {
+    font-size: 28px;
     line-height: 32px;
   }
 
-  .psb-top>p{
+  .psb-top>p {
     display: inline-block;
     font-size: 14px;
     line-height: 18px;
     white-space: nowrap;
   }
 
-  .posibility .psb-box{
-    padding: 50px 0  30px 0;
+  .posibility .psb-box {
+    padding: 50px 0 30px 0;
   }
 
-  .posibility .psb-box::after{
+  .posibility .psb-box::after {
     bottom: 0;
-    right: 15px;
+    right: 45px;
+    width: 45px;
+    height: 45px;
+  }
 
+  .posibility .psb-box .psb-graph {
+    margin-left: 40px;
   }
 
   .posibility .psb-desc {
-margin: 0 auto;
-margin-top: 20px;
-padding-left: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 15px;
   }
 
-  .aboutme-bottom .my-roadmap{
+  .aboutme-bottom .my-roadmap {
     position: relative;
     display: block;
     width: 100%;
@@ -1331,23 +1335,25 @@ padding-left: 15px;
 
   .my-roadmap h3 {
 
-  font-size: 28px;
-  line-height: 32px;
+    font-size: 28px;
+    line-height: 32px;
   }
 
-  .my-roadmap>p{
+  .my-roadmap>p {
     font-size: 14px;
     line-height: 18px;
   }
 
-  .my-roadmap .map-review{
+  .my-roadmap .map-review {
     width: 100%;
   }
-  .my-roadmap .mr-control{
+
+  .my-roadmap .mr-control {
     width: 100%;
     margin-top: 20px;
   }
-  .mr-content li{
+
+  .mr-content li {
     padding-left: 60px;
   }
 }
@@ -1638,65 +1644,64 @@ padding-left: 15px;
   cursor: not-allowed;
 }
 
-@media all and (max-width: 1440px) {
-  .skill-list>li>a>span {
-    font-size: 12px;
-    line-height: 14px;
-    top: 105px;
-  }
-}
+@media all and (max-width: 480px) {
 
-@media all and (max-width: 1320px) {
-  .skill-list>li>a {
-    background-size: 45px;
-    background-position: center;
+  .skills {
+    padding: 70px 0;
   }
 
-  .skill-list>li>a>span {
-    display: none;
-  }
-}
+  .skills h2 {
 
-@media all and (max-width: 1080px) {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  .skills h2::after {
+    width: 48px;
+    height: 48px;
+    right: 12px;
+  }
+
   .skill-list {
-    padding: 0;
     white-space: nowrap;
-    overflow: auto;
-    height: 190px;
+    overflow-x: auto;
+    padding: 0;
+    padding-bottom: 25px;
   }
-
-  .skill-list::-webkit-scrollbar {
-    height: 10px;
-    background-color: rgb(210, 210, 210);
-  }
-
-  .skill-list::-webkit-scrollbar-thumb {
-    background-color: rgb(60, 193, 255);
-
-  }
-
 
   .skill-list>li {
-    display: inline-block;
+    width: 20%;
     margin: 0;
-    margin-right: 40px;
+    margin-right: 20px;
+    padding: 0;
   }
 
   .skill-list>li:nth-child(4n) {
-    display: inline-block;
-    margin: 0;
-    margin-right: 40px;
+    margin-right: 20px;
+  }
+
+  .skill-list>li:nth-child(1) {
+    margin-left: 20px;
   }
 
   .skill-list>li:nth-child(9) {
     display: none;
   }
 
+
   .skill-list>li:nth-child(12) {
     display: none;
   }
 
-  .
+  .skill-list>li>a {
+    background-position: center;
+    background-size: 35px
+  }
+
+  .skill-list>li>a>span {
+    display: none;
+  }
 }
 
 /* portfolio */
@@ -2454,6 +2459,7 @@ li.usedS04 {
   display: block;
 }
 
+
 .life-bottom .case-top {
   position: relative;
   display: inline-block;
@@ -3132,13 +3138,319 @@ div.caseset {
   background-color: transparent;
 }
 
-@media all and (max-width:1320px) {
-  .port-left {
-    left: -900px;
+@media all and (max-width:480px) {
+  .life {
+    padding: 50px 0;
   }
 
-  .port-right {
-    right: 180px;
+  .life .inner .life-top h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .life-top span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .life-bottom {
+    display: block;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .playlist {
+    margin: 0 40px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .playlist.hoverM {
+    transform: none;
+  }
+
+  .playlist>p {
+    width: 208px;
+    height: 208px;
+  }
+
+  .playlist>p>span {
+    position: absolute;
+    bottom: 8px;
+    right: 7px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(46, 161, 255, 0.67) url("../images/hover02.png") no-repeat center;
+    background-size: 20px 20px;
+    transition: all 0.5s 0.5s;
+    cursor: pointer;
+  }
+  
+  .playlist>p>span:hover {
+    background: rgb(144, 203, 255) url("../images/hover01.png") no-repeat center;
+    background-size:  20px 20px;
+      transition: all 0.5s;
+  }
+
+
+
+
+
+
+  .playlist>span {
+    width: 200px;
+    height: 200px;
+  }
+
+  .playlist>span.hoverM {
+    transform: translate(200px, 2px);
+
+    background: url("../images/cd-title-02.png") no-repeat center;
+    background-size: 100% 100%;
+    
+  }
+
+  .playlist>span.hoverM>p {
+    position: absolute;
+    display: block;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background: rgba(247, 251, 255);
+    background-size: 30px 30px;
+    border-radius: 50%;
+    transition: all 1s 1s;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .playlist>span.hoverM>p:hover {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: rgb(144, 203, 255) url("../images/hover01.png") no-repeat center;
+    background-size: 14px 14px;
+    transition: all 0.5s;
+  }
+
+
+  .playlist>i {
+    left: 185px;
+    width: 15px;
+    height: 200px;
+    border-radius: 0px 10px 10px 0
+  }
+
+  .playlist>i.hoverM {
+    position: absolute;
+    top: 1px;
+    left: 200px;
+    display: block;
+    width: 20px;
+    height: 206px;
+    background-size: 20px 206px;
+    transition: all 0.5s ease 0.1s;
+  }
+
+  .playlist>span>img {
+    position: absolute;
+    top: 50px;
+    right: -140px;
+    display: block;
+    opacity: 0;
+    width: 120px;
+    height: 120px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 100%;
+    transition: opacity 1s 0.8s, transform 1s 1.2s;
+  }
+
+
+
+  .life-bottom>div.music-box{
+    padding-left: 20px;
+  }
+  
+  .life-bottom .case-top {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 200px;
+    border: 1px solid #333;
+    border-radius: 10px 0 0 10px;
+    background-color: #b8b8b8;
+    box-shadow: inset 1px 1px 2px 0.5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+
+  
+.life-bottom .case-top p {
+  position: relative;
+  display: block;
+  width: 3vw;
+  height: calc(100% - 1vw);
+  border-radius: 6px 3px 3px 6px;
+  margin: 2px 0 0 2px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.life-bottom .case-top p::after {
+  content: "";
+  position: absolute;
+  left: -0.5vw;
+    bottom: 3px;
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  background: url("../images/hover02.png") no-repeat center;
+  background-size: contain;
+  transition: all 0.25s;
+}
+
+
+
+.life-bottom .top01>p {
+  background-color: #ff70a5;
+  border-left: 1vw solid #fd80ae;
+  border-right: 1vw solid #ff659e;
+}
+
+.life-bottom .top02>p {
+  background-color: #ffdb4c;
+  border-left: 6px solid #ffe16a;
+  border-right: 6px solid #ffd42a;
+}
+
+.life-bottom .top03>p {
+  background-color: #4ee4ff;
+  border-left: 6px solid #65e8ff;
+  border-right: 6px solid #33e0ff;
+}
+
+.life-bottom .top04>p {
+  background-color: #3c3c3c;
+  border-left: 6px solid #464646;
+  border-right: 6px solid #333333;
+}
+
+.life-bottom .top01>p:hover {
+  background-color: #e35187;
+  border-left: 6px solid #e55f90;
+  border-right: 6px solid #e0447d;
+}
+
+.life-bottom .top02>p:hover {
+  background-color: #dfbe3b;
+  border-left: 6px solid #dfc352;
+  border-right: 6px solid #dfbb29;
+}
+
+.life-bottom .top03>p:hover {
+  background-color: #3ac2da;
+  border-left: 6px solid #4dc5db;
+  border-right: 6px solid #29bdd7;
+}
+
+.life-bottom .top04>p:hover {
+  background-color: #2f2e2e;
+  border-left: 6px solid #393737;
+  border-right: 6px solid #212020;
+}
+
+
+
+
+
+
+  .life-bottom .case-bottom {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 200px;
+    border: 1px solid #333;
+    border-radius: 0 10px 10px 0;
+    box-shadow: inset -1px -1px 1px 0.5px rgba(73, 73, 73, 0.3);
+    transition: all 1s;
+    z-index: 10;
+  }
+
+  .life-bottom .case-bottom.show {
+    width: 200px;
+}
+  .life-bottom .case-bottom p {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: block;
+    width: 3vw;
+    height: calc(100% - 1vw);
+    border-radius: 2px 8px 8px 2px;
+    background-color: #000;
+    transition: all 1s;
+  }
+  .life-bottom .case-bottom p.show {
+    width: 193px;
+}
+.music-content {
+  width: 200px;
+  height: 200px
+}
+.music-content>div.show {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: translateX(200px) translateY(-50%);
+  cursor: pointer;
+}
+.music-content>div>img
+{
+  left: 20px;
+  top: 20px;
+  width: 160px;
+  height: 160px;
+  transition: all 1s; 
+
+}
+
+.music-content>div>img.show{
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  transition: all 0.5s; 
+}
+
+.music-content>div>button {
+  position: absolute;
+  bottom:10px;
+  left: 100px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  background: url("../images/reset-music.png") no-repeat center;
+  background-size: contain;
+  transition: transform 0.3s;
+  border: 0;
+  cursor: pointer;
+}
+
+
+.music-content>div>button:hover {
+  transform: rotate(180deg);
+}
+
+
+
+
+  .life-bottom .photo-box {
+    display: block;
   }
 
 }
@@ -3330,4 +3642,18 @@ div.caseset {
   border: 4px solid #1395ff;
   background: #006ec7 url("../images/gotop-r.png") no-repeat center;
   background-size: 20px 20px;
+}
+
+
+@media all and (max-width:480px){
+  .sidebt {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: 30px;
+    height: 90px;
+  }
+  
+  
 }
