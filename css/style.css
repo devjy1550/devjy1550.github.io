@@ -319,10 +319,23 @@ a.logo {
   }
 
   .gnb .menu li span {
-    left: 50%;
+    left: calc(50% + 5px);
     transform: translateX(-50%);
     bottom: 10px;
+    height: 8px;
     width: 80px;
+  }
+
+  .gnb .menu li:nth-child(2) > span {
+    left: calc(50%);
+    transform: translateX(-50%);
+    width: 60%;
+  }
+
+  .gnb .menu li:nth-child(4) > span {
+    left: calc(50%);
+    transform: translateX(-50%);
+    width: 60%;
   }
 }
 
@@ -468,9 +481,9 @@ a.logo {
     width: 100%;
     padding: 20px 15px;
     background: #a3d6f4 url("../images/face02.png") no-repeat;
-    background-size: 100px 120px;
-    background-position-x: 290px;
-    background-position-y: 30px;
+    background-size: 120px 140px;
+    background-position-x: 306px;
+    background-position-y: 21px;
   }
 
   .visual-left h2 {
@@ -481,8 +494,9 @@ a.logo {
 
   .visual-left span {
     display: inline-block;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
     margin-top: 5px;
   }
 
@@ -2386,7 +2400,7 @@ li.usedS04 {
 
   .port-right .portsummary {
     display: block;
-    height: 680px;
+    height: 640px;
     opacity: 0;
     background-color: transparent;
     z-index: -999999999999;
@@ -2394,8 +2408,8 @@ li.usedS04 {
   .portcontrol {
     position: relative;
     display: block;
-    padding-top: 20px;
     z-index: 15;
+    padding-top: 30px;
   }
 }
 
