@@ -24,9 +24,9 @@ window.onload = function () {
   });
 
   // 새로고침 상단위치
-  $("html").stop().animate({
-    scrollTop: 0,
-  });
+  // $("html").stop().animate({
+  //   scrollTop: 0,
+  // });
 
   const nowstart = document.querySelector(".talk-start");
   const saying = ["안녕하십니까,"];
@@ -616,7 +616,7 @@ window.onload = function () {
     turnTable.addClass("turnon");
     cdSleeveFNB.addClass("hoverM");
     $(".photo-box").addClass("hide");
-
+    musicContent.show();
     TitleCdHover.addClass("hoverM");
   });
 
@@ -640,7 +640,6 @@ window.onload = function () {
 
     cdContent.removeClass("show");
     cdContentImg.removeClass("show");
-
     musicCds.removeClass("show");
     lifeBottom.removeClass("show");
     $(".photo-box").removeClass("hide");
