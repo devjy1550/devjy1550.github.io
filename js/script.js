@@ -637,7 +637,6 @@ window.onload = function () {
     musicContent.addClass("caseset");
     musicContent.removeClass("show");
     musicContentOn.removeClass("show");
-
     cdContent.removeClass("show");
     cdContentImg.removeClass("show");
     musicCds.removeClass("show");

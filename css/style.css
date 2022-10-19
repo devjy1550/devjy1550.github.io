@@ -310,12 +310,13 @@ a.logo {
 
   .gnb .menu li {
     width: 110px;
+    line-height: 30px;
   }
 
   .gnb .menu li a {
     font-size: 14px;
     line-height: 18px;
-    padding: 10px 0;
+    padding-bottom: 10px;
     text-align: center;
   }
 
@@ -1946,7 +1947,21 @@ a.showBt03 {
   transition: all 0.8s;
 }
 
-.portlist-sw .swiper-slide > div.control-bar-vue > .controlButtons {
+.portlist-sw .swiper-slide > div.control-bar-vue-b {
+  position: absolute;
+  display: block;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  height: 80px;
+  border-radius: 24px;
+  background-color: rgba(0, 255, 110, 0.4);
+  transition: all 0.8s;
+}
+
+.portlist-sw .swiper-slide > div.control-bar-vue > .controlButtons,
+.portlist-sw .swiper-slide > div.control-bar-vue-b > .controlButtons {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -1955,7 +1970,8 @@ a.showBt03 {
   height: 80px;
 }
 
-.control-bar-vue > .controlButtons > a {
+.control-bar-vue > .controlButtons > a,
+.control-bar-vue-b > .controlButtons > a {
   position: relative;
   display: block;
   width: 56px;
@@ -1965,19 +1981,23 @@ a.showBt03 {
   cursor: pointer;
 }
 
-.control-bar-vue a.showBt01 {
+.control-bar-vue a.showBt01,
+.control-bar-vue-b a.showBt01 {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.control-bar-vue a.showBt02 {
+.control-bar-vue a.showBt02,
+.control-bar-vue-b a.showBt02 {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.control-bar-vue a.showBt03 {
+.control-bar-vue a.showBt03,
+.control-bar-vue-b a.showBt03 {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-.control-bar-vue > .controlButtons > a > span {
+.control-bar-vue > .controlButtons > a > span,
+.control-bar-vue-b > .controlButtons > a > span {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1992,7 +2012,8 @@ a.showBt03 {
   letter-spacing: 0px;
 }
 
-.control-bar-vue > .controlButtons > a.showBt01 > span::before {
+.control-bar-vue > .controlButtons > a.showBt01 > span::before,
+.control-bar-vue-b > .controlButtons > a.showBt01 > span::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -2005,7 +2026,8 @@ a.showBt03 {
   background-size: contain;
 }
 
-.control-bar-vue > .controlButtons > a.showBt02 > span::before {
+.control-bar-vue > .controlButtons > a.showBt02 > span::before,
+.control-bar-vue-b > .controlButtons > a.showBt02 > span::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -2018,7 +2040,8 @@ a.showBt03 {
   background-size: contain;
 }
 
-.control-bar-vue > .controlButtons > a.showBt03 > span::before {
+.control-bar-vue > .controlButtons > a.showBt03 > span::before,
+.control-bar-vue-b > .controlButtons > a.showBt03 > span::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -2031,7 +2054,8 @@ a.showBt03 {
   background-size: contain;
 }
 
-.control-bar-vue > .controlButtons > a:hover {
+.control-bar-vue > .controlButtons > a:hover,
+.control-bar-vue-b > .controlButtons > a:hover {
   background-color: rgba(255, 255, 255);
 }
 
@@ -3046,7 +3070,7 @@ div.caseset {
 }
 
 .photo-content.show {
-  left: 200px;
+  left: 400px;
   width: 350px;
   transition: all 1s;
 }
@@ -3507,8 +3531,7 @@ div.caseset {
     display: block;
     width: 40px;
     height: 40px;
-    background: #412905 url(http://127.0.0.1:5500/css/../images/hover02.png)
-      no-repeat center;
+    background: #412905 url("../images/hover02.png") no-repeat center;
     background-size: 20px 20px;
     transition: all 0.5s 0.5s;
     cursor: pointer;
@@ -3528,8 +3551,7 @@ div.caseset {
     opacity: 0;
     width: 60px;
     height: 60px;
-    background: url(http://127.0.0.1:5500/css/../images/reset-album.png)
-      no-repeat right bottom;
+    background: url("../images/reset-album.png") no-repeat right bottom;
     background-size: contain;
     color: #fff;
     cursor: pointer;
@@ -3540,8 +3562,7 @@ div.caseset {
     display: block;
     width: 200px;
     height: 204px;
-    background: url(http://127.0.0.1:5500/css/../images/photo-title-bg.png)
-      no-repeat left;
+    background: url("../images/photo-title-bg.png") no-repeat left;
     background-size: contain;
     z-index: 9;
   }
@@ -3553,8 +3574,7 @@ div.caseset {
     display: block;
     width: 114px;
     height: 64px;
-    background: url(http://127.0.0.1:5500/css/../images/photo-title-03.png)
-      no-repeat center;
+    background: url("../images/photo-title-03.png") no-repeat center;
     background-size: contain;
     transition: all 0.5s 0.5s;
   }
@@ -3567,6 +3587,12 @@ div.caseset {
     height: 200px;
     display: block;
     font-size: 0;
+  }
+
+  .photo-content.show {
+    left: 200px;
+    width: 350px;
+    transition: all 1s;
   }
 
   .photo-content > div {
