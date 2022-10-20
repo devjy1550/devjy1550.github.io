@@ -1857,6 +1857,10 @@ a.logo {
   transition: animation 0.5s 1s;
 }
 
+.portlist-sw .swiper-slide > a.memo-screen::before {
+  height: 100%;
+}
+
 .portlist-sw .swiper-slide > div.control-bar {
   position: absolute;
   display: block;
