@@ -286,17 +286,15 @@ a.logo {
 .gnb .menu li > span.screenon {
   background-color: rgba(210, 217, 230, 0.837);
 }
-
-@media all and (max-width: 480px) {
+@media all and (max-width: 540px) {
   a.logo {
     position: relative;
     display: block;
     margin: 0 auto;
     float: none;
-    width: 40px;
-    height: 48px;
+    width: 12%;
+    height: 50px;
   }
-
   .gnb {
     float: none;
     padding: 0;
@@ -304,12 +302,12 @@ a.logo {
   }
 
   .gnb .menu {
-    width: 480px;
+    width: 100%;
     text-align: center;
   }
 
   .gnb .menu li {
-    width: 110px;
+    width: 22%;
     line-height: 30px;
   }
 
@@ -325,7 +323,60 @@ a.logo {
     transform: translateX(-50%);
     bottom: 10px;
     height: 8px;
-    width: 80px;
+    width: 80%;
+  }
+
+  .gnb .menu li:nth-child(2) > span {
+    left: calc(50%);
+    transform: translateX(-50%);
+    width: 60%;
+  }
+
+  .gnb .menu li:nth-child(4) > span {
+    left: calc(50%);
+    transform: translateX(-50%);
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  a.logo {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 12%;
+    height: 50px;
+  }
+  .gnb {
+    float: none;
+    padding: 0;
+    padding-bottom: 8px;
+  }
+
+  .gnb .menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gnb .menu li {
+    width: 22%;
+    line-height: 30px;
+  }
+
+  .gnb .menu li a {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .gnb .menu li span {
+    left: calc(50% + 5px);
+    transform: translateX(-50%);
+    bottom: 10px;
+    height: 8px;
+    width: 80%;
   }
 
   .gnb .menu li:nth-child(2) > span {
@@ -468,14 +519,14 @@ a.logo {
   background-color: white;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 540px) {
   .visual {
-    height: 880px;
-    padding: 145px 0 220px 0;
+    height: 860px;
+    padding: 25% 0 30% 0;
   }
 
   .visual .inner {
-    padding: 0 20px;
+    padding: 0 3%;
   }
 
   .visual-left {
@@ -483,23 +534,22 @@ a.logo {
     width: 100%;
     padding: 20px 15px;
     background: #a3d6f4 url("../images/face02.png") no-repeat;
-    background-size: 120px 140px;
-    background-position-x: 306px;
-    background-position-y: 21px;
+    background-size: 30% 60%;
+    background-position-x: 94%;
+    background-position-y: 20%;
   }
 
   .visual-left h2 {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 32px;
-    margin-bottom: 10px;
   }
 
   .visual-left span {
     display: inline-block;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 24px;
-    letter-spacing: 2px;
-    margin-top: 5px;
+    letter-spacing: 2.5px;
+    margin-top: 10px;
   }
 
   .visual-right {
@@ -508,17 +558,17 @@ a.logo {
   }
 
   .visual-right:before {
-    width: 360px;
+    width: 100%;
     height: 360px;
     top: 140px;
   }
 
   .visual-talk {
-    padding: 20px 55px 0 55px;
+    padding: 5% 15% 0 20%;
   }
 
   .visual-talk::before {
-    width: 420px;
+    width: 100%;
     height: 280px;
     background-size: 100% 85%;
   }
@@ -560,6 +610,140 @@ a.logo {
   .d-line1,
   .d-line2 {
     display: none;
+  }
+}
+
+@media all and (max-width: 510px) {
+  .visual {
+    height: 840px;
+    padding: 25% 0 30% 0;
+  }
+  .visual-left span {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+  }
+
+  .visual-talk {
+    padding: 5% 13% 0 18%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .visual {
+    height: 820px;
+    padding: 25% 0 30% 0;
+  }
+
+  .visual .inner {
+    padding: 0 3%;
+  }
+
+  .visual-left {
+    float: none;
+    width: 100%;
+    padding: 20px 15px;
+    background: #a3d6f4 url("../images/face02.png") no-repeat;
+    background-size: 30% 60%;
+    background-position-x: 94%;
+    background-position-y: 20%;
+  }
+
+  .visual-left h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .visual-left span {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+  }
+
+  .visual-right {
+    float: none;
+    width: 100%;
+  }
+
+  .visual-right:before {
+    width: 360px;
+    height: 360px;
+    top: 140px;
+  }
+
+  .visual-talk {
+    padding: 5% 12% 0 12%;
+  }
+
+  .visual-talk::before {
+    width: 100%;
+    height: 260px;
+    background-size: 100% 85%;
+  }
+
+  .visual-right span.talk-start {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .visual-right span.talk-on {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .visual-right span.talk-last {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 10px;
+    letter-spacing: 0;
+  }
+
+  .visual-right span.talk-end {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+    padding: 0;
+  }
+
+  .myname {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 0;
+  }
+
+  .d-line1,
+  .d-line2 {
+    display: none;
+  }
+}
+
+@media all and (max-width: 455px) {
+  .visual-left h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .visual-left span {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+  }
+
+  .visual-right span.talk-on {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 8px;
+    letter-spacing: 0px;
   }
 }
 
@@ -1178,7 +1362,7 @@ a.logo {
   background-color: rgba(32, 136, 255, 0.744);
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 540px) {
   .aboutme {
     padding: 40px 20px;
   }
@@ -1195,16 +1379,16 @@ a.logo {
   }
 
   .mystory p {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 32px;
-    letter-spacing: 0.55px;
+    letter-spacing: 0;
     padding-left: 20px;
   }
 
   .mystory span {
-    top: 88px;
-    font-size: 80px;
-    line-height: 72px;
+    top: -140px;
+    font-size: 100px;
+    line-height: 100px;
     text-align: right;
   }
 
@@ -1276,7 +1460,243 @@ a.logo {
   .profile .profile-right > div.education {
     margin: 0;
     padding: 0;
-    margin-left: 15px;
+    margin-left: 24px;
+  }
+
+  .profile .profile-right > div.education ul li {
+    padding-right: 0;
+  }
+
+  .profile .profile-right > div.education ul span {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+  }
+
+  .profile .profile-right > div.education ul li p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .profile .profile-right > div.education ul li i {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .aboutme-bottom .posibility {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: none;
+  }
+
+  .posibility .psb-top h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .psb-top > p {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  .posibility .psb-box {
+    padding: 50px 0 30px 0;
+  }
+
+  .posibility .psb-box::after {
+    bottom: 0;
+    right: 45px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .posibility .psb-box .psb-graph {
+    margin-left: 80px;
+  }
+
+  .posibility .psb-desc {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+
+  .aboutme-bottom .my-roadmap {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .my-roadmap h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .my-roadmap > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .my-roadmap .map-review {
+    width: 100%;
+  }
+
+  .my-roadmap .mr-control {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .mr-content li {
+    padding-left: 60px;
+  }
+}
+
+@media all and (max-width: 510px) {
+  .mystory p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+    padding-left: 20px;
+  }
+
+  .mystory span {
+    top: -160px;
+    font-size: 88px;
+    line-height: 88px;
+    text-align: right;
+  }
+  .profile .profile-left .name-text p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 15px;
+  }
+
+  .profile .profile-right > div.introduce ul li p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 15px;
+  }
+
+  .profile .profile-right > div.education {
+    margin: 0;
+    padding: 0;
+    margin-left: 18px;
+  }
+
+  .profile .profile-right > div.education ul li {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .aboutme {
+    padding: 40px 20px;
+  }
+
+  .aboutme h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .aboutme h2::after {
+    width: 48px;
+    height: 48px;
+    right: 24px;
+  }
+
+  .mystory p {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.55px;
+    padding-left: 20px;
+  }
+
+  .mystory span {
+    top: -160px;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: right;
+  }
+
+  .aboutme-bottom .profile h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .profile .profile-left {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  .profile .profile-right {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .profile .profile-left > span.pic {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+    margin-top: 20px;
+  }
+
+  .profile .profile-left .name-text {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+  }
+
+  .profile .profile-left .name-text span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .profile .profile-left .name-text p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 10px;
+  }
+
+  .profile .profile-right > div.introduce {
+    margin-top: 48px;
+    padding: 0;
+  }
+
+  .profile .profile-right > div.introduce ul li {
+    padding: 10px 0;
+  }
+
+  .profile .profile-right > div.introduce ul li span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .profile .profile-right > div.introduce ul li p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+  }
+
+  .profile .profile-right > div.education {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
   }
 
   .profile .profile-right > div.education ul li {
@@ -1338,6 +1758,14 @@ a.logo {
     margin: 0 auto;
     margin-top: 20px;
     padding-left: 15px;
+  }
+
+  .posibility > .psb-desc p {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
   }
 
   .aboutme-bottom .my-roadmap {
