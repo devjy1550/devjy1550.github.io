@@ -1864,7 +1864,7 @@ a.logo {
 .portlist-sw .swiper-slide > div.control-bar {
   position: absolute;
   display: block;
-  bottom: 3%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   width: 72%;
@@ -1966,7 +1966,7 @@ a.showBt03 {
 .portlist-sw .swiper-slide > div.control-bar-vue {
   position: absolute;
   display: block;
-  bottom: 18%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   width: 72%;
@@ -1979,7 +1979,7 @@ a.showBt03 {
 .portlist-sw .swiper-slide > div.control-bar-vue-b {
   position: absolute;
   display: block;
-  bottom: 3%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   width: 72%;
@@ -2213,13 +2213,6 @@ a.showBt03 {
   line-height: 24px;
   font-weight: 700;
   color: #000;
-}
-
-.portsummary .st-desc-sw .swiper-slide p {
-  position: relative;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 14px;
 }
 
 .portsummary .st-desc-sw .swiper-slide .overview {
