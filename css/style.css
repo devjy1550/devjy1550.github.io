@@ -2086,6 +2086,64 @@ a.logo {
   z-index: 9;
   cursor: not-allowed;
 }
+@media all and (max-width: 540px) {
+  .skills {
+    padding: 70px 0;
+  }
+
+  
+  .skills h2 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  .skills h2::after {
+    width: 48px;
+    height: 48px;
+    right: 12px;
+  }
+
+  .skill-list {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  .skill-list > li {
+    width: 20%;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .skill-list > li:nth-child(4n) {
+    margin-right: 20px;
+  }
+
+  .skill-list > li:nth-child(1) {
+    margin-left: 20px;
+  }
+
+  .skill-list > li:nth-child(9) {
+    display: none;
+  }
+
+  .skill-list > li:nth-child(12) {
+    display: none;
+  }
+
+  .skill-list > li > a {
+    background-position: center;
+    background-size: 35px;
+  }
+
+  .skill-list > li > a > span {
+    display: none;
+  }
+}
+
 
 @media all and (max-width: 480px) {
   .skills {
@@ -2108,7 +2166,7 @@ a.logo {
     white-space: nowrap;
     overflow-x: auto;
     padding: 0;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
 
   .skill-list > li {
@@ -2863,6 +2921,50 @@ li.usedS07 {
   background-color: rgba(192, 221, 238, 0.639);
   opacity: 1;
 }
+
+
+@media all and (max-width: 540px) {
+  .port-left {
+    left: -990px;
+    z-index: 10;
+  }
+
+  .port-right {
+    display: block;
+    top: -140px;
+    left: 40px;
+    width: 400px;
+    height: 800px;
+  }
+  .port-right h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .port-right h2::before {
+    width: 30%;
+  }
+  .port-right h2::after {
+    width: 48px;
+    height: 48px;
+    left: 100px;
+  }
+
+  .port-right .portsummary {
+    display: block;
+    height: 640px;
+    opacity: 0;
+    background-color: transparent;
+    z-index: -999999999999;
+  }
+  .portcontrol {
+    position: relative;
+    display: block;
+    z-index: 15;
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+
 
 @media all and (max-width: 480px) {
   .port-left {
