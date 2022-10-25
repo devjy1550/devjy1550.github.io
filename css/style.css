@@ -2115,7 +2115,6 @@ a.logo {
     padding: 70px 0;
   }
 
-  
   .skills h2 {
     font-size: 32px;
     line-height: 48px;
@@ -2167,7 +2166,6 @@ a.logo {
     display: none;
   }
 }
-
 
 @media all and (max-width: 480px) {
   .skills {
@@ -2949,7 +2947,6 @@ li.usedS07 {
   opacity: 1;
 }
 
-
 @media all and (max-width: 540px) {
   .port-left {
     left: -990px;
@@ -2991,7 +2988,7 @@ li.usedS07 {
     padding-top: 30px;
     padding-left: 50px;
   }
-
+}
 
 @media all and (max-width: 480px) {
   .port-left {
