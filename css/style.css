@@ -286,6 +286,7 @@ a.logo {
 .gnb .menu li > span.screenon {
   background-color: rgba(210, 217, 230, 0.837);
 }
+
 @media all and (max-width: 540px) {
   a.logo {
     position: relative;
@@ -295,6 +296,7 @@ a.logo {
     width: 12%;
     height: 50px;
   }
+
   .gnb {
     float: none;
     padding: 0;
@@ -348,6 +350,7 @@ a.logo {
     width: 12%;
     height: 50px;
   }
+
   .gnb {
     float: none;
     padding: 0;
@@ -618,6 +621,7 @@ a.logo {
     height: 840px;
     padding: 25% 0 30% 0;
   }
+
   .visual-left span {
     display: inline-block;
     font-size: 22px;
@@ -1364,7 +1368,8 @@ a.logo {
 
 @media all and (max-width: 540px) {
   .aboutme {
-    padding: 40px 20px;
+    padding: 160px 20px;
+    padding-bottom: 40px;
   }
 
   .aboutme h2 {
@@ -1390,6 +1395,10 @@ a.logo {
     font-size: 100px;
     line-height: 100px;
     text-align: right;
+  }
+
+  .aboutme-bottom {
+    padding-top: 140px;
   }
 
   .aboutme-bottom .profile h3 {
@@ -1484,6 +1493,11 @@ a.logo {
     letter-spacing: 0.5px;
   }
 
+  .aboutme-bottom .psbNrm {
+    padding-top: 120px;
+    margin-top: 0;
+  }
+
   .aboutme-bottom .posibility {
     position: relative;
     display: block;
@@ -1530,7 +1544,8 @@ a.logo {
     width: 100%;
     float: none;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 120px;
+    margin-bottom: 40px;
   }
 
   .my-roadmap h3 {
@@ -1555,6 +1570,10 @@ a.logo {
   .mr-content li {
     padding-left: 60px;
   }
+
+  .mr-content li::before {
+    margin-left: 70px;
+  }
 }
 
 @media all and (max-width: 510px) {
@@ -1571,6 +1590,7 @@ a.logo {
     line-height: 88px;
     text-align: right;
   }
+
   .profile .profile-left .name-text p {
     font-size: 14px;
     line-height: 16px;
@@ -1592,6 +1612,10 @@ a.logo {
   .profile .profile-right > div.education ul li {
     padding-left: 15px;
     padding-right: 0;
+  }
+
+  .mr-content li::before {
+    margin-left: 40px;
   }
 }
 
@@ -2757,14 +2781,17 @@ li.usedS04 {
   background: url("../images/sklist06.png") no-repeat top;
   background-size: 42px 46px;
 }
+
 li.usedS05 {
   background: url("../images/sklist03.png") no-repeat top;
   background-size: 42px 46px;
 }
+
 li.usedS06 {
   background: url("../images/sklist11.png") no-repeat top;
   background-size: 42px 46px;
 }
+
 li.usedS07 {
   background: url("../images/sklist12.png") no-repeat top;
   background-size: 42px 46px;
@@ -2877,6 +2904,7 @@ li.usedS07 {
     width: 400px;
     height: 800px;
   }
+
   .port-right h2 {
     font-size: 32px;
     line-height: 48px;
@@ -2885,6 +2913,7 @@ li.usedS07 {
   .port-right h2::before {
     width: 30%;
   }
+
   .port-right h2::after {
     width: 48px;
     height: 48px;
@@ -2898,6 +2927,7 @@ li.usedS07 {
     background-color: transparent;
     z-index: -999999999999;
   }
+
   .portcontrol {
     position: relative;
     display: block;
@@ -3406,6 +3436,7 @@ div.caseset {
   opacity: 1;
   transition: all 1s 0.5s;
 }
+
 .life-bottom .music-box {
 }
 
@@ -3712,6 +3743,7 @@ div.caseset {
   .life-bottom > div.music-box {
     padding-right: 60px;
   }
+
   .life-bottom > div.photo-box {
     transform: translateX(70px);
     height: 200px;
@@ -3850,6 +3882,7 @@ div.caseset {
     cursor: pointer;
     transition: all 0.25s;
   }
+
   .life-bottom .case-top p::after {
     content: "";
     position: absolute;
@@ -3926,6 +3959,7 @@ div.caseset {
   .life-bottom .case-bottom.show {
     width: 168px;
   }
+
   .life-bottom .case-bottom p {
     position: absolute;
     top: 2px;
@@ -3937,14 +3971,17 @@ div.caseset {
     background-color: #000;
     transition: all 1s;
   }
+
   .life-bottom .case-bottom p.show {
     width: 160px;
     background-size: 160px 160px;
   }
+
   .music-content {
     width: 200px;
     height: 200px;
   }
+
   .music-content > div.show {
     width: 400px;
     height: 200px;
@@ -3952,6 +3989,7 @@ div.caseset {
     transform: translateX(200px) translateY(-50%);
     cursor: pointer;
   }
+
   .music-content > div > img {
     left: 0;
     top: 20px;
@@ -4011,6 +4049,7 @@ div.caseset {
 
     transition: all 0.5s;
   }
+
   .life-bottom .photo-box .photo-album span {
     position: absolute;
     bottom: 4px;
@@ -4069,6 +4108,7 @@ div.caseset {
     width: 20px;
     height: 100%;
   }
+
   .photo-content > div > span {
     position: relative;
     display: inline-block;
@@ -4077,6 +4117,7 @@ div.caseset {
     cursor: pointer;
     transition: all 0.8s;
   }
+
   .photo-content > div.slide01 > span {
     background: url("../images/mypic-01.jpg") no-repeat center;
     background-size: auto 200px;
@@ -4323,6 +4364,7 @@ div.caseset {
     font-size: 32px;
     line-height: 48px;
   }
+
   .footer .inner h2::after {
     width: 48px;
     height: 48px;
@@ -4433,6 +4475,7 @@ div.caseset {
     background: #fff url("../images/pdf-on.png") no-repeat center;
     background-size: contain;
   }
+
   .gotop {
     position: relative;
     display: block;
@@ -4447,6 +4490,7 @@ div.caseset {
     cursor: pointer;
     transition: all 0.4s;
   }
+
   .gotop:hover {
     border: 4px solid #1395ff;
     background: #e9f7ff url("../images/gotop.png") no-repeat center;
